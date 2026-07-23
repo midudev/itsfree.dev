@@ -117,6 +117,7 @@ const pricingUrls: Record<string, string> = {
   "Microsoft Clarity": "https://clarity.microsoft.com/pricing",
   "Axiom": "https://axiom.co/pricing",
   "Pipedream": "https://pipedream.com/docs/pricing",
+  "n8n": "https://n8n.io/pricing/",
   "Beeceptor": "https://beeceptor.com/pricing",
   "MockAPI": "https://mockapi.io/pricing",
   "Abstract API": "https://www.abstractapi.com/api",
@@ -247,6 +248,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
 
   // APIs
   { name: "Pipedream", url: "https://pipedream.com", category: "api", tags: ["automation", "workflows", "api"], description: { en: "Connect APIs and run event-driven workflows with code when you need it.", es: "Conecta APIs y ejecuta workflows por eventos usando código cuando haga falta." } },
+  { name: "n8n", url: "https://n8n.io", faviconFile:"n8n.webp", category: "api", tags: ["automation", "workflows", "integrations"], description: { en: "Build automated workflows by connecting apps, APIs, and AI with a visual editor.", es: "Crea flujos de trabajo automatizados conectando aplicaciones, APIs e IA con un editor visual.",  } },
   { name: "Beeceptor", url: "https://beeceptor.com", category: "api", tags: ["mock", "http", "debug"], description: { en: "Create instant mock endpoints and inspect, transform or proxy requests.", es: "Crea endpoints mock e inspecciona, transforma o redirige peticiones." } },
   { name: "MockAPI", url: "https://mockapi.io", category: "api", tags: ["mock", "rest", "prototype"], description: { en: "Generate REST endpoints and realistic sample data for prototypes.", es: "Genera endpoints REST y datos realistas para prototipos." } },
   { name: "Abstract API", url: "https://www.abstractapi.com", category: "api", tags: ["validation", "geolocation", "utilities"], description: { en: "A practical API suite for IP, email, phone and other validation tasks.", es: "Suite de APIs para IP, email, teléfono y otras validaciones habituales." } },

@@ -111,6 +111,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Axiom": { en: "Free: 500 GB-hours of query time and 25 GB ingest/month, with 30-day retention.", es: "Gratis: 500 GB-horas de consulta y 25 GB de ingesta/mes, con 30 días de retención." },
 
   "Pipedream": { en: "Free: 100 workflow credits/month, 3 active workflows and unlimited testing in the builder.", es: "Gratis: 100 créditos de workflows/mes, 3 workflows activos y pruebas ilimitadas en el editor." },
+  "n8n": { en: "Free: Self-host the Community Edition with unlimited workflows and users.", es: "Gratis: Community Edition hosteada en tu propia máquina con workflows y usuarios ilimitados." }, 
   "Beeceptor": { en: "Free: 50 requests/day, 1 mock endpoint and 10 days of request history, with no credit card.", es: "Gratis: 50 peticiones/día, 1 endpoint mock y 10 días de historial, sin tarjeta." },
   "MockAPI": { en: "Free: one project with up to 2 resources and basic fake REST endpoints for prototyping.", es: "Gratis: un proyecto con hasta 2 recursos y endpoints REST falsos básicos para prototipos." },
   "Abstract API": { en: "Free API keys with product-specific monthly quotas; common APIs include limited requests for testing.", es: "API keys gratis con cuotas mensuales según el producto; las APIs comunes incluyen peticiones limitadas para pruebas." },
