@@ -79,7 +79,9 @@ const imageAlt =
       try {
         const savedTheme = localStorage.getItem("itsfree-theme")
         if (savedTheme === "light" || savedTheme === "dark") {
-          document.documentElement.dataset.theme = savedTheme
+          const root = document.documentElement
+          root.dataset.theme = savedTheme
+          root.style.colorScheme = savedTheme
         }
       } catch {}
     </script>
@@ -96,6 +98,28 @@ const imageAlt =
         toggle.setAttribute("aria-label", document.documentElement.dataset.theme === "light" ? "Use dark theme" : "Use light theme")
       }
 
+      const getStoredTheme = () => {
+        try {
+          const savedTheme = localStorage.getItem("itsfree-theme")
+          return savedTheme === "light" || savedTheme === "dark" ? savedTheme : null
+        } catch {
+          return null
+        }
+      }
+
+      const applyTheme = (theme = getStoredTheme()) => {
+        const root = document.documentElement
+        const resolvedTheme = theme ?? root.dataset.theme ?? "dark"
+        root.dataset.theme = resolvedTheme
+        root.style.colorScheme = resolvedTheme
+
+        try {
+          localStorage.setItem("itsfree-theme", resolvedTheme)
+        } catch {}
+
+        syncThemeToggle()
+      }
+
       document.addEventListener("click", (event) => {
         const target = event.target
         if (!(target instanceof Element)) return
@@ -107,14 +131,22 @@ const imageAlt =
 
         if (!target.closest("#theme-toggle")) return
 
-        const root = document.documentElement
-        const nextTheme = root.dataset.theme === "light" ? "dark" : "light"
-        root.dataset.theme = nextTheme
-        try { localStorage.setItem("itsfree-theme", nextTheme) } catch {}
-        syncThemeToggle()
+        const nextTheme = document.documentElement.dataset.theme === "light" ? "dark" : "light"
+        applyTheme(nextTheme)
+      })
+
+      document.addEventListener("astro:before-swap", () => {
+        const storedTheme = getStoredTheme()
+        if (storedTheme) {
+          const root = document.documentElement
+          root.dataset.theme = storedTheme
+          root.style.colorScheme = storedTheme
+        }
       })
 
       document.addEventListener("astro:after-swap", () => {
+        applyTheme(getStoredTheme())
+
         if (!categoryNavigationPending) return
 
         const directory = document.querySelector<HTMLElement>("#directory")
@@ -130,8 +162,11 @@ const imageAlt =
         categoryNavigationPending = false
       })
 
-      document.addEventListener("astro:page-load", syncThemeToggle)
-      syncThemeToggle()
+      document.addEventListener("astro:page-load", () => {
+        applyTheme(getStoredTheme())
+      })
+
+      applyTheme(getStoredTheme())
     </script>
   </body>
 </html>
