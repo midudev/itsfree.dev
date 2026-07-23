@@ -79,6 +79,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Formspree": { en: "Free: 50 form submissions/month, unlimited forms and projects, spam filtering and email notifications.", es: "Gratis: 50 envíos de formulario/mes, formularios y proyectos ilimitados, antispam y avisos por email." },
   "Tally": { en: "Free: unlimited forms and submissions with most input types, payments, logic and integrations included.", es: "Gratis: formularios y respuestas ilimitados con casi todos los campos, pagos, lógica e integraciones." },
   "Web3Forms": { en: "Free: 250 form submissions/month, unlimited forms and websites, with no backend or account required.", es: "Gratis: 250 envíos de formulario/mes, formularios y webs ilimitados, sin backend ni cuenta." },
+  "Madoo AI": { en: "Free: 30 AI credits/month (5/day), 10 stored templates and test emails, no credit card; a 7-day trial of the paid plans is opt-in at sign-up.", es: "Gratis: 30 créditos de IA al mes (5/día), 10 plantillas guardadas y emails de prueba, sin tarjeta; incluye una prueba de 7 días de los planes de pago al registrarte." },
 
   "Sentry": { en: "Developer: 5k errors, 5M spans, 50 replays and 5 GB logs/month for one user.", es: "Developer: 5.000 errores, 5 M de spans, 50 replays y 5 GB de logs/mes para un usuario." },
   "Better Stack": { en: "Free: 10 monitors, 3-minute checks, 1 status page, 1 GB logs/month and 3-day retention.", es: "Gratis: 10 monitores, checks cada 3 min, 1 página de estado, 1 GB de logs/mes y 3 días de retención." },
