@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-07-23"
+export const sourceReviewedAt = "2026-07-24"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -139,6 +139,7 @@ const pricingUrls: Record<string, string> = {
   "Have I Been Pwned": "https://haveibeenpwned.com/API/Key",
   "Linear": "https://linear.app/pricing",
   "Notion": "https://www.notion.so/pricing",
+  "Obsidian": "https://obsidian.md/pricing",
   "Trello": "https://trello.com/pricing",
   "Miro": "https://miro.com/pricing/",
   "ClickUp": "https://clickup.com/pricing",
@@ -276,6 +277,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   // Collaboration
   { name: "Linear", url: "https://linear.app", category: "collaboration", featured: true, tags: ["issues", "roadmap", "product"], description: { en: "Fast issue tracking, cycles and product roadmaps for software teams.", es: "Issues, ciclos y roadmaps rápidos para equipos de software." } },
   { name: "Notion", url: "https://www.notion.so", category: "collaboration", tags: ["docs", "wiki", "projects"], description: { en: "Connected docs, wikis, databases and lightweight project management.", es: "Documentos, wikis, bases de datos y gestión ligera de proyectos." } },
+  { name: "Obsidian", url: "https://obsidian.md/", faviconFile:"obsidian.webp", category: "collaboration", tags: ["notes", "markdown", "knowledge"], description: { en: "Build a second brain with local Markdown notes and linked knowledge.", es: "Crea un segundo cerebro con notas Markdown locales y conocimiento interconectado." } },
   { name: "Trello", url: "https://trello.com", category: "collaboration", tags: ["kanban", "tasks", "boards"], description: { en: "Visual Kanban boards for organizing projects and team workflows.", es: "Tableros Kanban visuales para organizar proyectos y workflows." } },
   { name: "Miro", url: "https://miro.com", category: "collaboration", tags: ["whiteboard", "workshops", "remote"], description: { en: "A collaborative whiteboard for workshops, diagrams and remote planning.", es: "Pizarra colaborativa para workshops, diagramas y planificación remota." } },
   { name: "ClickUp", url: "https://clickup.com", category: "collaboration", tags: ["tasks", "docs", "projects"], description: { en: "Tasks, docs, goals and project views in a highly configurable workspace.", es: "Tareas, documentos, objetivos y proyectos en un espacio configurable." } },

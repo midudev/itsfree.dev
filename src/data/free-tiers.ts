@@ -20,6 +20,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "tldraw": "no-signup",
   "Fontshare": "no-signup",
   "Mozilla Observatory": "no-signup",
+  "Obsidian": "no-signup",
   "Have I Been Pwned": "no-signup",
 }
 
@@ -136,6 +137,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
 
   "Linear": { en: "Free: unlimited members, 2 teams and 250 issues, with Slack/GitHub integrations and API access.", es: "Gratis: miembros ilimitados, 2 equipos y 250 issues, con integraciones de Slack/GitHub y API." },
   "Notion": { en: "Free for individuals with unlimited pages; teams get a limited collaborative block trial and 5 MB uploads.", es: "Gratis para uso individual con páginas ilimitadas; los equipos tienen bloques limitados y subidas de 5 MB." },
+  "Obsidian": { en: "Free for personal use with unlimited local Markdown notes; Sync and Publish are paid add-ons.", es: "Gratis para uso personal con notas Markdown locales ilimitadas; Sync y Publish son complementos de pago." },
   "Trello": { en: "Free: up to 10 boards per workspace, unlimited cards, 10 collaborators and 250 automation runs/month.", es: "Gratis: hasta 10 tableros por workspace, tarjetas ilimitadas, 10 colaboradores y 250 automatizaciones/mes." },
   "Miro": { en: "Free: unlimited team members, 3 editable boards, templates and core integrations.", es: "Gratis: miembros ilimitados, 3 tableros editables, plantillas e integraciones básicas." },
   "ClickUp": { en: "Free Forever: unlimited tasks and members, 100 MB storage, collaborative docs and Kanban boards.", es: "Gratis para siempre: tareas y miembros ilimitados, 100 MB, documentos colaborativos y tableros Kanban." },
