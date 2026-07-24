@@ -59,6 +59,7 @@ const pricingUrls: Record<string, string> = {
   "Upstash": "https://upstash.com/pricing",
   "CockroachDB": "https://www.cockroachlabs.com/pricing/",
   "Aiven": "https://aiven.io/pricing",
+  "Prisma Postgres": "https://www.prisma.io/pricing",
   "Braintrust": "https://www.braintrust.dev/pricing",
   "Langfuse": "https://langfuse.com/pricing",
   "Hugging Face": "https://huggingface.co/pricing",
@@ -152,7 +153,6 @@ const pricingUrls: Record<string, string> = {
   "Cloudinary": "https://cloudinary.com/pricing",
   "Uploadcare": "https://uploadcare.com/pricing/",
   "ImageKit": "https://imagekit.io/plans",
-  "Prisma Postgres": "https://www.prisma.io/pricing",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
