@@ -20,6 +20,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "tldraw": "no-signup",
   "Fontshare": "no-signup",
   "Mozilla Observatory": "no-signup",
+  "Obsidian": "no-signup",
   "Have I Been Pwned": "no-signup",
 }
 
@@ -111,6 +112,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Axiom": { en: "Free: 500 GB-hours of query time and 25 GB ingest/month, with 30-day retention.", es: "Gratis: 500 GB-horas de consulta y 25 GB de ingesta/mes, con 30 días de retención." },
 
   "Pipedream": { en: "Free: 100 workflow credits/month, 3 active workflows and unlimited testing in the builder.", es: "Gratis: 100 créditos de workflows/mes, 3 workflows activos y pruebas ilimitadas en el editor." },
+  "n8n": { en: "Free: Self-host the Community Edition with unlimited workflows and users.", es: "Gratis: Community Edition hosteada en tu propia máquina con workflows y usuarios ilimitados." }, 
   "Beeceptor": { en: "Free: 50 requests/day, 1 mock endpoint and 10 days of request history, with no credit card.", es: "Gratis: 50 peticiones/día, 1 endpoint mock y 10 días de historial, sin tarjeta." },
   "MockAPI": { en: "Free: one project with up to 2 resources and basic fake REST endpoints for prototyping.", es: "Gratis: un proyecto con hasta 2 recursos y endpoints REST falsos básicos para prototipos." },
   "Abstract API": { en: "Free API keys with product-specific monthly quotas; common APIs include limited requests for testing.", es: "API keys gratis con cuotas mensuales según el producto; las APIs comunes incluyen peticiones limitadas para pruebas." },
@@ -135,6 +137,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
 
   "Linear": { en: "Free: unlimited members, 2 teams and 250 issues, with Slack/GitHub integrations and API access.", es: "Gratis: miembros ilimitados, 2 equipos y 250 issues, con integraciones de Slack/GitHub y API." },
   "Notion": { en: "Free for individuals with unlimited pages; teams get a limited collaborative block trial and 5 MB uploads.", es: "Gratis para uso individual con páginas ilimitadas; los equipos tienen bloques limitados y subidas de 5 MB." },
+  "Obsidian": { en: "Free for personal use with unlimited local Markdown notes; Sync and Publish are paid add-ons.", es: "Gratis para uso personal con notas Markdown locales ilimitadas; Sync y Publish son complementos de pago." },
   "Trello": { en: "Free: up to 10 boards per workspace, unlimited cards, 10 collaborators and 250 automation runs/month.", es: "Gratis: hasta 10 tableros por workspace, tarjetas ilimitadas, 10 colaboradores y 250 automatizaciones/mes." },
   "Miro": { en: "Free: unlimited team members, 3 editable boards, templates and core integrations.", es: "Gratis: miembros ilimitados, 3 tableros editables, plantillas e integraciones básicas." },
   "ClickUp": { en: "Free Forever: unlimited tasks and members, 100 MB storage, collaborative docs and Kanban boards.", es: "Gratis para siempre: tareas y miembros ilimitados, 100 MB, documentos colaborativos y tableros Kanban." },
