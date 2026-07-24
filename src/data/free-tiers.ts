@@ -46,6 +46,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Upstash": { en: "Redis Free: 256 MB and 500k commands/month; QStash includes 1,000 messages/day.", es: "Redis Free: 256 MB y 500.000 comandos/mes; QStash incluye 1.000 mensajes/día." },
   "CockroachDB": { en: "Basic: up to 10 GiB storage and 50M request units/month at no cost, across one organization.", es: "Basic: hasta 10 GiB y 50 M de request units/mes sin coste dentro de una organización." },
   "Aiven": { en: "Free plans for PostgreSQL, MySQL, Valkey and Kafka: one small node with limited storage and no SLA.", es: "Planes gratis para PostgreSQL, MySQL, Valkey y Kafka: un nodo pequeño, storage limitado y sin SLA." },
+    "Prisma Postgres": { en: "Free: 100k operations, 500 MB storage and 50 databases; quotas are shared across all databases in the account.", es: "Gratis: 100.000 operaciones, 500 MB de almacenamiento y 50 bases de datos; las cuotas se comparten entre todas las bases de la cuenta." },
 
   "Braintrust": { en: "Free: 1 GB of logs/month, 10k scores and experiments, prompt playground and unlimited users.", es: "Gratis: 1 GB de logs/mes, 10.000 scores y experimentos, playground de prompts y usuarios ilimitados." },
   "Langfuse": { en: "Hobby: 50k usage units/month with 30-day retention; self-hosting the open-source edition is also free.", es: "Hobby: 50.000 unidades de uso/mes y 30 días de retención; la edición open source self-hosted también es gratis." },

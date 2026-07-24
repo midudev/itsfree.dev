@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-07-23"
+export const sourceReviewedAt = "2026-07-24"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -152,6 +152,7 @@ const pricingUrls: Record<string, string> = {
   "Cloudinary": "https://cloudinary.com/pricing",
   "Uploadcare": "https://uploadcare.com/pricing/",
   "ImageKit": "https://imagekit.io/plans",
+  "Prisma Postgres": "https://www.prisma.io/pricing",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -175,6 +176,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Upstash", url: "https://upstash.com", category: "data", featured: true, tags: ["redis", "kafka", "serverless"], description: { en: "Serverless Redis, Kafka and workflow tools with usage-based free tiers.", es: "Redis, Kafka y workflows serverless con capas gratuitas por uso." } },
   { name: "CockroachDB", url: "https://www.cockroachlabs.com", faviconFile: "cockroachlabs.com.webp", category: "data", tags: ["sql", "distributed", "cloud"], description: { en: "Distributed SQL built for resilient, globally available applications.", es: "SQL distribuido para aplicaciones resistentes y disponibles globalmente." } },
   { name: "Aiven", url: "https://aiven.io", category: "data", tags: ["postgres", "valkey", "kafka"], description: { en: "Managed open-source data services with free plans for selected products.", es: "Servicios de datos open source gestionados con planes gratuitos seleccionados." } },
+  { name: "Prisma Postgres", url: "https://www.prisma.io/postgres", category: "data", tags: ["postgres", "serverless", "database"], description: { en: "Managed serverless Postgres with instant provisioning, connection pooling and support for standard PostgreSQL clients.", es: "Postgres serverless gestionado con aprovisionamiento instantáneo, pooling de conexiones y soporte para clientes PostgreSQL estándar." } },
 
   // AI
   { name: "Braintrust", url: "https://www.braintrustdata.com", category: "ai", tags: ["evals", "prompts", "data"], description: { en: "Evaluate AI applications, compare prompts and manage test datasets.", es: "Evalúa aplicaciones de IA, compara prompts y gestiona datasets de prueba." } },
