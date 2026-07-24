@@ -153,6 +153,7 @@ const pricingUrls: Record<string, string> = {
   "Uploadcare": "https://uploadcare.com/pricing/",
   "ImageKit": "https://imagekit.io/plans",
   "Dokploy": "https://dokploy.com/pricing",
+  "Plane": "https://plane.so/pricing",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -281,6 +282,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "ClickUp", url: "https://clickup.com", category: "collaboration", tags: ["tasks", "docs", "projects"], description: { en: "Tasks, docs, goals and project views in a highly configurable workspace.", es: "Tareas, documentos, objetivos y proyectos en un espacio configurable." } },
   { name: "Discord", url: "https://discord.com", category: "collaboration", tags: ["community", "chat", "voice"], description: { en: "Persistent text, voice and video spaces for developer communities.", es: "Espacios persistentes de texto, voz y vídeo para comunidades." } },
   { name: "Slack", url: "https://slack.com", category: "collaboration", tags: ["chat", "integrations", "teams"], description: { en: "Team messaging with channels, huddles and a large integration ecosystem.", es: "Mensajería de equipo con canales, huddles y muchas integraciones." } },
+  { name: "Plane", url: "https://plane.so", faviconFile: "plane.so.webp", category: "collaboration", tags: ["self-hosted", "issues", "open source"], description: { en: "Open-source project management to track issues, run sprint cycles and manage product roadmaps.", es: "Gestión de proyectos open source para trackear issues, correr sprints por cycles y gestionar roadmaps." } },
 
   // CMS
   { name: "Sanity", url: "https://www.sanity.io", category: "cms", tags: ["headless", "content lake", "studio"], description: { en: "A customizable content workspace backed by a real-time content platform.", es: "Workspace de contenido personalizable sobre una plataforma realtime." } },
