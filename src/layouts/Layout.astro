@@ -114,6 +114,11 @@ const imageAlt =
         syncThemeToggle()
       })
 
+      document.addEventListener("astro:before-swap", (event) => {
+        const theme = document.documentElement.dataset.theme
+        if (theme) event.newDocument.documentElement.dataset.theme = theme
+      })
+
       document.addEventListener("astro:after-swap", () => {
         if (!categoryNavigationPending) return
 
