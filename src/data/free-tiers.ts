@@ -21,6 +21,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Fontshare": "no-signup",
   "Mozilla Observatory": "no-signup",
   "Have I Been Pwned": "no-signup",
+  "Dokploy": "no-signup",
 }
 
 /**
@@ -151,4 +152,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Cloudinary": { en: "Free: 25 monthly credits for image/video transformations, storage and bandwidth, with 3 users.", es: "Gratis: 25 créditos mensuales para transformaciones, storage y tráfico de imagen/vídeo, con 3 usuarios." },
   "Uploadcare": { en: "Free for personal use: 1,000 operations/month, files up to 500 MB, upload widget and API, basic image transformations, adaptive bitrate streaming, CDN delivery, signed uploads and webhooks.", es: "Gratis para uso personal: 1.000 operaciones/mes, archivos de hasta 500 MB, widget y API de subida, transformaciones básicas de imagen, streaming adaptativo, entrega por CDN, subidas firmadas y webhooks." },
   "ImageKit": { en: "Free forever: 20 GB bandwidth and 3 GB media storage/month, with transformations and video processing.", es: "Gratis para siempre: 20 GB de tráfico y 3 GB de media/mes, con transformaciones y procesado de vídeo." },
+  "Dokploy": { en: "Free forever when self-hosted on your own server, unlimited apps and databases; the managed Dokploy Cloud is paid, from $4.50/month per server with no free tier.", es: "Gratis para siempre en self-hosting en tu propio servidor, apps y bases de datos ilimitadas; Dokploy Cloud gestionado es de pago desde 4,50 $/mes por servidor y no tiene capa gratuita." },
 }

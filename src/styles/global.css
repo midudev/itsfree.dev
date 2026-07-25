@@ -764,6 +764,9 @@ a {
 :root[data-theme="light"] img[src$="/render.com.svg"] {
   filter: invert(1);
 }
+:root[data-theme="light"] img[src$="/dokploy.com.webp"] {
+  filter: invert(1);
+}
 
 .resource-initials {
   position: absolute;
