@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-07-23"
+export const sourceReviewedAt = "2026-08-12"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -75,6 +75,7 @@ const pricingUrls: Record<string, string> = {
   "Pollinations.AI": "https://pollinations.ai/docs",
   "Portkey": "https://portkey.ai/pricing",
   "Comet Opik": "https://www.comet.com/site/pricing/",
+  "Mydentify AI Crawler Access Checker": "https://mydentify.com/tools/ai-crawler-access-checker",
   "Clerk": "https://clerk.com/pricing",
   "Auth0": "https://auth0.com/pricing",
   "WorkOS": "https://workos.com/pricing",
@@ -193,6 +194,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Pollinations.AI", url: "https://pollinations.ai", category: "ai", tags: ["images", "api", "open source"], description: { en: "Generate AI images through a free API without sign-up or API keys.", es: "Genera imágenes con IA mediante una API gratis sin registro ni claves." } },
   { name: "Portkey", url: "https://portkey.ai", category: "ai", tags: ["gateway", "observability", "llm"], description: { en: "An AI gateway and control plane with logging, routing and guardrails.", es: "Gateway y panel de control de IA con logs, routing y guardrails." } },
   { name: "Comet Opik", url: "https://www.comet.com/site/products/opik", category: "ai", tags: ["evals", "tracing", "open source"], description: { en: "Trace, evaluate and test LLM applications throughout development.", es: "Traza, evalúa y prueba aplicaciones con LLM durante su desarrollo." } },
+  { name: "Mydentify AI Crawler Access Checker", url: "https://mydentify.com/tools/ai-crawler-access-checker", faviconFile: "mydentify.com.svg", category: "ai", tags: ["crawlers", "robots.txt", "seo"], description: { en: "Check whether documented OpenAI and Anthropic crawlers can access a public page.", es: "Comprueba si los crawlers documentados de OpenAI y Anthropic pueden acceder a una página pública." } },
 
   // Auth
   { name: "Clerk", url: "https://clerk.com", category: "auth", featured: true, tags: ["auth", "components", "organizations"], description: { en: "Authentication and user management with polished prebuilt components.", es: "Autenticación y gestión de usuarios con componentes listos y cuidados." } },

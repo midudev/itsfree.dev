@@ -20,6 +20,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "tldraw": "no-signup",
   "Fontshare": "no-signup",
   "Mozilla Observatory": "no-signup",
+  "Mydentify AI Crawler Access Checker": "no-signup",
   "Have I Been Pwned": "no-signup",
 }
 
@@ -63,6 +64,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Pollinations.AI": { en: "Free image and text generation API with no sign-up or API key; public usage is rate-limited under fair use.", es: "API gratis de imagen y texto sin registro ni API key; el uso público tiene límites de fair use." },
   "Portkey": { en: "Free developer plan: AI gateway, caching, fallbacks and a limited monthly log allowance; inference is separate.", es: "Plan developer gratis: gateway, caché, fallbacks y una cuota mensual de logs; la inferencia se paga aparte." },
   "Comet Opik": { en: "Free cloud tier for one developer with limited monthly traces; the open-source self-hosted edition is unlimited.", es: "Cloud gratis para un developer con trazas mensuales limitadas; la edición open source self-hosted es ilimitada." },
+  "Mydentify AI Crawler Access Checker": { en: "Completely free public checker for six crawler names, robots.txt, page directives and response headers; no sign-up or card required.", es: "Comprobador público y gratis para seis crawlers, robots.txt, directivas de página y headers de respuesta; sin registro ni tarjeta." },
 
   "Clerk": { en: "Hobby: 50k monthly retained users per app, up to 5 dashboard seats and 100 organizations.", es: "Hobby: 50.000 usuarios retenidos al mes por app, hasta 5 miembros y 100 organizaciones." },
   "Auth0": { en: "Free: up to 25k monthly active users, social connections, passwordless login and 5 organizations.", es: "Gratis: hasta 25.000 usuarios activos/mes, conexiones sociales, passwordless y 5 organizaciones." },
