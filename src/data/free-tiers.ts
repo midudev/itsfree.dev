@@ -21,6 +21,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Fontshare": "no-signup",
   "Mozilla Observatory": "no-signup",
   "Have I Been Pwned": "no-signup",
+  "MonitorFlare": "no-signup",
 }
 
 /**
@@ -87,6 +88,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Uptime.com": { en: "No permanent free tier: the platform currently offers a time-limited free trial of its paid monitoring plans.", es: "Sin capa gratis permanente: actualmente ofrece una prueba temporal de sus planes de monitorización de pago." },
   "Checkly": { en: "Free: 10k API checks and 1,500 browser checks/month, 1-minute frequency and 7-day retention.", es: "Gratis: 10.000 checks de API y 1.500 de navegador/mes, frecuencia de 1 min y 7 días de retención." },
   "healthchecks.io": { en: "Hosted free plan: 20 checks for one team member with email, webhook and chat integrations.", es: "Plan alojado gratis: 20 checks para un miembro con integraciones de email, webhooks y chat." },
+  "MonitorFlare": { en: "Free and unlimited self-hosted monitoring on Cloudflare's free tier with 9 notification channels.", es: "Monitorización auto-alojada gratuita e ilimitada en el plan gratis de Cloudflare con 9 canales de notificación." },
   "New Relic": { en: "Free: 100 GB data ingest/month, one full-platform user and unlimited basic users.", es: "Gratis: 100 GB de ingesta/mes, un usuario full-platform y usuarios básicos ilimitados." },
   "Logtail": { en: "Better Stack free logs: 1 GB/month with 3-day retention, live tail, SQL queries and alerts.", es: "Logs gratis de Better Stack: 1 GB/mes y 3 días de retención, live tail, consultas SQL y alertas." },
 

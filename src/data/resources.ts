@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-07-23"
+export const sourceReviewedAt = "2026-08-16"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -96,6 +96,7 @@ const pricingUrls: Record<string, string> = {
   "Uptime.com": "https://uptime.com/pricing",
   "Checkly": "https://www.checklyhq.com/pricing/",
   "healthchecks.io": "https://healthchecks.io/pricing/",
+  "MonitorFlare": "https://monitorflare.csr.plus/",
   "New Relic": "https://newrelic.com/pricing",
   "Logtail": "https://betterstack.com/pricing",
   "GitHub Actions": "https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions",
@@ -220,6 +221,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Uptime.com", url: "https://uptime.com", faviconFile: "uptime.com.webp", category: "observability", tags: ["uptime", "synthetic", "alerts"], description: { en: "Website, API and real-user monitoring with alerts and incident workflows.", es: "Monitorización de webs, APIs y usuarios reales con alertas y gestión de incidentes." } },
   { name: "Checkly", url: "https://www.checklyhq.com", category: "observability", tags: ["playwright", "synthetic", "api"], description: { en: "Code-first synthetic monitoring for web apps and APIs using Playwright.", es: "Monitorización sintética como código para webs y APIs con Playwright." } },
   { name: "healthchecks.io", url: "https://healthchecks.io", category: "observability", tags: ["cron", "alerts", "jobs"], description: { en: "Monitor cron jobs and background tasks with simple heartbeat URLs.", es: "Monitoriza tareas cron y procesos en background con URLs heartbeat." } },
+  { name: "MonitorFlare", url: "https://monitorflare.csr.plus", category: "observability", tags: ["uptime", "status", "cloudflare"], description: { en: "Self-hosted uptime monitoring and status page on the Cloudflare free tier.", es: "Monitorización de uptime y página de estado auto-alojada en el plan gratis de Cloudflare." } },
   { name: "New Relic", url: "https://newrelic.com", category: "observability", tags: ["apm", "logs", "infra"], description: { en: "Full-stack application performance and infrastructure monitoring.", es: "Monitorización full-stack del rendimiento e infraestructura." } },
   { name: "Logtail", url: "https://betterstack.com/logs", category: "observability", tags: ["logs", "sql", "alerts"], description: { en: "Centralize structured logs and query them quickly with SQL-like syntax.", es: "Centraliza logs estructurados y consúltalos con una sintaxis tipo SQL." } },
 
