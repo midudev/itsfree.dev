@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-07-23"
+export const sourceReviewedAt = "2026-08-16"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -136,6 +136,7 @@ const pricingUrls: Record<string, string> = {
   "Socket": "https://socket.dev/pricing",
   "Mozilla Observatory": "https://observatory.mozilla.org/",
   "Have I Been Pwned": "https://haveibeenpwned.com/API/Key",
+  "CSR.plus": "https://csr.plus/docs/api",
   "Linear": "https://linear.app/pricing",
   "Notion": "https://www.notion.so/pricing",
   "Trello": "https://trello.com/pricing",
@@ -270,6 +271,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Socket", url: "https://socket.dev", category: "security", tags: ["supply chain", "npm", "dependencies"], description: { en: "Protect JavaScript supply chains by analyzing dependency behavior.", es: "Protege la cadena de suministro JavaScript analizando dependencias." } },
   { name: "Mozilla Observatory", url: "https://observatory.mozilla.org", category: "security", tags: ["headers", "audit", "web"], description: { en: "Scan a website for security headers and common web hardening practices.", es: "Escanea headers y prácticas habituales de protección web." } },
   { name: "Have I Been Pwned", url: "https://haveibeenpwned.com/API/v3", category: "security", tags: ["breaches", "api", "passwords"], description: { en: "Check accounts and domains against known data breaches through an API.", es: "Comprueba cuentas y dominios frente a filtraciones conocidas mediante API." } },
+  { name: "CSR.plus", url: "https://csr.plus", category: "security", tags: ["ssl", "csr", "certificates", "api"], description: { en: "Generate certificate signing requests and private keys entirely in the browser, no OpenSSL required.", es: "Genera solicitudes de firma de certificados y claves privadas en el navegador, sin necesidad de OpenSSL." } },
 
   // Collaboration
   { name: "Linear", url: "https://linear.app", category: "collaboration", featured: true, tags: ["issues", "roadmap", "product"], description: { en: "Fast issue tracking, cycles and product roadmaps for software teams.", es: "Issues, ciclos y roadmaps rápidos para equipos de software." } },

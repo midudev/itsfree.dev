@@ -21,6 +21,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Fontshare": "no-signup",
   "Mozilla Observatory": "no-signup",
   "Have I Been Pwned": "no-signup",
+  "CSR.plus": "no-signup",
 }
 
 /**
@@ -132,6 +133,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Socket": { en: "Free for open-source projects; personal GitHub protection and dependency analysis are available at no cost.", es: "Gratis para open source; la protección personal de GitHub y el análisis de dependencias no tienen coste." },
   "Mozilla Observatory": { en: "Completely free public web-security scanner with unlimited on-demand scans and no account required.", es: "Escáner público de seguridad web totalmente gratis, con análisis bajo demanda y sin necesidad de cuenta." },
   "Have I Been Pwned": { en: "Pwned Passwords and basic breach lookups are free; authenticated account and domain API access is paid.", es: "Pwned Passwords y las búsquedas básicas son gratis; la API autenticada de cuentas y dominios es de pago." },
+  "CSR.plus": { en: "Free and unlimited CSR generation with RSA, ECDSA and Ed25519 keys, plus a free no-sign-up API.", es: "Generación gratuita e ilimitada de CSR con claves RSA, ECDSA y Ed25519, además de una API gratuita sin registro." },
 
   "Linear": { en: "Free: unlimited members, 2 teams and 250 issues, with Slack/GitHub integrations and API access.", es: "Gratis: miembros ilimitados, 2 equipos y 250 issues, con integraciones de Slack/GitHub y API." },
   "Notion": { en: "Free for individuals with unlimited pages; teams get a limited collaborative block trial and 5 MB uploads.", es: "Gratis para uso individual con páginas ilimitadas; los equipos tienen bloques limitados y subidas de 5 MB." },
