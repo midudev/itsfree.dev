@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-07-23"
+export const sourceReviewedAt = "2026-08-25"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -125,6 +125,7 @@ const pricingUrls: Record<string, string> = {
   "Open-Meteo": "https://open-meteo.com/en/pricing",
   "OpenGraph.to": "https://www.opengraph.to/api",
   "Hoppscotch": "https://hoppscotch.com/pricing",
+  "JSON Diff": "https://alltoolsverse.com/tools/json-diff/",
   "Figma": "https://www.figma.com/pricing/",
   "Canva": "https://www.canva.com/pricing/",
   "Excalidraw": "https://plus.excalidraw.com/pricing",
@@ -255,6 +256,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Open-Meteo", url: "https://open-meteo.com", category: "api", tags: ["weather", "forecast", "open data"], description: { en: "Global weather forecasts and historical data through a free JSON API with no API key.", es: "Pronósticos globales e históricos del tiempo mediante una API JSON gratis sin API key." } },
   { name: "OpenGraph.to", url: "https://www.opengraph.to", faviconFile: "opengraph.to.svg", category: "api", tags: ["open graph", "seo", "social"], description: { en: "Scrape Open Graph, Twitter Card and SEO tags for any public URL: title, description, image, score, issues and suggested meta tags as JSON.", es: "Extrae tags Open Graph, Twitter Card y SEO de cualquier URL pública: título, descripción, imagen, puntuación, problemas y meta tags sugeridos en JSON." } },
   { name: "Hoppscotch", url: "https://hoppscotch.io", category: "api", tags: ["api client", "graphql", "realtime"], description: { en: "A fast web API client for REST, GraphQL and realtime protocols.", es: "Cliente web rápido para APIs REST, GraphQL y protocolos realtime." } },
+  { name: "JSON Diff", url: "https://alltoolsverse.com/tools/json-diff/", faviconFile: "alltoolsverse.com.png", category: "ci", tags: ["json", "diff", "developer tools"], description: { en: "Compare two JSON values in the browser and list added, removed and changed paths.", es: "Compara dos valores JSON en el navegador y muestra rutas añadidas, eliminadas y modificadas." } },
 
   // Design
   { name: "Figma", url: "https://www.figma.com", category: "design", featured: true, tags: ["ui", "prototype", "collaboration"], description: { en: "Collaborative interface design, prototyping and developer handoff.", es: "Diseño de interfaces, prototipado y handoff colaborativo." } },

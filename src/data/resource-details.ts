@@ -142,6 +142,60 @@ const accessCaveats: Record<Resource["accessRequirement"], Record<Locale, string
 
 /** Optional per-resource guides that replace the generic category copy on detail pages. */
 const resourceGuides: Partial<Record<string, LocalizedGuide & { longDescription: Record<Locale, string[]> }>> = {
+  "JSON Diff": {
+    overview: {
+      en: "It compares two valid JSON values and reports property paths whose values were added, removed or changed, so developers can inspect data differences without writing a script.",
+      es: "Compara dos valores JSON válidos e indica las rutas cuyas propiedades se añadieron, eliminaron o cambiaron, para revisar diferencias sin escribir un script.",
+    },
+    idealFor: {
+      en: "API response checks, configuration reviews and fixture comparisons",
+      es: "Revisión de respuestas API, configuraciones y fixtures",
+    },
+    useCases: {
+      en: [
+        "Compare an API response before and after a backend change.",
+        "Review configuration differences between two environments.",
+        "Summarize fixture changes in a bug report or pull request.",
+      ],
+      es: [
+        "Comparar una respuesta API antes y después de un cambio en el backend.",
+        "Revisar diferencias de configuración entre dos entornos.",
+        "Resumir cambios en fixtures para un bug report o pull request.",
+      ],
+    },
+    exampleTitle: {
+      en: "Compare two API responses",
+      es: "Compara dos respuestas API",
+    },
+    exampleSteps: {
+      en: [
+        "Paste the earlier JSON response in the first field and the newer response in the second.",
+        "Run the comparison and inspect the added, removed and changed property paths.",
+        "Remove sensitive values, then copy the result into the related issue or pull request.",
+      ],
+      es: [
+        "Pega la respuesta JSON anterior en el primer campo y la nueva en el segundo.",
+        "Ejecuta la comparación y revisa las rutas añadidas, eliminadas y modificadas.",
+        "Elimina valores sensibles y copia el resultado en el issue o pull request relacionado.",
+      ],
+    },
+    caveat: {
+      en: "The tool compares parsed JSON structure. It does not create a patch, ignore array order or validate against a schema. Remove secrets before pasting data.",
+      es: "La herramienta compara la estructura JSON parseada. No crea un patch, no ignora el orden de arrays ni valida contra un schema. Elimina secretos antes de pegar datos.",
+    },
+    longDescription: {
+      en: [
+        "JSON Diff is a focused browser tool for comparing two valid JSON values and identifying structural changes.",
+        "It reports added properties with a plus sign, removed properties with a minus sign and changed values with a tilde, using readable property paths.",
+        "Use it for quick manual review. For automated regression checks, keep the comparison in a versioned test or command-line workflow.",
+      ],
+      es: [
+        "JSON Diff es una herramienta web específica para comparar dos valores JSON válidos e identificar cambios estructurales.",
+        "Muestra propiedades añadidas con un signo más, eliminadas con un signo menos y valores modificados con una tilde, usando rutas legibles.",
+        "Úsala para revisiones manuales rápidas. Para regresiones automatizadas, conserva la comparación en un test versionado o flujo de línea de comandos.",
+      ],
+    },
+  },
   "OpenGraph.to": {
     overview: {
       en: "It scrapes any public URL and returns structured Open Graph, Twitter Card and SEO metadata as JSON, plus a quality score and copy-paste meta tags.",
