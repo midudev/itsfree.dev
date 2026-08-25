@@ -16,6 +16,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "JSONPlaceholder": "no-signup",
   "Open-Meteo": "no-signup",
   "OpenGraph.to": "no-signup",
+  "JSON Diff": "no-signup",
   "Excalidraw": "no-signup",
   "tldraw": "no-signup",
   "Fontshare": "no-signup",
@@ -119,6 +120,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Open-Meteo": { en: "Open-Access free API with no sign-up or key for non-commercial use: 600 calls/min, 5,000/hour, 10,000/day and 300,000/month.", es: "API Open-Access gratis sin registro ni clave para uso no comercial: 600 llamadas/min, 5.000/hora, 10.000/día y 300.000/mes." },
   "OpenGraph.to": { en: "Free public API with no sign-up or key: 10 requests/hour per IP, JSON responses with a 5-minute cache.", es: "API pública gratis sin registro ni clave: 10 peticiones/hora por IP, respuestas JSON con caché de 5 minutos." },
   "Hoppscotch": { en: "The web client and self-hosted Community Edition are free; cloud collaboration has a free personal workspace.", es: "El cliente web y Community self-hosted son gratis; el cloud incluye un workspace personal gratuito." },
+  "JSON Diff": { en: "Completely free browser tool with no sign-up; compare JSON values and copy the result.", es: "Herramienta web totalmente gratis y sin registro; compara valores JSON y permite copiar el resultado." },
 
   "Figma": { en: "Starter: unlimited drafts, UI kits and collaborators, with 3 collaborative design files and 3 FigJam files.", es: "Starter: borradores, kits y colaboradores ilimitados, con 3 archivos de diseño y 3 de FigJam compartidos." },
   "Canva": { en: "Free: 250k+ templates, 1M+ stock assets, 5 GB cloud storage and standard design tools.", es: "Gratis: más de 250.000 plantillas, 1 M de recursos, 5 GB de storage y herramientas de diseño estándar." },
