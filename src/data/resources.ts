@@ -116,6 +116,7 @@ const pricingUrls: Record<string, string> = {
   "Cloudflare Web Analytics": "https://developers.cloudflare.com/web-analytics/",
   "Microsoft Clarity": "https://clarity.microsoft.com/pricing",
   "Axiom": "https://axiom.co/pricing",
+  "AnyHook": "https://anyhook.net/pricing",
   "Pipedream": "https://pipedream.com/docs/pricing",
   "Beeceptor": "https://beeceptor.com/pricing",
   "MockAPI": "https://mockapi.io/pricing",
@@ -255,6 +256,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Open-Meteo", url: "https://open-meteo.com", category: "api", tags: ["weather", "forecast", "open data"], description: { en: "Global weather forecasts and historical data through a free JSON API with no API key.", es: "Pronósticos globales e históricos del tiempo mediante una API JSON gratis sin API key." } },
   { name: "OpenGraph.to", url: "https://www.opengraph.to", faviconFile: "opengraph.to.svg", category: "api", tags: ["open graph", "seo", "social"], description: { en: "Scrape Open Graph, Twitter Card and SEO tags for any public URL: title, description, image, score, issues and suggested meta tags as JSON.", es: "Extrae tags Open Graph, Twitter Card y SEO de cualquier URL pública: título, descripción, imagen, puntuación, problemas y meta tags sugeridos en JSON." } },
   { name: "Hoppscotch", url: "https://hoppscotch.io", category: "api", tags: ["api client", "graphql", "realtime"], description: { en: "A fast web API client for REST, GraphQL and realtime protocols.", es: "Cliente web rápido para APIs REST, GraphQL y protocolos realtime." } },
+  { name: "AnyHook", url: "https://anyhook.net", category: "api", tags: ["webhooks", "retries", "logs"], description: { en: "Take delivery of inbound webhooks without running your own endpoint: retries, event log and replay.", es: "Recibe webhooks entrantes sin montar tu propio endpoint: reintentos, registro de eventos y reenvío." } },
 
   // Design
   { name: "Figma", url: "https://www.figma.com", category: "design", featured: true, tags: ["ui", "prototype", "collaboration"], description: { en: "Collaborative interface design, prototyping and developer handoff.", es: "Diseño de interfaces, prototipado y handoff colaborativo." } },
