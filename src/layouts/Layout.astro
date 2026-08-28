@@ -54,8 +54,10 @@ const imageAlt =
     {englishUrl && <link rel="alternate" hreflang="en" href={englishUrl} />}
     {spanishUrl && <link rel="alternate" hreflang="es" href={spanishUrl} />}
     {englishUrl && <link rel="alternate" hreflang="x-default" href={englishUrl} />}
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#090a0c" />
     <meta property="og:type" content={type} />
@@ -71,6 +73,8 @@ const imageAlt =
     <meta property="og:locale" content={locale === "es" ? "es_ES" : "en_US"} />
     <meta property="og:locale:alternate" content={locale === "es" ? "en_US" : "es_ES"} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@midudev" />
+    <meta name="twitter:creator" content="@midudev" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imageUrl} />

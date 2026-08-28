@@ -255,6 +255,20 @@ jobs:
       - run: pnpm test
       - run: pnpm build`,
   },
+  dummyjson: {
+    title: { en: "Fetch sample products", es: "Obtén productos de ejemplo" },
+    description: { en: "Call DummyJSON without an API key and paginate the catalog.", es: "Llama a DummyJSON sin API key y pagina el catálogo." },
+    filename: "products.ts",
+    lang: "javascript",
+    code: `const response = await fetch(
+  "https://dummyjson.com/products?limit=5&skip=0",
+)
+
+if (!response.ok) throw new Error("Could not load products")
+
+const { products, total } = await response.json()
+console.log(total, products.map((product) => product.title))`,
+  },
   jsonplaceholder: {
     title: { en: "Fetch predictable test data", es: "Obtén datos de prueba predecibles" },
     description: { en: "Prototype a UI without credentials or a backend.", es: "Prototipa una interfaz sin credenciales ni backend." },
@@ -268,6 +282,54 @@ if (!response.ok) throw new Error("Could not load posts")
 
 const posts = await response.json()
 console.log(posts)`,
+  },
+  "cloudflare-browser-run": {
+    title: { en: "Extract a page as Markdown", es: "Extrae una página como Markdown" },
+    description: { en: "Use Browser Run Quick Actions to render JavaScript and return Markdown.", es: "Usa Quick Actions de Browser Run para renderizar JavaScript y devolver Markdown." },
+    filename: "scrape.ts",
+    lang: "javascript",
+    code: `const accountId = process.env.CLOUDFLARE_ACCOUNT_ID!
+const token = process.env.CLOUDFLARE_API_TOKEN!
+
+const response = await fetch(
+  \`https://api.cloudflare.com/client/v4/accounts/\${accountId}/browser-rendering/markdown\`,
+  {
+    method: "POST",
+    headers: {
+      Authorization: \`Bearer \${token}\`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ url: "https://example.com" }),
+  },
+)
+
+if (!response.ok) throw new Error("Could not render page")
+
+const result = await response.json()
+console.log(result.result)
+console.log(response.headers.get("X-Browser-Ms-Used"))`,
+  },
+  nhost: {
+    title: { en: "Query GraphQL from the browser", es: "Consulta GraphQL desde el navegador" },
+    description: { en: "Call the Hasura endpoint with the public anon role.", es: "Llama al endpoint de Hasura con el rol público anon." },
+    filename: "nhost.ts",
+    lang: "javascript",
+    code: `const endpoint = import.meta.env.PUBLIC_NHOST_GRAPHQL_URL
+const response = await fetch(endpoint, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    query: \`query ListUsers {
+      users(limit: 5) { id displayName }
+    }\`,
+  }),
+})
+
+if (!response.ok) throw new Error("GraphQL request failed")
+
+const { data, errors } = await response.json()
+if (errors) throw new Error(errors[0].message)
+console.log(data.users)`,
   },
   "open-meteo": {
     title: { en: "Get the current weather", es: "Consulta el tiempo actual" },

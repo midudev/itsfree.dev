@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-07-23"
+export const sourceReviewedAt = "2026-08-27"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -47,11 +47,13 @@ const pricingUrls: Record<string, string> = {
   "Netlify": "https://www.netlify.com/pricing/",
   "Cloud 66": "https://www.cloud66.com/pricing/",
   "deployment.io": "https://deployment.io/pricing",
+  "Northflank": "https://northflank.com/pricing",
   "Render": "https://render.com/pricing",
   "Appish": "https://appi.sh/#pricing",
   "Deno Deploy": "https://deno.com/deploy/pricing",
   "GitHub": "https://github.com/pricing",
   "Supabase": "https://supabase.com/pricing",
+  "Nhost": "https://nhost.io/pricing",
   "InsForge": "https://insforge.dev/pricing",
   "Neon": "https://neon.com/pricing",
   "Turso": "https://turso.tech/pricing",
@@ -121,7 +123,10 @@ const pricingUrls: Record<string, string> = {
   "MockAPI": "https://mockapi.io/pricing",
   "Abstract API": "https://www.abstractapi.com/api",
   "IPinfo": "https://ipinfo.io/pricing",
+  "IPQuery": "https://ipquery.io/",
+  "DummyJSON": "https://dummyjson.com/docs",
   "JSONPlaceholder": "https://jsonplaceholder.typicode.com/guide/",
+  "Cloudflare Browser Run": "https://developers.cloudflare.com/browser-run/pricing/",
   "Open-Meteo": "https://open-meteo.com/en/pricing",
   "OpenGraph.to": "https://www.opengraph.to/api",
   "Hoppscotch": "https://hoppscotch.com/pricing",
@@ -161,6 +166,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Netlify", url: "https://www.netlify.com", category: "hosting", tags: ["hosting", "functions", "jamstack"], description: { en: "A complete platform for deploying modern web projects and serverless functions.", es: "Una plataforma completa para desplegar proyectos web modernos y funciones serverless." } },
   { name: "Cloud 66", url: "https://www.cloud66.com", category: "hosting", tags: ["deploy", "cloud", "automation"], description: { en: "Deploy and manage applications on your own cloud without the server busywork.", es: "Despliega y gestiona aplicaciones en tu cloud sin el trabajo pesado de servidores." } },
   { name: "deployment.io", url: "https://deployment.io", category: "hosting", tags: ["aws", "deploy", "preview"], description: { en: "Automate AWS deployments for static sites, services and preview environments.", es: "Automatiza en AWS sitios estáticos, servicios y entornos de preview." } },
+  { name: "Northflank", url: "https://northflank.com", faviconFile: "northflank.com.webp", category: "hosting", tags: ["containers", "jobs", "databases"], description: { en: "Deploy containers, cron jobs and databases on Northflank's cloud or your own infrastructure.", es: "Despliega contenedores, cron jobs y bases de datos en el cloud de Northflank o en tu propia infraestructura." } },
   { name: "Render", url: "https://render.com", faviconFile: "render.com.svg", category: "hosting", tags: ["web services", "cron", "static"], description: { en: "Run web services, static sites and scheduled jobs from one dashboard.", es: "Ejecuta servicios web, sitios estáticos y tareas programadas desde un panel." } },
   { name: "Appish", url: "https://appi.sh", category: "hosting", tags: ["containers", "demos", "docker"], description: { en: "Push Docker containers to short-lived public slots made for demos.", es: "Publica contenedores Docker en slots temporales pensados para demos." } },
   { name: "Deno Deploy", url: "https://deno.com/deploy", category: "hosting", tags: ["typescript", "edge", "serverless"], description: { en: "Run JavaScript and TypeScript close to users on a global edge network.", es: "Ejecuta JavaScript y TypeScript cerca del usuario en una red edge global." } },
@@ -168,6 +174,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
 
   // Data & backend
   { name: "Supabase", url: "https://supabase.com", category: "data", featured: true, tags: ["postgres", "realtime", "backend"], description: { en: "A Postgres backend with database, auth, storage, realtime and edge functions.", es: "Backend Postgres con base de datos, auth, storage, realtime y funciones edge." } },
+  { name: "Nhost", url: "https://nhost.io", faviconFile: "nhost.io.webp", category: "data", tags: ["postgres", "graphql", "backend"], description: { en: "A Postgres backend with Hasura GraphQL, auth, storage and serverless functions.", es: "Backend Postgres con GraphQL de Hasura, auth, storage y funciones serverless." } },
   { name: "InsForge", url: "https://insforge.dev", category: "data", featured: true, tags: ["backend", "ai agents", "postgres"], description: { en: "An agent-native backend with database, auth, storage, functions and model access.", es: "Backend nativo para agentes con base de datos, auth, storage, funciones y acceso a modelos." } },
   { name: "Neon", url: "https://neon.tech", category: "data", featured: true, tags: ["postgres", "serverless", "branching"], description: { en: "Serverless Postgres with instant database branches and scale-to-zero compute.", es: "Postgres serverless con ramas instantáneas y cómputo que escala a cero." } },
   { name: "Turso", url: "https://turso.tech", category: "data", featured: true, tags: ["sqlite", "edge", "database"], description: { en: "Edge-hosted SQLite databases with replicas close to your users.", es: "Bases SQLite en el edge con réplicas cerca de tus usuarios." } },
@@ -251,10 +258,13 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "MockAPI", url: "https://mockapi.io", category: "api", tags: ["mock", "rest", "prototype"], description: { en: "Generate REST endpoints and realistic sample data for prototypes.", es: "Genera endpoints REST y datos realistas para prototipos." } },
   { name: "Abstract API", url: "https://www.abstractapi.com", category: "api", tags: ["validation", "geolocation", "utilities"], description: { en: "A practical API suite for IP, email, phone and other validation tasks.", es: "Suite de APIs para IP, email, teléfono y otras validaciones habituales." } },
   { name: "IPinfo", url: "https://ipinfo.io", category: "api", tags: ["ip", "geolocation", "network"], description: { en: "IP address data for geolocation, networks, privacy and security use cases.", es: "Datos de IP para geolocalización, redes, privacidad y seguridad." } },
+  { name: "IPQuery", url: "https://ipquery.io/", category: "api", featured: true, tags: ["ip", "geolocation", "risk"], description: { en: "Free IP intelligence API for location, ISP and risk data in JSON, XML or YAML—no API key required.", es: "API gratis de inteligencia IP con ubicación, ISP y riesgo en JSON, XML o YAML, sin API key." } },
+  { name: "DummyJSON", url: "https://dummyjson.com", faviconFile: "dummyjson.com.webp", category: "api", tags: ["fake api", "rest", "testing"], description: { en: "A free fake REST API with products, users, carts and auth for frontend prototypes—no backend or API key required.", es: "API REST falsa gratis con productos, usuarios, carritos y auth para prototipos frontend, sin backend ni API key." } },
   { name: "JSONPlaceholder", url: "https://jsonplaceholder.typicode.com", category: "api", tags: ["fake api", "rest", "testing"], description: { en: "A dependable fake REST API for examples, tests and quick prototypes.", es: "Una API REST falsa y fiable para ejemplos, pruebas y prototipos." } },
   { name: "Open-Meteo", url: "https://open-meteo.com", category: "api", tags: ["weather", "forecast", "open data"], description: { en: "Global weather forecasts and historical data through a free JSON API with no API key.", es: "Pronósticos globales e históricos del tiempo mediante una API JSON gratis sin API key." } },
   { name: "OpenGraph.to", url: "https://www.opengraph.to", faviconFile: "opengraph.to.svg", category: "api", tags: ["open graph", "seo", "social"], description: { en: "Scrape Open Graph, Twitter Card and SEO tags for any public URL: title, description, image, score, issues and suggested meta tags as JSON.", es: "Extrae tags Open Graph, Twitter Card y SEO de cualquier URL pública: título, descripción, imagen, puntuación, problemas y meta tags sugeridos en JSON." } },
   { name: "Hoppscotch", url: "https://hoppscotch.io", category: "api", tags: ["api client", "graphql", "realtime"], description: { en: "A fast web API client for REST, GraphQL and realtime protocols.", es: "Cliente web rápido para APIs REST, GraphQL y protocolos realtime." } },
+  { name: "Cloudflare Browser Run", url: "https://developers.cloudflare.com/browser-run/", faviconFile: "cloudflare.com.webp", category: "api", tags: ["scraping", "headless", "automation"], description: { en: "Run headless Chrome on Cloudflare's network to scrape, screenshot, crawl and extract page content as HTML, Markdown or JSON.", es: "Ejecuta Chrome headless en la red de Cloudflare para scrapear, capturar, crawlear y extraer contenido como HTML, Markdown o JSON." } },
 
   // Design
   { name: "Figma", url: "https://www.figma.com", category: "design", featured: true, tags: ["ui", "prototype", "collaboration"], description: { en: "Collaborative interface design, prototyping and developer handoff.", es: "Diseño de interfaces, prototipado y handoff colaborativo." } },

@@ -142,6 +142,60 @@ const accessCaveats: Record<Resource["accessRequirement"], Record<Locale, string
 
 /** Optional per-resource guides that replace the generic category copy on detail pages. */
 const resourceGuides: Partial<Record<string, LocalizedGuide & { longDescription: Record<Locale, string[]> }>> = {
+  "Cloudflare Browser Run": {
+    overview: {
+      en: "It runs headless Chrome on Cloudflare's network so you can scrape, screenshot, crawl and extract page content without hosting browsers yourself.",
+      es: "Ejecuta Chrome headless en la red de Cloudflare para scrapear, capturar, crawlear y extraer contenido sin hospedar navegadores propios.",
+    },
+    idealFor: {
+      en: "Web scraping, screenshots, Markdown extraction and light browser automation",
+      es: "Web scraping, capturas, extracción a Markdown y automatización ligera del navegador",
+    },
+    useCases: {
+      en: [
+        "Turn a public article into Markdown for an AI pipeline.",
+        "Capture a screenshot or PDF of a JavaScript-rendered page.",
+        "Crawl a small documentation site and extract structured JSON.",
+      ],
+      es: [
+        "Convertir un artículo público a Markdown para un pipeline de IA.",
+        "Capturar un screenshot o PDF de una página con JavaScript.",
+        "Crawlear una documentación pequeña y extraer JSON estructurado.",
+      ],
+    },
+    exampleTitle: {
+      en: "Extract Markdown from a public page",
+      es: "Extrae Markdown de una página pública",
+    },
+    exampleSteps: {
+      en: [
+        "Create a Cloudflare API token with Browser Rendering Edit permission.",
+        "POST the target URL to the /markdown Quick Action endpoint.",
+        "Watch X-Browser-Ms-Used and stay within the 10-minute daily free allowance.",
+      ],
+      es: [
+        "Crea un API token de Cloudflare con permiso Browser Rendering Edit.",
+        "Envía la URL a la Quick Action /markdown por POST.",
+        "Vigila X-Browser-Ms-Used y no superes los 10 minutos diarios de la cuota gratis.",
+      ],
+    },
+    caveat: {
+      en: "Workers Free includes 10 minutes of browser time per day and 3 concurrent browsers. Crawl is limited to 5 jobs/day and 100 pages. Requests are identifiable as bots.",
+      es: "Workers Free incluye 10 minutos de navegador al día y 3 navegadores simultáneos. El crawl se limita a 5 jobs/día y 100 páginas. Las peticiones se identifican como bots.",
+    },
+    longDescription: {
+      en: [
+        "Cloudflare Browser Run (formerly Browser Rendering) provides REST Quick Actions and Workers bindings for screenshots, HTML, PDF, Markdown, JSON extraction, links and crawls, plus Puppeteer, Playwright and CDP sessions.",
+        "The Workers Free plan includes 10 minutes of browser time per day and 3 concurrent browsers. Crawl jobs are capped at 5 per day and 100 pages. Paid Workers plans include 10 hours per month, then $0.09 per extra browser hour.",
+        "Use it for scraping and automation prototypes. Respect site terms, expect bot detection, and upgrade if you need more than a few minutes of headless Chrome per day.",
+      ],
+      es: [
+        "Cloudflare Browser Run (antes Browser Rendering) ofrece Quick Actions REST y bindings de Workers para screenshots, HTML, PDF, Markdown, JSON, enlaces y crawls, además de sesiones Puppeteer, Playwright y CDP.",
+        "El plan Workers Free incluye 10 minutos de navegador al día y 3 navegadores simultáneos. Los crawls se limitan a 5 al día y 100 páginas. El plan de pago incluye 10 horas/mes y luego 0,09 $ por hora extra.",
+        "Sirve para prototipos de scraping y automatización. Respeta los términos del sitio, espera detección de bots y escala si necesitas más de unos minutos de Chrome headless al día.",
+      ],
+    },
+  },
   "OpenGraph.to": {
     overview: {
       en: "It scrapes any public URL and returns structured Open Graph, Twitter Card and SEO metadata as JSON, plus a quality score and copy-paste meta tags.",
