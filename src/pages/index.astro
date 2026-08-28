@@ -160,7 +160,6 @@ const homeStructuredData = {
       <nav class="topbar-nav" aria-label="Primary navigation">
         <a href="#directory">{t({ en: "Explore", es: "Explorar" })}</a>
         <a href="#about">{t({ en: "About", es: "Sobre el proyecto" })}</a>
-        <a href={`${localePrefix}/sponsor`}>{t({ en: "Sponsor", es: "Patrocinar" })}</a>
       </nav>
 
       <div class="topbar-actions">
@@ -193,7 +192,7 @@ const homeStructuredData = {
       <section class="directory" id="directory" aria-labelledby="directory-title" transition:name="directory" transition:animate="fade">
         <div class="directory-heading">
           <div>
-            <p class="section-kicker">// DIRECTORY_01</p>
+            <p class="section-kicker">// DIRECTORY</p>
             <h2 id="directory-title">{selectedCategory ? pageTitle : t({ en: "Find your next tool", es: "Encuentra tu próxima herramienta" })}</h2>
           </div>
           <p>{t({ en: "Search by product, use case or technology.", es: "Busca por producto, caso de uso o tecnología." })}</p>
@@ -240,13 +239,6 @@ const homeStructuredData = {
                 <small>{categoryCounts.get(category.id)}</small>
               </a>
             ))}
-            <a class="sponsor-mini" href={`${localePrefix}/sponsor`}>
-              <span class="sponsor-mini-mark">AD*</span>
-              <span>
-                <strong>{t({ en: "Sponsor this directory", es: "Patrocina este directorio" })}</strong>
-                <small>{t({ en: "€1,500 / 30 days →", es: "1.500 € / 30 días →" })}</small>
-              </span>
-            </a>
           </aside>
 
           <div class="results-column">
@@ -316,7 +308,7 @@ const homeStructuredData = {
 
       <section class="faq-section" id="faq" aria-labelledby="faq-title">
         <div class="faq-intro">
-          <p class="section-kicker">// FAQ_04</p>
+          <p class="section-kicker">// FAQ</p>
           <h2 id="faq-title">{t({ en: "Questions, answered.", es: "Preguntas, resueltas." })}</h2>
           <p>{t({ en: "The small print, without making it small.", es: "La letra pequeña, sin hacerla pequeña." })}</p>
         </div>

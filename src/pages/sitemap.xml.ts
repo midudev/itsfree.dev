@@ -13,7 +13,6 @@ const escapeXml = (value: string) => value
 export const GET: APIRoute = () => {
   const pages = [
     { en: siteUrl, es: `${siteUrl}/es`, priority: "1.0" },
-    { en: `${siteUrl}/sponsor`, es: `${siteUrl}/es/sponsor`, priority: "0.5" },
     ...categories.map((category) => ({
       en: `${siteUrl}/categories/${category.id}`,
       es: `${siteUrl}/es/categories/${category.id}`,

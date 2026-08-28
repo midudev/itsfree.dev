@@ -49,7 +49,7 @@ src/
 ├── components/          Reusable interface components
 ├── data/                Resources, pricing links, and free-tier details
 ├── layouts/             Shared page metadata and document layout
-├── pages/               Home, sponsor, sitemap, and resource pages
+├── pages/               Home, sitemap, and resource pages
 └── styles/              Global and resource-detail styles
 public/
 ├── favicons/            Local resource icons
