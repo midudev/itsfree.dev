@@ -24,6 +24,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Fontshare": "no-signup",
   "Mozilla Observatory": "no-signup",
   "Have I Been Pwned": "no-signup",
+  "Dokploy": "no-signup",
 }
 
 /**
@@ -41,6 +42,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Appish": { en: "Free demo hosting for temporary Docker containers; slots are short-lived and intended for previews, not production.", es: "Hosting gratis para demos con contenedores Docker temporales; los slots caducan y no son para producción." },
   "Deno Deploy": { en: "Free organization with monthly request, bandwidth and compute allowances; apps pause when a limit is reached.", es: "Organización gratis con cuotas mensuales de peticiones, tráfico y cómputo; las apps se pausan al agotarlas." },
   "GitHub": { en: "Unlimited public/private repositories; Pages and 2,000 Actions minutes/month for private repositories.", es: "Repositorios públicos y privados ilimitados; Pages y 2.000 min/mes de Actions para repos privados." },
+  "Dokploy": { en: "Free forever when self-hosted on your own server, unlimited apps and databases; the managed Dokploy Cloud is paid, from $4.50/month per server with no free tier.", es: "Gratis para siempre en self-hosting en tu propio servidor, apps y bases de datos ilimitadas; Dokploy Cloud gestionado es de pago desde 4,50 $/mes por servidor y no tiene capa gratuita." },
 
   "Supabase": { en: "Free: 2 projects, 500 MB database, 1 GB storage, 5 GB egress and 50k monthly active users.", es: "Gratis: 2 proyectos, 500 MB de base de datos, 1 GB de storage, 5 GB de salida y 50.000 usuarios activos/mes." },
   "Nhost": { en: "Starter: 1 active project (pauses after 1 week idle), 1 GB database, 1 GB storage, 5 GB egress and unlimited users. No credit card.", es: "Starter: 1 proyecto activo (se pausa tras 1 semana inactivo), 1 GB de base de datos, 1 GB de storage, 5 GB de salida y usuarios ilimitados. Sin tarjeta." },
