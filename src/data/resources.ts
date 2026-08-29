@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-08-27"
+export const sourceReviewedAt = "2026-08-29"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -157,6 +157,7 @@ const pricingUrls: Record<string, string> = {
   "Cloudinary": "https://cloudinary.com/pricing",
   "Uploadcare": "https://uploadcare.com/pricing/",
   "ImageKit": "https://imagekit.io/plans",
+  "Azure DevOps": "https://azure.microsoft.com/pricing/details/devops/azure-devops-services/",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -171,6 +172,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Appish", url: "https://appi.sh", category: "hosting", tags: ["containers", "demos", "docker"], description: { en: "Push Docker containers to short-lived public slots made for demos.", es: "Publica contenedores Docker en slots temporales pensados para demos." } },
   { name: "Deno Deploy", url: "https://deno.com/deploy", category: "hosting", tags: ["typescript", "edge", "serverless"], description: { en: "Run JavaScript and TypeScript close to users on a global edge network.", es: "Ejecuta JavaScript y TypeScript cerca del usuario en una red edge global." } },
   { name: "GitHub", url: "https://github.com", category: "hosting", tags: ["git", "pages", "actions"], description: { en: "Repositories, static Pages, CI/CD and project tools in one developer platform.", es: "Repositorios, Pages, CI/CD y gestión en una plataforma para developers." } },
+  { name: "Azure DevOps", url: "https://azure.microsoft.com/en-us/products/devops/", faviconFile: "azure.microsoft.com.svg", category: "hosting", tags: ["ci-cd", "project-management", "git-hosting"], description: { en: "Collaborative development tools including Git repos, Agile boards, and CI/CD pipelines.", es: "Herramientas de desarrollo colaborativo que incluyen repositorios Git, tableros ágiles y pipelines CI/CD." } },
 
   // Data & backend
   { name: "Supabase", url: "https://supabase.com", category: "data", featured: true, tags: ["postgres", "realtime", "backend"], description: { en: "A Postgres backend with database, auth, storage, realtime and edge functions.", es: "Backend Postgres con base de datos, auth, storage, realtime y funciones edge." } },
