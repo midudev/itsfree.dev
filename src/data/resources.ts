@@ -157,6 +157,7 @@ const pricingUrls: Record<string, string> = {
   "Cloudinary": "https://cloudinary.com/pricing",
   "Uploadcare": "https://uploadcare.com/pricing/",
   "ImageKit": "https://imagekit.io/plans",
+  "PixelVault": "https://pixelvault.dev/pricing",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -302,6 +303,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Cloudinary", url: "https://cloudinary.com", category: "media", featured: true, tags: ["images", "video", "cdn"], description: { en: "Upload, transform, optimize and deliver images and video through a CDN.", es: "Sube, transforma, optimiza y entrega imágenes y vídeo mediante CDN." } },
   { name: "Uploadcare", url: "https://uploadcare.com", category: "media", tags: ["uploads", "images", "cdn"], description: { en: "File uploads, image processing and adaptive delivery for web apps.", es: "Subida de archivos, procesado de imágenes y entrega adaptativa." } },
   { name: "ImageKit", url: "https://imagekit.io", category: "media", tags: ["images", "optimization", "cdn"], description: { en: "Real-time image and video optimization, transformation and delivery.", es: "Optimización, transformación y entrega de imagen y vídeo en tiempo real." } },
+  { name: "PixelVault", url: "https://pixelvault.dev", category: "media", tags: ["images", "uploads", "cdn"], description: { en: "Image hosting for developers and AI agents: upload via API for permanent CDN URLs with on-the-fly transforms.", es: "Hosting de imágenes para developers y agentes de IA: sube por API y obtén URLs permanentes en CDN con transformaciones al vuelo." } },
 ]
 
 export const slugifyResourceName = (name: string) => name
