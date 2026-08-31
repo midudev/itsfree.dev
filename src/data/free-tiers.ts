@@ -148,6 +148,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "ClickUp": { en: "Free Forever: unlimited tasks and members, 100 MB storage, collaborative docs and Kanban boards.", es: "Gratis para siempre: tareas y miembros ilimitados, 100 MB, documentos colaborativos y tableros Kanban." },
   "Discord": { en: "Core text, voice, video, communities and bots are free; upload quality and customization have limits.", es: "Texto, voz, vídeo, comunidades y bots son gratis; las subidas, calidad y personalización tienen límites." },
   "Slack": { en: "Free: 90 days of message history, 10 app integrations and one-to-one huddles for small teams.", es: "Gratis: 90 días de historial, 10 integraciones y huddles uno a uno para equipos pequeños." },
+  "Plane": { en: "Free cloud plan for up to 12 users with core project management (projects, work items, cycles, modules and views); the AGPL-licensed Community Edition is free and open source to self-host with no user limit.", es: "Plan cloud gratis para hasta 12 usuarios con gestión de proyectos base (proyectos, work items, cycles, módulos y vistas); la Community Edition con licencia AGPL es gratis y open source para self-host sin límite de usuarios." },
 
   "Sanity": { en: "Free: 20 user seats, 2 datasets, 10k documents, 100k API requests and 100 GB CDN bandwidth/month.", es: "Gratis: 20 usuarios, 2 datasets, 10.000 documentos, 100.000 peticiones y 100 GB de CDN/mes." },
   "Contentful": { en: "Free: 10 users, 2 roles, 2 locales, 1M API calls and 50 GB CDN bandwidth/month.", es: "Gratis: 10 usuarios, 2 roles, 2 idiomas, 1 M de llamadas API y 50 GB de CDN/mes." },
@@ -159,4 +160,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Cloudinary": { en: "Free: 25 monthly credits for image/video transformations, storage and bandwidth, with 3 users.", es: "Gratis: 25 créditos mensuales para transformaciones, storage y tráfico de imagen/vídeo, con 3 usuarios." },
   "Uploadcare": { en: "Free for personal use: 1,000 operations/month, files up to 500 MB, upload widget and API, basic image transformations, adaptive bitrate streaming, CDN delivery, signed uploads and webhooks.", es: "Gratis para uso personal: 1.000 operaciones/mes, archivos de hasta 500 MB, widget y API de subida, transformaciones básicas de imagen, streaming adaptativo, entrega por CDN, subidas firmadas y webhooks." },
   "ImageKit": { en: "Free forever: 20 GB bandwidth and 3 GB media storage/month, with transformations and video processing.", es: "Gratis para siempre: 20 GB de tráfico y 3 GB de media/mes, con transformaciones y procesado de vídeo." },
+  
 }
