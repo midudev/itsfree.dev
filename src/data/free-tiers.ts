@@ -182,4 +182,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Reqres": { en: "Free tier: 250 requests per day, full CRUD endpoint access, request logging, and instant response simulation.", es: "Plan gratis: 250 peticiones al día, acceso completo a endpoints CRUD, logs de peticiones y respuestas inmediatas." },
   "Transform.tools": { en: "100% free and open source: Client-side processing with unlimited conversions and no registration required.", es: "100% gratis y de código abierto: Procesamiento en cliente con conversiones ilimitadas y sin necesidad de registro." },
   "Scalar": { en: "Free plan: Unlimited API references, interactive testing client, and open-source embedding support.", es: "Plan gratis: Referencias de API ilimitadas, cliente interactivo de pruebas y soporte de integración open source." },
+  "Plunk": { en: "Free plan: 1,000 emails per month, unlimited contacts, automated event workflows, and full API access.", es: "Plan gratis: 1.000 emails al mes, contactos ilimitados, workflows automatizados y acceso completo a la API." },
 }
