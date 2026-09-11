@@ -170,6 +170,7 @@ const pricingUrls: Record<string, string> = {
   "Surge.sh": "https://surge.sh/pricing",
   "Koyeb": "https://www.koyeb.com/pricing",
   "Snyk": "https://snyk.io/pricing/",
+  "Cronitor": "https://cronitor.io/pricing",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -247,6 +248,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "healthchecks.io", url: "https://healthchecks.io", category: "observability", tags: ["cron", "alerts", "jobs"], description: { en: "Monitor cron jobs and background tasks with simple heartbeat URLs.", es: "Monitoriza tareas cron y procesos en background con URLs heartbeat." } },
   { name: "New Relic", url: "https://newrelic.com", category: "observability", tags: ["apm", "logs", "infra"], description: { en: "Full-stack application performance and infrastructure monitoring.", es: "Monitorización full-stack del rendimiento e infraestructura." } },
   { name: "Logtail", url: "https://betterstack.com/logs", category: "observability", tags: ["logs", "sql", "alerts"], description: { en: "Centralize structured logs and query them quickly with SQL-like syntax.", es: "Centraliza logs estructurados y consúltalos con una sintaxis tipo SQL." } },
+  { name: "Cronitor", url: "https://cronitor.io", faviconFile: "cronitor.io.png", category: "observability", tags: ["cron", "uptime", "heartbeat"], description: { en: "Continuous monitoring for cron jobs, background workers, and websites with instant alerts.", es: "Monitorización continua de tareas cron, workers en segundo plano y sitios web con alertas instantáneas." } },
 
   // CI/CD
   { name: "GitHub Actions", url: "https://github.com/features/actions", category: "ci", featured: true, tags: ["ci", "automation", "github"], description: { en: "Automate builds, tests, releases and workflows next to your code.", es: "Automatiza builds, tests, releases y workflows junto a tu código." } },
