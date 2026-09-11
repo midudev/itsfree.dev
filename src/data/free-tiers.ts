@@ -26,6 +26,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Have I Been Pwned": "no-signup",
   "Webhook.site": "no-signup",
   "Mockoon": "no-signup",
+  "Smee.io": "no-signup",
 }
 
 /**
@@ -176,4 +177,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Snyk": { en: "Free plan: 400 open-source (SCA) tests/month, 100 code (SAST) tests/month, and 100 container tests/month.", es: "Plan gratis: 400 análisis open source (SCA)/mes, 100 análisis de código (SAST)/mes y 100 análisis de contenedores/mes." },
   "Cronitor": { en: "Hacker plan: 5 monitors, 5-minute check frequency, 1 public status page with 50 subscribers, and Slack/email alerts.", es: "Plan Hacker: 5 monitores, checks cada 5 minutos, 1 página de estado con 50 suscriptores y alertas por Slack y email." },
   "GlitchTip": { en: "Hosted free tier: 1,000 events per month, unlimited team members, and full alerting integrations.", es: "Plan alojado gratis: 1.000 eventos al mes, miembros de equipo ilimitados e integraciones completas de alertas." },
+  "Smee.io": { en: "Completely free and unlimited: Instant webhook forwarding URL with no account, sign-up, or card required.", es: "Totalmente gratis e ilimitado: URL instantánea de reenvío de webhooks sin cuenta, registro ni tarjeta." },
 }
