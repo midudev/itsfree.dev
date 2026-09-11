@@ -173,6 +173,7 @@ const pricingUrls: Record<string, string> = {
   "Cronitor": "https://cronitor.io/pricing",
   "GlitchTip": "https://glitchtip.com/pricing",
   "Smee.io": "https://smee.io",
+  "Reqres": "https://reqres.in/",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -292,6 +293,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Mockoon", url: "https://mockoon.com", faviconFile: "mockoon.com.svg", category: "api", tags: ["mock", "local", "open source"], description: { en: "Open-source desktop application and CLI to design and run realistic mock APIs locally in seconds.", es: "Aplicación de escritorio y CLI open source para diseñar y ejecutar APIs mock realistas en local en segundos." } },
   { name: "Flagsmith", url: "https://flagsmith.com", faviconFile: "flagsmith.com.png", category: "api", tags: ["feature flags", "remote config", "open source"], description: { en: "Feature flags and remote configuration platform with hosted cloud and self-hostable open-source options.", es: "Plataforma de feature flags y configuración remota con nube alojada y opción open source self-hosted." } },
   { name: "Smee.io", url: "https://smee.io", faviconFile: "smee.io.png", category: "api", tags: ["webhooks", "proxy", "local"], description: { en: "Webhook payload delivery service that proxies webhooks directly to your local development environment.", es: "Servicio que reenvía payloads de webhooks directamente a tu entorno de desarrollo local." } },
+  { name: "Reqres", url: "https://reqres.in", faviconFile: "reqres.in.png", category: "api", tags: ["mock", "rest", "prototyping"], description: { en: "Hosted REST API simulating real CRUD operations and JSON responses for front-end prototyping.", es: "API REST alojada que simula operaciones CRUD reales y respuestas JSON para prototipar frontends." } },
 
   // Design
   { name: "Figma", url: "https://www.figma.com", category: "design", featured: true, tags: ["ui", "prototype", "collaboration"], description: { en: "Collaborative interface design, prototyping and developer handoff.", es: "Diseño de interfaces, prototipado y handoff colaborativo." } },
