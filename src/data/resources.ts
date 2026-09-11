@@ -184,6 +184,7 @@ const pricingUrls: Record<string, string> = {
   "Ray.so": "https://ray.so",
   "SVGOMG": "https://svgomg.net",
   "Shields.io": "https://shields.io",
+  "Can I Use": "https://caniuse.com",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -278,6 +279,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "CodeRabbit", url: "https://www.coderabbit.ai", faviconFile: "coderabbit.ai.webp", category: "ci", featured: true, tags: ["code review", "ai", "pull requests"], description: { en: "AI code reviews for pull requests, IDEs and the command line, with free access for open-source projects.", es: "Revisiones de código con IA para pull requests, IDE y terminal, con acceso gratis para proyectos open source." } },
   { name: "Jules", url: "https://jules.google/", faviconFile: "jules.google.webp", category: "ci", tags: ["coding agent", "github", "gemini"], description: { en: "An asynchronous coding agent that works on real tasks in GitHub repositories and prepares changes for review.", es: "Agente de programación asíncrono que resuelve tareas reales en repositorios de GitHub y prepara los cambios para revisarlos." } },
   { name: "Shields.io", url: "https://shields.io", faviconFile: "shields.io.png", category: "ci", tags: ["badges", "svg", "readme"], description: { en: "Pixel-perfect concise status badges in SVG and raster formats for open-source repositories and dashboards.", es: "Insignias de estado concisas en SVG y mapa de bits para repositorios open source y paneles de control." } },
+  { name: "Can I Use", url: "https://caniuse.com", faviconFile: "caniuse.com.png", category: "ci", tags: ["compatibility", "browsers", "standards"], description: { en: "Up-to-date browser support tables for modern desktop and mobile front-end web technologies.", es: "Tablas actualizadas de compatibilidad entre navegadores web de escritorio y móviles para tecnologías frontend." } },
 
   // Analytics
   { name: "PostHog", url: "https://posthog.com", category: "analytics", tags: ["product", "replay", "experiments"], description: { en: "Product analytics, session replay, feature flags and experiments together.", es: "Analítica de producto, replay, feature flags y experimentos en un sitio." } },
