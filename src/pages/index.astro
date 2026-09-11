@@ -245,9 +245,9 @@ const homeStructuredData = {
             <div class="results-toolbar">
               <p><span id="results-count">{totalResources}</span> <span>{t({ en: "resources found", es: "recursos encontrados" })}</span></p>
               <div class="access-filters" role="group" aria-label={t({ en: "Filter by access requirements", es: "Filtrar por requisitos de acceso" })}>
-                <button type="button" class="access-filter-pill is-active" data-access-filter="all">{t({ en: "All", es: "Todos" })}</button>
-                <button type="button" class="access-filter-pill" data-access-filter="no-card">{t({ en: "No card", es: "Sin tarjeta" })}</button>
-                <button type="button" class="access-filter-pill" data-access-filter="no-signup">{t({ en: "No sign-up", es: "Sin registro" })}</button>
+                <button type="button" class="access-filter-pill is-active" data-access-filter="all" aria-pressed="true">{t({ en: "All", es: "Todos" })}</button>
+                <button type="button" class="access-filter-pill" data-access-filter="no-card" aria-pressed="false">{t({ en: "No card", es: "Sin tarjeta" })}</button>
+                <button type="button" class="access-filter-pill" data-access-filter="no-signup" aria-pressed="false">{t({ en: "No sign-up", es: "Sin registro" })}</button>
               </div>
             </div>
 
@@ -376,7 +376,7 @@ const homeStructuredData = {
       if (!searchInput || !resultsCount || !emptyState || searchInput.dataset.enhanced === "true") return
       searchInput.dataset.enhanced = "true"
 
-      const resourceCards = [...document.querySelectorAll<HTMLElement>("[data-resource]")]
+      const resourceCards = [...document.querySelectorAll<HTMLElement>("#resource-grid [data-resource]")]
       const accessButtons = [...document.querySelectorAll<HTMLButtonElement>("[data-access-filter]")]
       let activeAccessFilter = "all"
 
@@ -422,7 +422,9 @@ const homeStructuredData = {
           const filter = button.dataset.accessFilter ?? "all"
           activeAccessFilter = activeAccessFilter === filter && filter !== "all" ? "all" : filter
           accessButtons.forEach((btn) => {
-            btn.classList.toggle("is-active", btn.dataset.accessFilter === activeAccessFilter)
+            const isActive = btn.dataset.accessFilter === activeAccessFilter
+            btn.classList.toggle("is-active", isActive)
+            btn.setAttribute("aria-pressed", isActive ? "true" : "false")
           })
           applyFilters()
         })
@@ -433,7 +435,9 @@ const homeStructuredData = {
         searchInput.value = ""
         activeAccessFilter = "all"
         accessButtons.forEach((btn) => {
-          btn.classList.toggle("is-active", btn.dataset.accessFilter === "all")
+          const isAll = btn.dataset.accessFilter === "all"
+          btn.classList.toggle("is-active", isAll)
+          btn.setAttribute("aria-pressed", isAll ? "true" : "false")
         })
         applyFilters()
         searchInput.focus()
