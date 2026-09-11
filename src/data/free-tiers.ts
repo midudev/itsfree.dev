@@ -26,6 +26,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Have I Been Pwned": "no-signup",
   "Webhook.site": "no-signup",
   "Mockoon": "no-signup",
+  "Shields.io": "no-signup",
   "SVGOMG": "no-signup",
   "Ray.so": "no-signup",
   "Lucide Icons": "no-signup",
@@ -192,4 +193,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Lucide Icons": { en: "Completely free and open source: Full library with 1,450+ vector icons, npm packages, SVG downloads, and CDN access.", es: "Totalmente gratis y open source: Colección completa con más de 1.450 iconos vectoriales, paquetes npm, SVG y CDN." },
   "Ray.so": { en: "100% free web application: Unlimited high-resolution image exports and SVG downloads with no registration required.", es: "100% gratis en la web: Exportaciones ilimitadas en alta resolución y descargas SVG sin necesidad de registro." },
   "SVGOMG": { en: "100% free and open source: In-browser processing with unlimited SVG optimizations and zero tracking or sign-up.", es: "100% gratis y de código abierto: Procesamiento en el navegador con optimizaciones ilimitadas de SVG y sin registro." },
+  "Shields.io": { en: "100% free and open source: Unlimited badge requests, custom endpoints, and dynamic status badges with no sign-up required.", es: "100% gratis y open source: Peticiones ilimitadas de insignias, endpoints personalizados y badges dinámicos sin registro." },
 }
