@@ -166,4 +166,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "ImageKit": { en: "Free forever: 20 GB bandwidth and 3 GB media storage/month, with transformations and video processing.", es: "Gratis para siempre: 20 GB de tráfico y 3 GB de media/mes, con transformaciones y procesado de vídeo." },
   "Backblaze B2": { en: "Free forever: 10 GB cloud storage, 1 GB/day download egress, and free download egress up to 3x your average monthly storage.", es: "Gratis para siempre: 10 GB de almacenamiento cloud, 1 GB/día de descarga y salida gratuita de hasta el triple del almacenamiento medio mensual." },
   "UploadThing": { en: "Free tier: 2 GB total cloud storage, unlimited uploads and downloads, 7-day audit logs.", es: "Gratis: 2 GB de almacenamiento cloud total, subidas y descargas ilimitadas y 7 días de logs." },
+  "TinyPNG": { en: "Free tier: 500 image compressions per month with no credit card required.", es: "Gratis: 500 compresiones de imágenes al mes sin tarjeta requerida." },
 }

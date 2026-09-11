@@ -162,6 +162,7 @@ const pricingUrls: Record<string, string> = {
   "ImageKit": "https://imagekit.io/plans",
   "Backblaze B2": "https://www.backblaze.com/cloud-storage/pricing",
   "UploadThing": "https://uploadthing.com/pricing",
+  "TinyPNG": "https://tinify.com/pricing",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -312,6 +313,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "ImageKit", url: "https://imagekit.io", category: "media", tags: ["images", "optimization", "cdn"], description: { en: "Real-time image and video optimization, transformation and delivery.", es: "Optimización, transformación y entrega de imagen y vídeo en tiempo real." } },
   { name: "Backblaze B2", url: "https://www.backblaze.com/cloud-storage", faviconFile: "backblaze.com.png", category: "media", tags: ["storage", "s3", "cloud"], description: { en: "S3-compatible cloud object storage with 10 GB free storage and free daily download bandwidth.", es: "Almacenamiento de objetos cloud compatible con S3 con 10 GB gratis y descarga diaria gratuita." } },
   { name: "UploadThing", url: "https://uploadthing.com", faviconFile: "uploadthing.com.png", category: "media", tags: ["uploads", "nextjs", "storage"], description: { en: "File uploads for modern full-stack web applications with native framework SDKs.", es: "Subida de archivos para aplicaciones full-stack modernas con SDKs nativos para frameworks." } },
+  { name: "TinyPNG", url: "https://tinypng.com", faviconFile: "tinypng.com.png", category: "media", tags: ["compression", "images", "api"], description: { en: "Smart lossy compression API to compress WebP, PNG and JPEG images on the fly.", es: "API de compresión inteligente con pérdida para optimizar imágenes WebP, PNG y JPEG al vuelo." } },
 ]
 
 export const slugifyResourceName = (name: string) => name
