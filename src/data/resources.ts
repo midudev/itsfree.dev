@@ -164,6 +164,7 @@ const pricingUrls: Record<string, string> = {
   "UploadThing": "https://uploadthing.com/pricing",
   "TinyPNG": "https://tinify.com/pricing",
   "Filestack": "https://www.filestack.com/pricing/",
+  "TiDB Cloud": "https://www.pingcap.com/pricing/",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -189,6 +190,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Upstash", url: "https://upstash.com", category: "data", featured: true, tags: ["redis", "kafka", "serverless"], description: { en: "Serverless Redis, Kafka and workflow tools with usage-based free tiers.", es: "Redis, Kafka y workflows serverless con capas gratuitas por uso." } },
   { name: "CockroachDB", url: "https://www.cockroachlabs.com", faviconFile: "cockroachlabs.com.webp", category: "data", tags: ["sql", "distributed", "cloud"], description: { en: "Distributed SQL built for resilient, globally available applications.", es: "SQL distribuido para aplicaciones resistentes y disponibles globalmente." } },
   { name: "Aiven", url: "https://aiven.io", category: "data", tags: ["postgres", "valkey", "kafka"], description: { en: "Managed open-source data services with free plans for selected products.", es: "Servicios de datos open source gestionados con planes gratuitos seleccionados." } },
+  { name: "TiDB Cloud", url: "https://tidbcloud.com", faviconFile: "tidbcloud.com.png", category: "data", tags: ["mysql", "distributed", "serverless"], description: { en: "Serverless distributed SQL database compatible with MySQL with auto-scaling.", es: "Base de datos SQL distribuida serverless compatible con MySQL y auto-escalado." } },
 
   // AI
   { name: "Braintrust", url: "https://www.braintrustdata.com", category: "ai", tags: ["evals", "prompts", "data"], description: { en: "Evaluate AI applications, compare prompts and manage test datasets.", es: "Evalúa aplicaciones de IA, compara prompts y gestiona datasets de prueba." } },
