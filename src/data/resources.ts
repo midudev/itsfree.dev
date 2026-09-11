@@ -169,6 +169,7 @@ const pricingUrls: Record<string, string> = {
   "Qdrant Cloud": "https://qdrant.tech/pricing/",
   "Surge.sh": "https://surge.sh/pricing",
   "Koyeb": "https://www.koyeb.com/pricing",
+  "Snyk": "https://snyk.io/pricing/",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -300,6 +301,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Socket", url: "https://socket.dev", category: "security", tags: ["supply chain", "npm", "dependencies"], description: { en: "Protect JavaScript supply chains by analyzing dependency behavior.", es: "Protege la cadena de suministro JavaScript analizando dependencias." } },
   { name: "Mozilla Observatory", url: "https://observatory.mozilla.org", category: "security", tags: ["headers", "audit", "web"], description: { en: "Scan a website for security headers and common web hardening practices.", es: "Escanea headers y prácticas habituales de protección web." } },
   { name: "Have I Been Pwned", url: "https://haveibeenpwned.com/API/v3", category: "security", tags: ["breaches", "api", "passwords"], description: { en: "Check accounts and domains against known data breaches through an API.", es: "Comprueba cuentas y dominios frente a filtraciones conocidas mediante API." } },
+  { name: "Snyk", url: "https://snyk.io", faviconFile: "snyk.io.png", category: "security", tags: ["vulnerabilities", "dependencies", "sast"], description: { en: "Developer security platform scanning code, open-source dependencies, and container images for vulnerabilities.", es: "Plataforma de seguridad para desarrolladores que analiza código, dependencias open source y contenedores." } },
 
   // Collaboration
   { name: "Linear", url: "https://linear.app", category: "collaboration", featured: true, tags: ["issues", "roadmap", "product"], description: { en: "Fast issue tracking, cycles and product roadmaps for software teams.", es: "Issues, ciclos y roadmaps rápidos para equipos de software." } },
