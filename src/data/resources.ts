@@ -127,6 +127,7 @@ const pricingUrls: Record<string, string> = {
   "DummyJSON": "https://dummyjson.com/docs",
   "JSONPlaceholder": "https://jsonplaceholder.typicode.com/guide/",
   "Cloudflare Browser Run": "https://developers.cloudflare.com/browser-run/pricing/",
+  "Webhook.site": "https://webhook.site/pricing",
   "Open-Meteo": "https://open-meteo.com/en/pricing",
   "OpenGraph.to": "https://www.opengraph.to/api",
   "Hoppscotch": "https://hoppscotch.com/pricing",
@@ -266,6 +267,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "OpenGraph.to", url: "https://www.opengraph.to", faviconFile: "opengraph.to.svg", category: "api", tags: ["open graph", "seo", "social"], description: { en: "Scrape Open Graph, Twitter Card and SEO tags for any public URL: title, description, image, score, issues and suggested meta tags as JSON.", es: "Extrae tags Open Graph, Twitter Card y SEO de cualquier URL pública: título, descripción, imagen, puntuación, problemas y meta tags sugeridos en JSON." } },
   { name: "Hoppscotch", url: "https://hoppscotch.io", category: "api", tags: ["api client", "graphql", "realtime"], description: { en: "A fast web API client for REST, GraphQL and realtime protocols.", es: "Cliente web rápido para APIs REST, GraphQL y protocolos realtime." } },
   { name: "Cloudflare Browser Run", url: "https://developers.cloudflare.com/browser-run/", faviconFile: "cloudflare.com.webp", category: "api", tags: ["scraping", "headless", "automation"], description: { en: "Run headless Chrome on Cloudflare's network to scrape, screenshot, crawl and extract page content as HTML, Markdown or JSON.", es: "Ejecuta Chrome headless en la red de Cloudflare para scrapear, capturar, crawlear y extraer contenido como HTML, Markdown o JSON." } },
+  { name: "Webhook.site", url: "https://webhook.site", faviconFile: "webhook.site.png", category: "api", tags: ["webhooks", "testing", "debug"], description: { en: "Instantly receive, inspect and debug incoming HTTP webhooks and requests in real time without creating an account.", es: "Recibe, inspecciona y depura webhooks y peticiones HTTP entrantes en tiempo real sin crear una cuenta." } },
 
   // Design
   { name: "Figma", url: "https://www.figma.com", category: "design", featured: true, tags: ["ui", "prototype", "collaboration"], description: { en: "Collaborative interface design, prototyping and developer handoff.", es: "Diseño de interfaces, prototipado y handoff colaborativo." } },
