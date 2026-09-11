@@ -26,6 +26,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Have I Been Pwned": "no-signup",
   "Webhook.site": "no-signup",
   "Mockoon": "no-signup",
+  "Lucide Icons": "no-signup",
   "Transform.tools": "no-signup",
   "Smee.io": "no-signup",
 }
@@ -186,4 +187,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Courier": { en: "Developer plan: 10,000 notifications per month across all channels with unlimited templates and routing rules.", es: "Plan Developer: 10.000 notificaciones al mes en todos los canales con plantillas ilimitadas y reglas de enrutado." },
   "Loops": { en: "Free plan: Up to 1,000 contacts and 2,000 emails per month with API access, loops workflows and custom domains.", es: "Plan gratis: Hasta 1.000 contactos y 2.000 emails al mes con acceso a la API, workflows y dominios personalizados." },
   "Aptabase": { en: "Free cloud plan: 20,000 events/month, unlimited applications, real-time insights, and choice of EU or US data centers.", es: "Plan cloud gratis: 20.000 eventos al mes, aplicaciones ilimitadas, métricas en tiempo real y centros de datos en la UE o EE.UU." },
+  "Lucide Icons": { en: "Completely free and open source: Full library with 1,450+ vector icons, npm packages, SVG downloads, and CDN access.", es: "Totalmente gratis y open source: Colección completa con más de 1.450 iconos vectoriales, paquetes npm, SVG y CDN." },
 }
