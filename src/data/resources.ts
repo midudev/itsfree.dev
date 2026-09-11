@@ -166,6 +166,7 @@ const pricingUrls: Record<string, string> = {
   "Filestack": "https://www.filestack.com/pricing/",
   "TiDB Cloud": "https://www.pingcap.com/pricing/",
   "Convex": "https://www.convex.dev/pricing",
+  "Qdrant Cloud": "https://qdrant.tech/pricing/",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -193,6 +194,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Aiven", url: "https://aiven.io", category: "data", tags: ["postgres", "valkey", "kafka"], description: { en: "Managed open-source data services with free plans for selected products.", es: "Servicios de datos open source gestionados con planes gratuitos seleccionados." } },
   { name: "TiDB Cloud", url: "https://tidbcloud.com", faviconFile: "tidbcloud.com.png", category: "data", tags: ["mysql", "distributed", "serverless"], description: { en: "Serverless distributed SQL database compatible with MySQL with auto-scaling.", es: "Base de datos SQL distribuida serverless compatible con MySQL y auto-escalado." } },
   { name: "Convex", url: "https://www.convex.dev", faviconFile: "convex.dev.png", category: "data", tags: ["backend", "realtime", "typescript"], description: { en: "Reactive backend platform with automatic TypeScript database, cloud functions, and realtime state.", es: "Plataforma de backend reactivo con base de datos TypeScript, funciones serverless y estado en tiempo real." } },
+  { name: "Qdrant Cloud", url: "https://qdrant.tech", faviconFile: "qdrant.tech.png", category: "data", tags: ["vectors", "embeddings", "ai"], description: { en: "High-performance vector search engine and database for LLM embeddings and AI search.", es: "Motor y base de datos vectorial de alto rendimiento para embeddings de LLMs y búsqueda semántica con IA." } },
 
   // AI
   { name: "Braintrust", url: "https://www.braintrustdata.com", category: "ai", tags: ["evals", "prompts", "data"], description: { en: "Evaluate AI applications, compare prompts and manage test datasets.", es: "Evalúa aplicaciones de IA, compara prompts y gestiona datasets de prueba." } },

@@ -170,4 +170,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Filestack": { en: "Free tier: 100 uploads/month, 1 GB bandwidth, and 500 MB storage with upload widget.", es: "Gratis: 100 subidas/mes, 1 GB de ancho de banda y 500 MB de almacenamiento con widget de subida." },
   "TiDB Cloud": { en: "Starter: 25 GiB row storage, 25 GiB columnar storage, and 250M Request Units/month across up to 5 clusters.", es: "Starter: 25 GiB de almacenamiento por filas, 25 GiB en columnas y 250 M de Request Units/mes en hasta 5 clústeres." },
   "Convex": { en: "Free plan: 1 GB monthly database I/O, 500 MB storage, 40 deployments and up to 6 developers.", es: "Plan gratis: 1 GB de I/O mensual, 500 MB de almacenamiento, 40 deployments y hasta 6 desarrolladores." },
+  "Qdrant Cloud": { en: "Permanent free cluster: 0.5 vCPU, 1 GB RAM, and 4 GB disk space storing up to 1M vectors.", es: "Clúster gratis permanente: 0.5 vCPU, 1 GB de RAM y 4 GB de disco para almacenar hasta 1 M de vectores." },
 }
