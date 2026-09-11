@@ -175,6 +175,7 @@ const pricingUrls: Record<string, string> = {
   "Smee.io": "https://smee.io",
   "Reqres": "https://reqres.in/",
   "Transform.tools": "https://transform.tools",
+  "Scalar": "https://scalar.com/pricing",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -296,6 +297,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Smee.io", url: "https://smee.io", faviconFile: "smee.io.png", category: "api", tags: ["webhooks", "proxy", "local"], description: { en: "Webhook payload delivery service that proxies webhooks directly to your local development environment.", es: "Servicio que reenvía payloads de webhooks directamente a tu entorno de desarrollo local." } },
   { name: "Reqres", url: "https://reqres.in", faviconFile: "reqres.in.png", category: "api", tags: ["mock", "rest", "prototyping"], description: { en: "Hosted REST API simulating real CRUD operations and JSON responses for front-end prototyping.", es: "API REST alojada que simula operaciones CRUD reales y respuestas JSON para prototipar frontends." } },
   { name: "Transform.tools", url: "https://transform.tools", faviconFile: "transform.tools.png", category: "api", tags: ["converter", "code generation", "utilities"], description: { en: "Polyglot web converter turning JSON, HTML, CSS, and GraphQL into TypeScript, JSX, Go structs, and more.", es: "Conversor web multilingüe que transforma JSON, HTML, CSS y GraphQL a TypeScript, JSX, structs de Go y más." } },
+  { name: "Scalar", url: "https://scalar.com", faviconFile: "scalar.com.png", category: "api", tags: ["openapi", "docs", "testing"], description: { en: "Modern, interactive API documentation generator and REST client supporting OpenAPI and Swagger specifications.", es: "Generador moderno e interactivo de documentación de APIs y cliente REST compatible con OpenAPI y Swagger." } },
 
   // Design
   { name: "Figma", url: "https://www.figma.com", category: "design", featured: true, tags: ["ui", "prototype", "collaboration"], description: { en: "Collaborative interface design, prototyping and developer handoff.", es: "Diseño de interfaces, prototipado y handoff colaborativo." } },
