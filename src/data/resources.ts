@@ -119,6 +119,7 @@ const pricingUrls: Record<string, string> = {
   "Microsoft Clarity": "https://clarity.microsoft.com/pricing",
   "Axiom": "https://axiom.co/pricing",
   "Pipedream": "https://pipedream.com/docs/pricing",
+  "Flagsmith": "https://flagsmith.com/pricing/",
   "Beeceptor": "https://beeceptor.com/pricing",
   "MockAPI": "https://mockapi.io/pricing",
   "Mockoon": "https://mockoon.com/pricing/",
@@ -270,6 +271,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Cloudflare Browser Run", url: "https://developers.cloudflare.com/browser-run/", faviconFile: "cloudflare.com.webp", category: "api", tags: ["scraping", "headless", "automation"], description: { en: "Run headless Chrome on Cloudflare's network to scrape, screenshot, crawl and extract page content as HTML, Markdown or JSON.", es: "Ejecuta Chrome headless en la red de Cloudflare para scrapear, capturar, crawlear y extraer contenido como HTML, Markdown o JSON." } },
   { name: "Webhook.site", url: "https://webhook.site", faviconFile: "webhook.site.png", category: "api", tags: ["webhooks", "testing", "debug"], description: { en: "Instantly receive, inspect and debug incoming HTTP webhooks and requests in real time without creating an account.", es: "Recibe, inspecciona y depura webhooks y peticiones HTTP entrantes en tiempo real sin crear una cuenta." } },
   { name: "Mockoon", url: "https://mockoon.com", faviconFile: "mockoon.com.svg", category: "api", tags: ["mock", "local", "open source"], description: { en: "Open-source desktop application and CLI to design and run realistic mock APIs locally in seconds.", es: "Aplicación de escritorio y CLI open source para diseñar y ejecutar APIs mock realistas en local en segundos." } },
+  { name: "Flagsmith", url: "https://flagsmith.com", faviconFile: "flagsmith.com.png", category: "api", tags: ["feature flags", "remote config", "open source"], description: { en: "Feature flags and remote configuration platform with hosted cloud and self-hostable open-source options.", es: "Plataforma de feature flags y configuración remota con nube alojada y opción open source self-hosted." } },
 
   // Design
   { name: "Figma", url: "https://www.figma.com", category: "design", featured: true, tags: ["ui", "prototype", "collaboration"], description: { en: "Collaborative interface design, prototyping and developer handoff.", es: "Diseño de interfaces, prototipado y handoff colaborativo." } },
