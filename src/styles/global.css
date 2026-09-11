@@ -604,14 +604,48 @@ a {
 .results-toolbar {
   display: flex;
   min-height: 36px;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
   color: var(--text-faint);
   font-size: 12px;
 }
 
 .results-toolbar p {
   margin: 0;
+}
+
+.access-filters {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.access-filter-pill {
+  display: inline-flex;
+  align-items: center;
+  height: 25px;
+  padding: 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--bg-card);
+  color: var(--text-faint);
+  font: 500 11px var(--font-body);
+  cursor: pointer;
+  transition: color 150ms ease, border-color 150ms ease, background 150ms ease;
+}
+
+.access-filter-pill:hover {
+  border-color: var(--line-strong);
+  color: var(--text-soft);
+}
+
+.access-filter-pill.is-active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
 }
 
 #results-count {

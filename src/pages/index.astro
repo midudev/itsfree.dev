@@ -244,6 +244,11 @@ const homeStructuredData = {
           <div class="results-column">
             <div class="results-toolbar">
               <p><span id="results-count">{totalResources}</span> <span>{t({ en: "resources found", es: "recursos encontrados" })}</span></p>
+              <div class="access-filters" role="group" aria-label={t({ en: "Filter by access requirements", es: "Filtrar por requisitos de acceso" })}>
+                <button type="button" class="access-filter-pill is-active" data-access-filter="all">{t({ en: "All", es: "Todos" })}</button>
+                <button type="button" class="access-filter-pill" data-access-filter="no-card">{t({ en: "No card", es: "Sin tarjeta" })}</button>
+                <button type="button" class="access-filter-pill" data-access-filter="no-signup">{t({ en: "No sign-up", es: "Sin registro" })}</button>
+              </div>
             </div>
 
             <div class="resource-grid" id="resource-grid">
@@ -256,7 +261,7 @@ const homeStructuredData = {
                 const faviconUrl = getResourceFaviconUrl(resource)
                 const searchable = [resource.name, resource.description[locale], resource.freeTier[locale], ...resource.tags, category.name[locale]].join(" ").toLowerCase()
                 return (
-                  <article class={`resource-card${resource.featured ? " is-featured" : ""}`} data-resource data-category={resource.category} data-name={resource.name} data-search={searchable}>
+                  <article class={`resource-card${resource.featured ? " is-featured" : ""}`} data-resource data-category={resource.category} data-access={resource.accessRequirement} data-name={resource.name} data-search={searchable}>
                     {resource.featured && <span class="featured-corner" title="Editor's pick">✦</span>}
                     <div class="card-topline">
                       <span class="resource-logo" aria-hidden="true">
@@ -372,6 +377,8 @@ const homeStructuredData = {
       searchInput.dataset.enhanced = "true"
 
       const resourceCards = [...document.querySelectorAll<HTMLElement>("[data-resource]")]
+      const accessButtons = [...document.querySelectorAll<HTMLButtonElement>("[data-access-filter]")]
+      let activeAccessFilter = "all"
 
       document.querySelectorAll<HTMLImageElement>(".resource-logo img").forEach((image) => {
         const useFallback = () => {
@@ -388,10 +395,20 @@ const homeStructuredData = {
         let visible = 0
 
         resourceCards.forEach((card) => {
+          const access = card.dataset.access ?? "no-card"
+          let matchesAccess = true
+          if (activeAccessFilter === "no-card") {
+            matchesAccess = access === "no-card" || access === "no-signup"
+          } else if (activeAccessFilter === "no-signup") {
+            matchesAccess = access === "no-signup"
+          }
+
           const searchable = normalizeSearch(card.dataset.search ?? "")
           const name = card.dataset.name ?? ""
           const matchesName = normalizeSearch(name).includes(query) || compactSearch(name).includes(compactQuery)
-          const show = !query || matchesName || searchable.includes(query)
+          const matchesSearch = !query || matchesName || searchable.includes(query)
+
+          const show = matchesAccess && matchesSearch
           card.hidden = !show
           if (show) visible += 1
         })
@@ -400,9 +417,24 @@ const homeStructuredData = {
         emptyState.hidden = visible !== 0
       }
 
+      accessButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.accessFilter ?? "all"
+          activeAccessFilter = activeAccessFilter === filter && filter !== "all" ? "all" : filter
+          accessButtons.forEach((btn) => {
+            btn.classList.toggle("is-active", btn.dataset.accessFilter === activeAccessFilter)
+          })
+          applyFilters()
+        })
+      })
+
       searchInput.addEventListener("input", applyFilters)
       document.querySelector("#reset-filters")?.addEventListener("click", () => {
         searchInput.value = ""
+        activeAccessFilter = "all"
+        accessButtons.forEach((btn) => {
+          btn.classList.toggle("is-active", btn.dataset.accessFilter === "all")
+        })
         applyFilters()
         searchInput.focus()
       })
