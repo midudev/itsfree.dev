@@ -169,4 +169,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "TinyPNG": { en: "Free tier: 500 image compressions per month with no credit card required.", es: "Gratis: 500 compresiones de imágenes al mes sin tarjeta requerida." },
   "Filestack": { en: "Free tier: 100 uploads/month, 1 GB bandwidth, and 500 MB storage with upload widget.", es: "Gratis: 100 subidas/mes, 1 GB de ancho de banda y 500 MB de almacenamiento con widget de subida." },
   "TiDB Cloud": { en: "Starter: 25 GiB row storage, 25 GiB columnar storage, and 250M Request Units/month across up to 5 clusters.", es: "Starter: 25 GiB de almacenamiento por filas, 25 GiB en columnas y 250 M de Request Units/mes en hasta 5 clústeres." },
+  "Convex": { en: "Free plan: 1 GB monthly database I/O, 500 MB storage, 40 deployments and up to 6 developers.", es: "Plan gratis: 1 GB de I/O mensual, 500 MB de almacenamiento, 40 deployments y hasta 6 desarrolladores." },
 }
