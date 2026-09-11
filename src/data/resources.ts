@@ -177,6 +177,7 @@ const pricingUrls: Record<string, string> = {
   "Transform.tools": "https://transform.tools",
   "Scalar": "https://scalar.com/pricing",
   "Plunk": "https://useplunk.com/pricing",
+  "Courier": "https://www.courier.com/pricing/",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -244,6 +245,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Tally", url: "https://tally.so", category: "email", tags: ["forms", "no-code", "surveys"], description: { en: "Create flexible forms and surveys with a generous free plan.", es: "Crea formularios y encuestas flexibles con un plan gratuito generoso." } },
   { name: "Web3Forms", url: "https://web3forms.com", category: "email", tags: ["forms", "api", "static"], description: { en: "Receive static-site form submissions directly in your inbox through an API.", es: "Recibe formularios de sitios estáticos en tu email mediante una API." } },
   { name: "Plunk", url: "https://useplunk.com", faviconFile: "useplunk.com.png", category: "email", tags: ["transactional", "marketing", "aws-ses"], description: { en: "Open-source transactional and marketing email platform built directly on top of AWS SES.", es: "Plataforma open source para emails transaccionales y de marketing construida sobre AWS SES." } },
+  { name: "Courier", url: "https://www.courier.com", faviconFile: "courier.com.png", category: "email", tags: ["notifications", "multi-channel", "inbox"], description: { en: "Multi-channel notification API unifying email, SMS, push notifications, and in-app inboxes.", es: "API de notificaciones multicanal que unifica email, SMS, notificaciones push y buzones in-app." } },
 
   // Observability
   { name: "Sentry", url: "https://sentry.io", category: "observability", featured: true, tags: ["errors", "tracing", "replay"], description: { en: "Track errors, performance traces and user sessions across your stack.", es: "Monitoriza errores, trazas de rendimiento y sesiones en todo tu stack." } },
