@@ -171,6 +171,7 @@ const pricingUrls: Record<string, string> = {
   "Koyeb": "https://www.koyeb.com/pricing",
   "Snyk": "https://snyk.io/pricing/",
   "Cronitor": "https://cronitor.io/pricing",
+  "GlitchTip": "https://glitchtip.com/pricing",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -249,6 +250,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "New Relic", url: "https://newrelic.com", category: "observability", tags: ["apm", "logs", "infra"], description: { en: "Full-stack application performance and infrastructure monitoring.", es: "Monitorización full-stack del rendimiento e infraestructura." } },
   { name: "Logtail", url: "https://betterstack.com/logs", category: "observability", tags: ["logs", "sql", "alerts"], description: { en: "Centralize structured logs and query them quickly with SQL-like syntax.", es: "Centraliza logs estructurados y consúltalos con una sintaxis tipo SQL." } },
   { name: "Cronitor", url: "https://cronitor.io", faviconFile: "cronitor.io.png", category: "observability", tags: ["cron", "uptime", "heartbeat"], description: { en: "Continuous monitoring for cron jobs, background workers, and websites with instant alerts.", es: "Monitorización continua de tareas cron, workers en segundo plano y sitios web con alertas instantáneas." } },
+  { name: "GlitchTip", url: "https://glitchtip.com", faviconFile: "glitchtip.com.png", category: "observability", tags: ["errors", "open source", "sentry-compatible"], description: { en: "Open-source, Sentry-compatible error tracking and application performance monitoring.", es: "Seguimiento de errores y monitorización de rendimiento open source compatible con el SDK de Sentry." } },
 
   // CI/CD
   { name: "GitHub Actions", url: "https://github.com/features/actions", category: "ci", featured: true, tags: ["ci", "automation", "github"], description: { en: "Automate builds, tests, releases and workflows next to your code.", es: "Automatiza builds, tests, releases y workflows junto a tu código." } },

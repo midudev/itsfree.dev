@@ -175,4 +175,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Koyeb": { en: "Eco tier: 1 free web service (512 MB RAM, 0.1 vCPU), 100 GB egress/month, and automatic continuous deployment.", es: "Capa Eco: 1 servicio web gratis (512 MB de RAM, 0.1 vCPU), 100 GB de salida/mes y despliegue continuo automático." },
   "Snyk": { en: "Free plan: 400 open-source (SCA) tests/month, 100 code (SAST) tests/month, and 100 container tests/month.", es: "Plan gratis: 400 análisis open source (SCA)/mes, 100 análisis de código (SAST)/mes y 100 análisis de contenedores/mes." },
   "Cronitor": { en: "Hacker plan: 5 monitors, 5-minute check frequency, 1 public status page with 50 subscribers, and Slack/email alerts.", es: "Plan Hacker: 5 monitores, checks cada 5 minutos, 1 página de estado con 50 suscriptores y alertas por Slack y email." },
+  "GlitchTip": { en: "Hosted free tier: 1,000 events per month, unlimited team members, and full alerting integrations.", es: "Plan alojado gratis: 1.000 eventos al mes, miembros de equipo ilimitados e integraciones completas de alertas." },
 }
