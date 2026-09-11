@@ -167,6 +167,7 @@ const pricingUrls: Record<string, string> = {
   "TiDB Cloud": "https://www.pingcap.com/pricing/",
   "Convex": "https://www.convex.dev/pricing",
   "Qdrant Cloud": "https://qdrant.tech/pricing/",
+  "Surge.sh": "https://surge.sh/pricing",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -181,6 +182,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Appish", url: "https://appi.sh", category: "hosting", tags: ["containers", "demos", "docker"], description: { en: "Push Docker containers to short-lived public slots made for demos.", es: "Publica contenedores Docker en slots temporales pensados para demos." } },
   { name: "Deno Deploy", url: "https://deno.com/deploy", category: "hosting", tags: ["typescript", "edge", "serverless"], description: { en: "Run JavaScript and TypeScript close to users on a global edge network.", es: "Ejecuta JavaScript y TypeScript cerca del usuario en una red edge global." } },
   { name: "GitHub", url: "https://github.com", category: "hosting", tags: ["git", "pages", "actions"], description: { en: "Repositories, static Pages, CI/CD and project tools in one developer platform.", es: "Repositorios, Pages, CI/CD y gestión en una plataforma para developers." } },
+  { name: "Surge.sh", url: "https://surge.sh", faviconFile: "surge.sh.png", category: "hosting", tags: ["static", "cli", "cdn"], description: { en: "Single-command static web publishing right from the terminal with custom domain support.", es: "Publicación web estática con un solo comando desde la terminal con soporte para dominios personalizados." } },
 
   // Data & backend
   { name: "Supabase", url: "https://supabase.com", category: "data", featured: true, tags: ["postgres", "realtime", "backend"], description: { en: "A Postgres backend with database, auth, storage, realtime and edge functions.", es: "Backend Postgres con base de datos, auth, storage, realtime y funciones edge." } },
