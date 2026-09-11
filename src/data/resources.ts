@@ -179,6 +179,7 @@ const pricingUrls: Record<string, string> = {
   "Plunk": "https://useplunk.com/pricing",
   "Courier": "https://www.courier.com/pricing/",
   "Loops": "https://loops.so/pricing",
+  "Aptabase": "https://aptabase.com/pricing",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -283,6 +284,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Cloudflare Web Analytics", url: "https://www.cloudflare.com/web-analytics/", faviconFile: "cloudflare.com.webp", category: "analytics", tags: ["privacy", "web", "free"], description: { en: "Privacy-first web analytics from Cloudflare: no cookies, no personal data, free for any site.", es: "Analítica web privacy-first de Cloudflare: sin cookies, sin datos personales y gratis para cualquier web." } },
   { name: "Microsoft Clarity", url: "https://clarity.microsoft.com", category: "analytics", tags: ["heatmaps", "replay", "web"], description: { en: "Free heatmaps and session recordings for understanding website behavior.", es: "Mapas de calor y grabaciones gratis para entender el comportamiento web." } },
   { name: "Axiom", url: "https://axiom.co", category: "analytics", tags: ["events", "logs", "datasets"], description: { en: "Store and explore event data and logs with fast queries and dashboards.", es: "Almacena y explora eventos y logs con consultas rápidas y dashboards." } },
+  { name: "Aptabase", url: "https://aptabase.com", faviconFile: "aptabase.com.png", category: "analytics", tags: ["privacy", "mobile", "desktop"], description: { en: "Privacy-friendly, lightweight analytics built for mobile, desktop, and web applications.", es: "Analítica ligera y respetuosa con la privacidad diseñada para aplicaciones móviles, de escritorio y web." } },
 
   // APIs
   { name: "Pipedream", url: "https://pipedream.com", category: "api", tags: ["automation", "workflows", "api"], description: { en: "Connect APIs and run event-driven workflows with code when you need it.", es: "Conecta APIs y ejecuta workflows por eventos usando código cuando haga falta." } },

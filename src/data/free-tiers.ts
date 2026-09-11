@@ -185,4 +185,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Plunk": { en: "Free plan: 1,000 emails per month, unlimited contacts, automated event workflows, and full API access.", es: "Plan gratis: 1.000 emails al mes, contactos ilimitados, workflows automatizados y acceso completo a la API." },
   "Courier": { en: "Developer plan: 10,000 notifications per month across all channels with unlimited templates and routing rules.", es: "Plan Developer: 10.000 notificaciones al mes en todos los canales con plantillas ilimitadas y reglas de enrutado." },
   "Loops": { en: "Free plan: Up to 1,000 contacts and 2,000 emails per month with API access, loops workflows and custom domains.", es: "Plan gratis: Hasta 1.000 contactos y 2.000 emails al mes con acceso a la API, workflows y dominios personalizados." },
+  "Aptabase": { en: "Free cloud plan: 20,000 events/month, unlimited applications, real-time insights, and choice of EU or US data centers.", es: "Plan cloud gratis: 20.000 eventos al mes, aplicaciones ilimitadas, métricas en tiempo real y centros de datos en la UE o EE.UU." },
 }
