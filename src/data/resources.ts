@@ -181,6 +181,7 @@ const pricingUrls: Record<string, string> = {
   "Loops": "https://loops.so/pricing",
   "Aptabase": "https://aptabase.com/pricing",
   "Lucide Icons": "https://lucide.dev/license",
+  "Ray.so": "https://ray.so",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -317,6 +318,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Fontshare", url: "https://www.fontshare.com", category: "design", tags: ["fonts", "typography", "assets"], description: { en: "A growing collection of professional fonts free for personal and commercial use.", es: "Colección de fuentes profesionales gratis para uso personal y comercial." } },
   { name: "Stitch", url: "https://stitch.withgoogle.com/", faviconFile: "stitch.withgoogle.com.webp", category: "design", tags: ["ai", "ui", "frontend"], description: { en: "Turn text prompts, images and wireframes into UI designs, frontend code and editable Figma work.", es: "Convierte prompts, imágenes y wireframes en diseños UI, código frontend y trabajo editable en Figma." } },
   { name: "Lucide Icons", url: "https://lucide.dev", faviconFile: "lucide.dev.png", category: "design", tags: ["icons", "open source", "svg"], description: { en: "Community-driven open-source icon set with thousands of clean, customizable SVG icons and framework packages.", es: "Conjunto de iconos open source impulsado por la comunidad con miles de iconos SVG limpios y paquetes para frameworks." } },
+  { name: "Ray.so", url: "https://ray.so", faviconFile: "ray.so.png", category: "design", tags: ["code snippets", "images", "sharing"], description: { en: "Generate beautiful, high-resolution syntax-highlighted images of your code snippets for docs and social media.", es: "Genera imágenes atractivas y en alta resolución con resaltado de sintaxis para tus fragmentos de código." } },
 
   // Security
   { name: "GitGuardian", url: "https://www.gitguardian.com", category: "security", tags: ["secrets", "git", "scanning"], description: { en: "Detect exposed secrets in source code and guide their remediation.", es: "Detecta secretos expuestos en el código y guía su corrección." } },
