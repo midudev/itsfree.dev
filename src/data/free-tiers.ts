@@ -26,6 +26,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Have I Been Pwned": "no-signup",
   "Webhook.site": "no-signup",
   "Mockoon": "no-signup",
+  "Transform.tools": "no-signup",
   "Smee.io": "no-signup",
 }
 
@@ -179,4 +180,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "GlitchTip": { en: "Hosted free tier: 1,000 events per month, unlimited team members, and full alerting integrations.", es: "Plan alojado gratis: 1.000 eventos al mes, miembros de equipo ilimitados e integraciones completas de alertas." },
   "Smee.io": { en: "Completely free and unlimited: Instant webhook forwarding URL with no account, sign-up, or card required.", es: "Totalmente gratis e ilimitado: URL instantánea de reenvío de webhooks sin cuenta, registro ni tarjeta." },
   "Reqres": { en: "Free tier: 250 requests per day, full CRUD endpoint access, request logging, and instant response simulation.", es: "Plan gratis: 250 peticiones al día, acceso completo a endpoints CRUD, logs de peticiones y respuestas inmediatas." },
+  "Transform.tools": { en: "100% free and open source: Client-side processing with unlimited conversions and no registration required.", es: "100% gratis y de código abierto: Procesamiento en cliente con conversiones ilimitadas y sin necesidad de registro." },
 }
