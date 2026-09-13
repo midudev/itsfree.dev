@@ -78,6 +78,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Logto": { en: "Free cloud plan: 50k monthly active users and core auth; the open-source edition can be self-hosted free.", es: "Cloud gratis: 50.000 usuarios activos/mes y auth base; la edición open source se puede autoalojar gratis." },
 
   "Resend": { en: "Free: 3,000 emails/month and 100/day, one domain, one webhook endpoint and one-day log retention.", es: "Gratis: 3.000 emails/mes y 100/día, un dominio, un webhook y logs durante un día." },
+  "Unitpost": { en: "Free: 5,000 emails/month, 200 emails/day, 10,000 contacts, 5 domains. No credit card.", es: "Gratis: 5.000 emails/mes, 200 emails/día, 10.000 contactos, 5 dominios. Sin tarjeta." },
   "Brevo": { en: "Free: 300 emails/day, unlimited contacts, transactional email and basic campaign tools.", es: "Gratis: 300 emails/día, contactos ilimitados, email transaccional y herramientas básicas de campañas." },
   "Mailjet": { en: "Free: 6,000 emails/month with a 200/day limit, unlimited contacts, APIs, SMTP and one user.", es: "Gratis: 6.000 emails/mes con límite de 200/día, contactos ilimitados, APIs, SMTP y un usuario." },
   "Mailtrap": { en: "Email API Free: 4,000 emails/month with a 150/day limit, one domain and 3-day log retention.", es: "Email API Free: 4.000 emails/mes con límite de 150/día, un dominio y logs durante 3 días." },

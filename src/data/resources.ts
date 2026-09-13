@@ -85,6 +85,7 @@ const pricingUrls: Record<string, string> = {
   "Descope": "https://www.descope.com/pricing",
   "Logto": "https://logto.io/pricing",
   "Resend": "https://resend.com/pricing",
+  "Unitpost": "https://unitpost.com/pricing",
   "Brevo": "https://www.brevo.com/pricing/",
   "Mailjet": "https://www.mailjet.com/pricing/",
   "Mailtrap": "https://mailtrap.io/pricing/",
@@ -212,6 +213,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
 
   // Email & forms
   { name: "Resend", url: "https://resend.com", category: "email", featured: true, tags: ["transactional", "email", "api"], description: { en: "A modern transactional email API with excellent React and developer tooling.", es: "API moderna de email transaccional con gran integración con React." } },
+  { name: "Unitpost", url: "https://unitpost.com", faviconFile: "unitpost.com.svg", category: "email", tags: ["transactional", "email", "api"], description: { en: "Transactional and marketing email from one API, with React templates, campaigns and inbound routing.", es: "Email transaccional y de marketing desde una sola API, con plantillas React, campañas y correo entrante." } },
   { name: "Brevo", url: "https://www.brevo.com", category: "email", tags: ["email", "marketing", "smtp"], description: { en: "Transactional email, campaigns and contact management in one platform.", es: "Email transaccional, campañas y gestión de contactos en una plataforma." } },
   { name: "Mailjet", url: "https://www.mailjet.com", category: "email", tags: ["email", "smtp", "templates"], description: { en: "Send transactional and marketing email with APIs, SMTP and templates.", es: "Envía email transaccional y marketing con APIs, SMTP y plantillas." } },
   { name: "Mailtrap", url: "https://mailtrap.io", category: "email", tags: ["testing", "email", "sandbox"], description: { en: "Test email safely in sandboxes and send transactional messages in production.", es: "Prueba emails en sandboxes y envía mensajes transaccionales en producción." } },
