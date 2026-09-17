@@ -173,6 +173,25 @@ const { data, error } = await resend.emails.send({
 if (error) throw error
 console.log(data.id)`,
   },
+  unitpost: {
+    title: { en: "Send a transactional email", es: "Envía un email transaccional" },
+    description: { en: "Send a message from a verified domain with the Unitpost SDK.", es: "Envía un mensaje desde un dominio verificado con el SDK de Unitpost." },
+    filename: "email.ts",
+    lang: "javascript",
+    code: `import { Unitpost } from "unitpost"
+
+const unitpost = new Unitpost(process.env.UNITPOST_API_KEY)
+
+const { data, error } = await unitpost.email.send({
+  from: "Acme <hello@example.com>",
+  to: "ada@example.com",
+  subject: "Welcome!",
+  html: "<strong>Your account is ready.</strong>",
+})
+
+if (error) throw error
+console.log(data.id)`,
+  },
   sentry: {
     title: { en: "Capture an application error", es: "Captura un error de la aplicación" },
     description: { en: "Add useful context before reporting an exception.", es: "Añade contexto útil antes de reportar una excepción." },
