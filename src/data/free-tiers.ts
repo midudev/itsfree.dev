@@ -24,6 +24,8 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Fontshare": "no-signup",
   "Mozilla Observatory": "no-signup",
   "Have I Been Pwned": "no-signup",
+  "Webhook.site": "no-signup",
+  "Mockoon": "no-signup",
 }
 
 /**
@@ -128,6 +130,9 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "OpenGraph.to": { en: "Free public API with no sign-up or key: 10 requests/hour per IP, JSON responses with a 5-minute cache.", es: "API pública gratis sin registro ni clave: 10 peticiones/hora por IP, respuestas JSON con caché de 5 minutos." },
   "Hoppscotch": { en: "The web client and self-hosted Community Edition are free; cloud collaboration has a free personal workspace.", es: "El cliente web y Community self-hosted son gratis; el cloud incluye un workspace personal gratuito." },
   "Cloudflare Browser Run": { en: "Workers Free: 10 minutes of browser time/day and 3 concurrent browsers; crawl is limited to 5 jobs/day and 100 pages.", es: "Workers Free: 10 minutos de navegador/día y 3 navegadores simultáneos; el crawl se limita a 5 jobs/día y 100 páginas." },
+  "Webhook.site": { en: "Free: instant unique URL to inspect requests in the browser, custom actions and webhook forwarding with no registration.", es: "Gratis: URL única al instante para inspeccionar peticiones en el navegador, acciones personalizadas y reenvío de webhooks sin registro." },
+  "Mockoon": { en: "Free forever: 100% open-source local application and CLI with unlimited routes, mocks, rules and proxying without an account.", es: "Gratis para siempre: aplicación local y CLI 100% open source con rutas, mocks, reglas y proxy ilimitados sin necesidad de cuenta." },
+  "Flagsmith": { en: "Free: 50,000 requests/month, unlimited feature flags and remote config, 1 project and 3 team members; self-hosting is also free.", es: "Gratis: 50.000 peticiones/mes, feature flags y configuración remota ilimitadas, 1 proyecto y 3 miembros; el self-hosting también es gratis." },
 
   "Figma": { en: "Starter: unlimited drafts, UI kits and collaborators, with 3 collaborative design files and 3 FigJam files.", es: "Starter: borradores, kits y colaboradores ilimitados, con 3 archivos de diseño y 3 de FigJam compartidos." },
   "Canva": { en: "Free: 250k+ templates, 1M+ stock assets, 5 GB cloud storage and standard design tools.", es: "Gratis: más de 250.000 plantillas, 1 M de recursos, 5 GB de storage y herramientas de diseño estándar." },
@@ -160,4 +165,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Cloudinary": { en: "Free: 25 monthly credits for image/video transformations, storage and bandwidth, with 3 users.", es: "Gratis: 25 créditos mensuales para transformaciones, storage y tráfico de imagen/vídeo, con 3 usuarios." },
   "Uploadcare": { en: "Free for personal use: 1,000 operations/month, files up to 500 MB, upload widget and API, basic image transformations, adaptive bitrate streaming, CDN delivery, signed uploads and webhooks.", es: "Gratis para uso personal: 1.000 operaciones/mes, archivos de hasta 500 MB, widget y API de subida, transformaciones básicas de imagen, streaming adaptativo, entrega por CDN, subidas firmadas y webhooks." },
   "ImageKit": { en: "Free forever: 20 GB bandwidth and 3 GB media storage/month, with transformations and video processing.", es: "Gratis para siempre: 20 GB de tráfico y 3 GB de media/mes, con transformaciones y procesado de vídeo." },
+  "Backblaze B2": { en: "Free forever: 10 GB cloud storage, 1 GB/day download egress, and free download egress up to 3x your average monthly storage.", es: "Gratis para siempre: 10 GB de almacenamiento cloud, 1 GB/día de descarga y salida gratuita de hasta el triple del almacenamiento medio mensual." },
 }
