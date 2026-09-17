@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-08-27"
+export const sourceReviewedAt = "2026-09-10"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -120,14 +120,17 @@ const pricingUrls: Record<string, string> = {
   "Microsoft Clarity": "https://clarity.microsoft.com/pricing",
   "Axiom": "https://axiom.co/pricing",
   "Pipedream": "https://pipedream.com/docs/pricing",
+  "Flagsmith": "https://flagsmith.com/pricing/",
   "Beeceptor": "https://beeceptor.com/pricing",
   "MockAPI": "https://mockapi.io/pricing",
+  "Mockoon": "https://mockoon.com/pricing/",
   "Abstract API": "https://www.abstractapi.com/api",
   "IPinfo": "https://ipinfo.io/pricing",
   "IPQuery": "https://ipquery.io/",
   "DummyJSON": "https://dummyjson.com/docs",
   "JSONPlaceholder": "https://jsonplaceholder.typicode.com/guide/",
   "Cloudflare Browser Run": "https://developers.cloudflare.com/browser-run/pricing/",
+  "Webhook.site": "https://webhook.site/pricing",
   "Open-Meteo": "https://open-meteo.com/en/pricing",
   "OpenGraph.to": "https://www.opengraph.to/api",
   "Hoppscotch": "https://hoppscotch.com/pricing",
@@ -158,6 +161,31 @@ const pricingUrls: Record<string, string> = {
   "Cloudinary": "https://cloudinary.com/pricing",
   "Uploadcare": "https://uploadcare.com/pricing/",
   "ImageKit": "https://imagekit.io/plans",
+  "Backblaze B2": "https://www.backblaze.com/cloud-storage/pricing",
+  "UploadThing": "https://uploadthing.com/pricing",
+  "TinyPNG": "https://tinify.com/pricing",
+  "Filestack": "https://www.filestack.com/pricing/",
+  "TiDB Cloud": "https://www.pingcap.com/pricing/",
+  "Convex": "https://www.convex.dev/pricing",
+  "Qdrant Cloud": "https://qdrant.tech/pricing/",
+  "Surge.sh": "https://surge.sh/pricing",
+  "Koyeb": "https://www.koyeb.com/pricing",
+  "Snyk": "https://snyk.io/pricing/",
+  "Cronitor": "https://cronitor.io/pricing",
+  "GlitchTip": "https://glitchtip.com/pricing",
+  "Smee.io": "https://smee.io",
+  "Reqres": "https://reqres.in/",
+  "Transform.tools": "https://transform.tools",
+  "Scalar": "https://scalar.com/pricing",
+  "Plunk": "https://useplunk.com/pricing",
+  "Courier": "https://www.courier.com/pricing/",
+  "Loops": "https://loops.so/pricing",
+  "Aptabase": "https://aptabase.com/pricing",
+  "Lucide Icons": "https://lucide.dev/license",
+  "Ray.so": "https://ray.so",
+  "SVGOMG": "https://svgomg.net",
+  "Shields.io": "https://shields.io",
+  "Can I Use": "https://caniuse.com",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -172,6 +200,8 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Appish", url: "https://appi.sh", category: "hosting", tags: ["containers", "demos", "docker"], description: { en: "Push Docker containers to short-lived public slots made for demos.", es: "Publica contenedores Docker en slots temporales pensados para demos." } },
   { name: "Deno Deploy", url: "https://deno.com/deploy", category: "hosting", tags: ["typescript", "edge", "serverless"], description: { en: "Run JavaScript and TypeScript close to users on a global edge network.", es: "Ejecuta JavaScript y TypeScript cerca del usuario en una red edge global." } },
   { name: "GitHub", url: "https://github.com", category: "hosting", tags: ["git", "pages", "actions"], description: { en: "Repositories, static Pages, CI/CD and project tools in one developer platform.", es: "Repositorios, Pages, CI/CD y gestión en una plataforma para developers." } },
+  { name: "Surge.sh", url: "https://surge.sh", faviconFile: "surge.sh.png", category: "hosting", tags: ["static", "cli", "cdn"], description: { en: "Single-command static web publishing right from the terminal with custom domain support.", es: "Publicación web estática con un solo comando desde la terminal con soporte para dominios personalizados." } },
+  { name: "Koyeb", url: "https://www.koyeb.com", faviconFile: "koyeb.com.png", category: "hosting", tags: ["containers", "microservices", "serverless"], description: { en: "Serverless platform to deploy full-stack apps and Docker containers globally with git push.", es: "Plataforma serverless para desplegar apps full-stack y contenedores Docker globalmente con git push." } },
 
   // Data & backend
   { name: "Supabase", url: "https://supabase.com", category: "data", featured: true, tags: ["postgres", "realtime", "backend"], description: { en: "A Postgres backend with database, auth, storage, realtime and edge functions.", es: "Backend Postgres con base de datos, auth, storage, realtime y funciones edge." } },
@@ -183,6 +213,9 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Upstash", url: "https://upstash.com", category: "data", featured: true, tags: ["redis", "kafka", "serverless"], description: { en: "Serverless Redis, Kafka and workflow tools with usage-based free tiers.", es: "Redis, Kafka y workflows serverless con capas gratuitas por uso." } },
   { name: "CockroachDB", url: "https://www.cockroachlabs.com", faviconFile: "cockroachlabs.com.webp", category: "data", tags: ["sql", "distributed", "cloud"], description: { en: "Distributed SQL built for resilient, globally available applications.", es: "SQL distribuido para aplicaciones resistentes y disponibles globalmente." } },
   { name: "Aiven", url: "https://aiven.io", category: "data", tags: ["postgres", "valkey", "kafka"], description: { en: "Managed open-source data services with free plans for selected products.", es: "Servicios de datos open source gestionados con planes gratuitos seleccionados." } },
+  { name: "TiDB Cloud", url: "https://tidbcloud.com", faviconFile: "tidbcloud.com.png", category: "data", tags: ["mysql", "distributed", "serverless"], description: { en: "Serverless distributed SQL database compatible with MySQL with auto-scaling.", es: "Base de datos SQL distribuida serverless compatible con MySQL y auto-escalado." } },
+  { name: "Convex", url: "https://www.convex.dev", faviconFile: "convex.dev.png", category: "data", tags: ["backend", "realtime", "typescript"], description: { en: "Reactive backend platform with automatic TypeScript database, cloud functions, and realtime state.", es: "Plataforma de backend reactivo con base de datos TypeScript, funciones serverless y estado en tiempo real." } },
+  { name: "Qdrant Cloud", url: "https://qdrant.tech", faviconFile: "qdrant.tech.png", category: "data", tags: ["vectors", "embeddings", "ai"], description: { en: "High-performance vector search engine and database for LLM embeddings and AI search.", es: "Motor y base de datos vectorial de alto rendimiento para embeddings de LLMs y búsqueda semántica con IA." } },
 
   // AI
   { name: "Braintrust", url: "https://www.braintrustdata.com", category: "ai", tags: ["evals", "prompts", "data"], description: { en: "Evaluate AI applications, compare prompts and manage test datasets.", es: "Evalúa aplicaciones de IA, compara prompts y gestiona datasets de prueba." } },
@@ -220,6 +253,9 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Formspree", url: "https://formspree.io", category: "email", tags: ["forms", "static", "email"], description: { en: "Add a reliable form backend to any site without writing server code.", es: "Añade un backend fiable para formularios sin escribir código de servidor." } },
   { name: "Tally", url: "https://tally.so", category: "email", tags: ["forms", "no-code", "surveys"], description: { en: "Create flexible forms and surveys with a generous free plan.", es: "Crea formularios y encuestas flexibles con un plan gratuito generoso." } },
   { name: "Web3Forms", url: "https://web3forms.com", category: "email", tags: ["forms", "api", "static"], description: { en: "Receive static-site form submissions directly in your inbox through an API.", es: "Recibe formularios de sitios estáticos en tu email mediante una API." } },
+  { name: "Plunk", url: "https://useplunk.com", faviconFile: "useplunk.com.png", category: "email", tags: ["transactional", "marketing", "aws-ses"], description: { en: "Open-source transactional and marketing email platform built directly on top of AWS SES.", es: "Plataforma open source para emails transaccionales y de marketing construida sobre AWS SES." } },
+  { name: "Courier", url: "https://www.courier.com", faviconFile: "courier.com.png", category: "email", tags: ["notifications", "multi-channel", "inbox"], description: { en: "Multi-channel notification API unifying email, SMS, push notifications, and in-app inboxes.", es: "API de notificaciones multicanal que unifica email, SMS, notificaciones push y buzones in-app." } },
+  { name: "Loops", url: "https://loops.so", faviconFile: "loops.so.png", category: "email", tags: ["saas", "transactional", "marketing"], description: { en: "Modern email platform designed for SaaS companies combining transactional emails and automated campaigns.", es: "Plataforma de email moderna para empresas SaaS que combina emails transaccionales y campañas automatizadas." } },
 
   // Observability
   { name: "Sentry", url: "https://sentry.io", category: "observability", featured: true, tags: ["errors", "tracing", "replay"], description: { en: "Track errors, performance traces and user sessions across your stack.", es: "Monitoriza errores, trazas de rendimiento y sesiones en todo tu stack." } },
@@ -231,6 +267,8 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "healthchecks.io", url: "https://healthchecks.io", category: "observability", tags: ["cron", "alerts", "jobs"], description: { en: "Monitor cron jobs and background tasks with simple heartbeat URLs.", es: "Monitoriza tareas cron y procesos en background con URLs heartbeat." } },
   { name: "New Relic", url: "https://newrelic.com", category: "observability", tags: ["apm", "logs", "infra"], description: { en: "Full-stack application performance and infrastructure monitoring.", es: "Monitorización full-stack del rendimiento e infraestructura." } },
   { name: "Logtail", url: "https://betterstack.com/logs", category: "observability", tags: ["logs", "sql", "alerts"], description: { en: "Centralize structured logs and query them quickly with SQL-like syntax.", es: "Centraliza logs estructurados y consúltalos con una sintaxis tipo SQL." } },
+  { name: "Cronitor", url: "https://cronitor.io", faviconFile: "cronitor.io.png", category: "observability", tags: ["cron", "uptime", "heartbeat"], description: { en: "Continuous monitoring for cron jobs, background workers, and websites with instant alerts.", es: "Monitorización continua de tareas cron, workers en segundo plano y sitios web con alertas instantáneas." } },
+  { name: "GlitchTip", url: "https://glitchtip.com", faviconFile: "glitchtip.com.png", category: "observability", tags: ["errors", "open source", "sentry-compatible"], description: { en: "Open-source, Sentry-compatible error tracking and application performance monitoring.", es: "Seguimiento de errores y monitorización de rendimiento open source compatible con el SDK de Sentry." } },
 
   // CI/CD
   { name: "GitHub Actions", url: "https://github.com/features/actions", category: "ci", featured: true, tags: ["ci", "automation", "github"], description: { en: "Automate builds, tests, releases and workflows next to your code.", es: "Automatiza builds, tests, releases y workflows junto a tu código." } },
@@ -242,6 +280,8 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Dependabot", url: "https://dependabot.com", category: "ci", tags: ["dependencies", "automation", "security"], description: { en: "Automated dependency updates and vulnerability alerts inside GitHub.", es: "Actualizaciones de dependencias y alertas de vulnerabilidades en GitHub." } },
   { name: "CodeRabbit", url: "https://www.coderabbit.ai", faviconFile: "coderabbit.ai.webp", category: "ci", featured: true, tags: ["code review", "ai", "pull requests"], description: { en: "AI code reviews for pull requests, IDEs and the command line, with free access for open-source projects.", es: "Revisiones de código con IA para pull requests, IDE y terminal, con acceso gratis para proyectos open source." } },
   { name: "Jules", url: "https://jules.google/", faviconFile: "jules.google.webp", category: "ci", tags: ["coding agent", "github", "gemini"], description: { en: "An asynchronous coding agent that works on real tasks in GitHub repositories and prepares changes for review.", es: "Agente de programación asíncrono que resuelve tareas reales en repositorios de GitHub y prepara los cambios para revisarlos." } },
+  { name: "Shields.io", url: "https://shields.io", faviconFile: "shields.io.png", category: "ci", tags: ["badges", "svg", "readme"], description: { en: "Pixel-perfect concise status badges in SVG and raster formats for open-source repositories and dashboards.", es: "Insignias de estado concisas en SVG y mapa de bits para repositorios open source y paneles de control." } },
+  { name: "Can I Use", url: "https://caniuse.com", faviconFile: "caniuse.com.png", category: "ci", tags: ["compatibility", "browsers", "standards"], description: { en: "Up-to-date browser support tables for modern desktop and mobile front-end web technologies.", es: "Tablas actualizadas de compatibilidad entre navegadores web de escritorio y móviles para tecnologías frontend." } },
 
   // Analytics
   { name: "PostHog", url: "https://posthog.com", category: "analytics", tags: ["product", "replay", "experiments"], description: { en: "Product analytics, session replay, feature flags and experiments together.", es: "Analítica de producto, replay, feature flags y experimentos en un sitio." } },
@@ -253,6 +293,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Cloudflare Web Analytics", url: "https://www.cloudflare.com/web-analytics/", faviconFile: "cloudflare.com.webp", category: "analytics", tags: ["privacy", "web", "free"], description: { en: "Privacy-first web analytics from Cloudflare: no cookies, no personal data, free for any site.", es: "Analítica web privacy-first de Cloudflare: sin cookies, sin datos personales y gratis para cualquier web." } },
   { name: "Microsoft Clarity", url: "https://clarity.microsoft.com", category: "analytics", tags: ["heatmaps", "replay", "web"], description: { en: "Free heatmaps and session recordings for understanding website behavior.", es: "Mapas de calor y grabaciones gratis para entender el comportamiento web." } },
   { name: "Axiom", url: "https://axiom.co", category: "analytics", tags: ["events", "logs", "datasets"], description: { en: "Store and explore event data and logs with fast queries and dashboards.", es: "Almacena y explora eventos y logs con consultas rápidas y dashboards." } },
+  { name: "Aptabase", url: "https://aptabase.com", faviconFile: "aptabase.com.png", category: "analytics", tags: ["privacy", "mobile", "desktop"], description: { en: "Privacy-friendly, lightweight analytics built for mobile, desktop, and web applications.", es: "Analítica ligera y respetuosa con la privacidad diseñada para aplicaciones móviles, de escritorio y web." } },
 
   // APIs
   { name: "Pipedream", url: "https://pipedream.com", category: "api", tags: ["automation", "workflows", "api"], description: { en: "Connect APIs and run event-driven workflows with code when you need it.", es: "Conecta APIs y ejecuta workflows por eventos usando código cuando haga falta." } },
@@ -267,6 +308,13 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "OpenGraph.to", url: "https://www.opengraph.to", faviconFile: "opengraph.to.svg", category: "api", tags: ["open graph", "seo", "social"], description: { en: "Scrape Open Graph, Twitter Card and SEO tags for any public URL: title, description, image, score, issues and suggested meta tags as JSON.", es: "Extrae tags Open Graph, Twitter Card y SEO de cualquier URL pública: título, descripción, imagen, puntuación, problemas y meta tags sugeridos en JSON." } },
   { name: "Hoppscotch", url: "https://hoppscotch.io", category: "api", tags: ["api client", "graphql", "realtime"], description: { en: "A fast web API client for REST, GraphQL and realtime protocols.", es: "Cliente web rápido para APIs REST, GraphQL y protocolos realtime." } },
   { name: "Cloudflare Browser Run", url: "https://developers.cloudflare.com/browser-run/", faviconFile: "cloudflare.com.webp", category: "api", tags: ["scraping", "headless", "automation"], description: { en: "Run headless Chrome on Cloudflare's network to scrape, screenshot, crawl and extract page content as HTML, Markdown or JSON.", es: "Ejecuta Chrome headless en la red de Cloudflare para scrapear, capturar, crawlear y extraer contenido como HTML, Markdown o JSON." } },
+  { name: "Webhook.site", url: "https://webhook.site", faviconFile: "webhook.site.png", category: "api", tags: ["webhooks", "testing", "debug"], description: { en: "Instantly receive, inspect and debug incoming HTTP webhooks and requests in real time without creating an account.", es: "Recibe, inspecciona y depura webhooks y peticiones HTTP entrantes en tiempo real sin crear una cuenta." } },
+  { name: "Mockoon", url: "https://mockoon.com", faviconFile: "mockoon.com.svg", category: "api", tags: ["mock", "local", "open source"], description: { en: "Open-source desktop application and CLI to design and run realistic mock APIs locally in seconds.", es: "Aplicación de escritorio y CLI open source para diseñar y ejecutar APIs mock realistas en local en segundos." } },
+  { name: "Flagsmith", url: "https://flagsmith.com", faviconFile: "flagsmith.com.png", category: "api", tags: ["feature flags", "remote config", "open source"], description: { en: "Feature flags and remote configuration platform with hosted cloud and self-hostable open-source options.", es: "Plataforma de feature flags y configuración remota con nube alojada y opción open source self-hosted." } },
+  { name: "Smee.io", url: "https://smee.io", faviconFile: "smee.io.png", category: "api", tags: ["webhooks", "proxy", "local"], description: { en: "Webhook payload delivery service that proxies webhooks directly to your local development environment.", es: "Servicio que reenvía payloads de webhooks directamente a tu entorno de desarrollo local." } },
+  { name: "Reqres", url: "https://reqres.in", faviconFile: "reqres.in.png", category: "api", tags: ["mock", "rest", "prototyping"], description: { en: "Hosted REST API simulating real CRUD operations and JSON responses for front-end prototyping.", es: "API REST alojada que simula operaciones CRUD reales y respuestas JSON para prototipar frontends." } },
+  { name: "Transform.tools", url: "https://transform.tools", faviconFile: "transform.tools.png", category: "api", tags: ["converter", "code generation", "utilities"], description: { en: "Polyglot web converter turning JSON, HTML, CSS, and GraphQL into TypeScript, JSX, Go structs, and more.", es: "Conversor web multilingüe que transforma JSON, HTML, CSS y GraphQL a TypeScript, JSX, structs de Go y más." } },
+  { name: "Scalar", url: "https://scalar.com", faviconFile: "scalar.com.png", category: "api", tags: ["openapi", "docs", "testing"], description: { en: "Modern, interactive API documentation generator and REST client supporting OpenAPI and Swagger specifications.", es: "Generador moderno e interactivo de documentación de APIs y cliente REST compatible con OpenAPI y Swagger." } },
 
   // Design
   { name: "Figma", url: "https://www.figma.com", category: "design", featured: true, tags: ["ui", "prototype", "collaboration"], description: { en: "Collaborative interface design, prototyping and developer handoff.", es: "Diseño de interfaces, prototipado y handoff colaborativo." } },
@@ -276,12 +324,16 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "tldraw", url: "https://www.tldraw.com", faviconFile: "https://www.tldraw.com/favicon.ico", category: "design", tags: ["whiteboard", "infinite canvas", "sdk"], description: { en: "A fast collaborative infinite canvas plus a React SDK for building custom canvas experiences.", es: "Un lienzo infinito colaborativo y rápido, más un SDK de React para crear experiencias de canvas." } },
   { name: "Fontshare", url: "https://www.fontshare.com", category: "design", tags: ["fonts", "typography", "assets"], description: { en: "A growing collection of professional fonts free for personal and commercial use.", es: "Colección de fuentes profesionales gratis para uso personal y comercial." } },
   { name: "Stitch", url: "https://stitch.withgoogle.com/", faviconFile: "stitch.withgoogle.com.webp", category: "design", tags: ["ai", "ui", "frontend"], description: { en: "Turn text prompts, images and wireframes into UI designs, frontend code and editable Figma work.", es: "Convierte prompts, imágenes y wireframes en diseños UI, código frontend y trabajo editable en Figma." } },
+  { name: "Lucide Icons", url: "https://lucide.dev", faviconFile: "lucide.dev.png", category: "design", tags: ["icons", "open source", "svg"], description: { en: "Community-driven open-source icon set with thousands of clean, customizable SVG icons and framework packages.", es: "Conjunto de iconos open source impulsado por la comunidad con miles de iconos SVG limpios y paquetes para frameworks." } },
+  { name: "Ray.so", url: "https://ray.so", faviconFile: "ray.so.png", category: "design", tags: ["code snippets", "images", "sharing"], description: { en: "Generate beautiful, high-resolution syntax-highlighted images of your code snippets for docs and social media.", es: "Genera imágenes atractivas y en alta resolución con resaltado de sintaxis para tus fragmentos de código." } },
+  { name: "SVGOMG", url: "https://svgomg.net", faviconFile: "svgomg.net.png", category: "design", tags: ["svg", "optimization", "web tool"], description: { en: "Web-based GUI for SVGO to optimize and strip bloat from SVG images directly in the browser.", es: "Interfaz web para SVGO que permite optimizar y limpiar archivos SVG directamente en el navegador." } },
 
   // Security
   { name: "GitGuardian", url: "https://www.gitguardian.com", category: "security", tags: ["secrets", "git", "scanning"], description: { en: "Detect exposed secrets in source code and guide their remediation.", es: "Detecta secretos expuestos en el código y guía su corrección." } },
   { name: "Socket", url: "https://socket.dev", category: "security", tags: ["supply chain", "npm", "dependencies"], description: { en: "Protect JavaScript supply chains by analyzing dependency behavior.", es: "Protege la cadena de suministro JavaScript analizando dependencias." } },
   { name: "Mozilla Observatory", url: "https://observatory.mozilla.org", category: "security", tags: ["headers", "audit", "web"], description: { en: "Scan a website for security headers and common web hardening practices.", es: "Escanea headers y prácticas habituales de protección web." } },
   { name: "Have I Been Pwned", url: "https://haveibeenpwned.com/API/v3", category: "security", tags: ["breaches", "api", "passwords"], description: { en: "Check accounts and domains against known data breaches through an API.", es: "Comprueba cuentas y dominios frente a filtraciones conocidas mediante API." } },
+  { name: "Snyk", url: "https://snyk.io", faviconFile: "snyk.io.png", category: "security", tags: ["vulnerabilities", "dependencies", "sast"], description: { en: "Developer security platform scanning code, open-source dependencies, and container images for vulnerabilities.", es: "Plataforma de seguridad para desarrolladores que analiza código, dependencias open source y contenedores." } },
 
   // Collaboration
   { name: "Linear", url: "https://linear.app", category: "collaboration", featured: true, tags: ["issues", "roadmap", "product"], description: { en: "Fast issue tracking, cycles and product roadmaps for software teams.", es: "Issues, ciclos y roadmaps rápidos para equipos de software." } },
@@ -304,6 +356,10 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Cloudinary", url: "https://cloudinary.com", category: "media", featured: true, tags: ["images", "video", "cdn"], description: { en: "Upload, transform, optimize and deliver images and video through a CDN.", es: "Sube, transforma, optimiza y entrega imágenes y vídeo mediante CDN." } },
   { name: "Uploadcare", url: "https://uploadcare.com", category: "media", tags: ["uploads", "images", "cdn"], description: { en: "File uploads, image processing and adaptive delivery for web apps.", es: "Subida de archivos, procesado de imágenes y entrega adaptativa." } },
   { name: "ImageKit", url: "https://imagekit.io", category: "media", tags: ["images", "optimization", "cdn"], description: { en: "Real-time image and video optimization, transformation and delivery.", es: "Optimización, transformación y entrega de imagen y vídeo en tiempo real." } },
+  { name: "Backblaze B2", url: "https://www.backblaze.com/cloud-storage", faviconFile: "backblaze.com.png", category: "media", tags: ["storage", "s3", "cloud"], description: { en: "S3-compatible cloud object storage with 10 GB free storage and free daily download bandwidth.", es: "Almacenamiento de objetos cloud compatible con S3 con 10 GB gratis y descarga diaria gratuita." } },
+  { name: "UploadThing", url: "https://uploadthing.com", faviconFile: "uploadthing.com.png", category: "media", tags: ["uploads", "nextjs", "storage"], description: { en: "File uploads for modern full-stack web applications with native framework SDKs.", es: "Subida de archivos para aplicaciones full-stack modernas con SDKs nativos para frameworks." } },
+  { name: "TinyPNG", url: "https://tinypng.com", faviconFile: "tinypng.com.png", category: "media", tags: ["compression", "images", "api"], description: { en: "Smart lossy compression API to compress WebP, PNG and JPEG images on the fly.", es: "API de compresión inteligente con pérdida para optimizar imágenes WebP, PNG y JPEG al vuelo." } },
+  { name: "Filestack", url: "https://www.filestack.com", faviconFile: "filestack.com.png", category: "media", tags: ["uploads", "transformations", "cdn"], description: { en: "File uploader, transformation API, and CDN delivery for web and mobile applications.", es: "Subida de archivos, API de transformaciones y entrega por CDN para aplicaciones web y móviles." } },
 ]
 
 export const slugifyResourceName = (name: string) => name
