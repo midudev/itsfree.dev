@@ -9,25 +9,41 @@
           "name": "Vercel",
           "description": "Deploy web projects with zero configuration",
           "url": "https://vercel.com",
-          "tags": ["deployment", "hosting", "serverless"]
+          "tags": [
+            "deployment",
+            "hosting",
+            "serverless"
+          ]
         },
         {
           "name": "Netlify",
           "description": "Build, deploy, and manage modern web projects",
           "url": "https://netlify.com",
-          "tags": ["deployment", "hosting", "jamstack"]
+          "tags": [
+            "deployment",
+            "hosting",
+            "jamstack"
+          ]
         },
         {
           "name": "Railway",
           "description": "Deploy code with zero configuration",
           "url": "https://railway.app",
-          "tags": ["deployment", "hosting", "databases"]
+          "tags": [
+            "deployment",
+            "hosting",
+            "databases"
+          ]
         },
         {
           "name": "Render",
           "description": "Cloud platform for developers and teams",
           "url": "https://render.com",
-          "tags": ["deployment", "hosting", "databases"]
+          "tags": [
+            "deployment",
+            "hosting",
+            "databases"
+          ]
         }
       ]
     },
@@ -40,31 +56,62 @@
           "name": "JSONPlaceholder",
           "description": "Free fake API for testing and prototyping",
           "url": "https://jsonplaceholder.typicode.com",
-          "tags": ["testing", "mock", "json"]
+          "tags": [
+            "testing",
+            "mock",
+            "json"
+          ]
         },
         {
           "name": "Public APIs",
           "description": "Collective list of free APIs",
           "url": "https://publicapis.dev",
-          "tags": ["directory", "free", "collection"]
+          "tags": [
+            "directory",
+            "free",
+            "collection"
+          ]
         },
         {
           "name": "REST Countries",
           "description": "Get information about countries via REST API",
           "url": "https://restcountries.com",
-          "tags": ["countries", "geography", "data"]
+          "tags": [
+            "countries",
+            "geography",
+            "data"
+          ]
         },
         {
           "name": "Open-Meteo",
           "description": "Global weather forecasts API with no API key",
           "url": "https://open-meteo.com",
-          "tags": ["weather", "forecast", "open data"]
+          "tags": [
+            "weather",
+            "forecast",
+            "open data"
+          ]
         },
         {
           "name": "OpenGraph.to",
           "description": "Free Open Graph API: scrape OG tags, score and suggestions",
           "url": "https://www.opengraph.to",
-          "tags": ["open graph", "seo", "social"]
+          "tags": [
+            "open graph",
+            "seo",
+            "social"
+          ]
+        },
+        {
+          "name": "MySpec",
+          "description": "Spec-Driven Development platform with free MCP server for AI coding agents",
+          "url": "https://myspec.dev",
+          "tags": [
+            "spec-driven",
+            "mcp",
+            "developer tools",
+            "free"
+          ]
         }
       ]
     },
@@ -77,25 +124,41 @@
           "name": "GitHub Pages",
           "description": "Host static websites directly from GitHub",
           "url": "https://pages.github.com",
-          "tags": ["static", "github", "free"]
+          "tags": [
+            "static",
+            "github",
+            "free"
+          ]
         },
         {
           "name": "Surge.sh",
           "description": "Static web publishing for front-end developers",
           "url": "https://surge.sh",
-          "tags": ["static", "cli", "simple"]
+          "tags": [
+            "static",
+            "cli",
+            "simple"
+          ]
         },
         {
           "name": "Firebase Hosting",
           "description": "Fast and secure web hosting",
           "url": "https://firebase.google.com/products/hosting",
-          "tags": ["google", "cdn", "ssl"]
+          "tags": [
+            "google",
+            "cdn",
+            "ssl"
+          ]
         },
         {
           "name": "Cloudflare Pages",
           "description": "JAMstack platform for frontend developers",
           "url": "https://pages.cloudflare.com",
-          "tags": ["jamstack", "cdn", "edge"]
+          "tags": [
+            "jamstack",
+            "cdn",
+            "edge"
+          ]
         }
       ]
     },
@@ -108,25 +171,41 @@
           "name": "GitHub Actions",
           "description": "Automate workflows directly in GitHub",
           "url": "https://github.com/features/actions",
-          "tags": ["automation", "github", "workflows"]
+          "tags": [
+            "automation",
+            "github",
+            "workflows"
+          ]
         },
         {
           "name": "GitLab CI/CD",
           "description": "Built-in continuous integration and deployment",
           "url": "https://docs.gitlab.com/ee/ci/",
-          "tags": ["gitlab", "pipelines", "devops"]
+          "tags": [
+            "gitlab",
+            "pipelines",
+            "devops"
+          ]
         },
         {
           "name": "CircleCI",
           "description": "Continuous integration and delivery platform",
           "url": "https://circleci.com",
-          "tags": ["automation", "testing", "deployment"]
+          "tags": [
+            "automation",
+            "testing",
+            "deployment"
+          ]
         },
         {
           "name": "Travis CI",
           "description": "Test and deploy with confidence",
           "url": "https://travis-ci.org",
-          "tags": ["testing", "deployment", "automation"]
+          "tags": [
+            "testing",
+            "deployment",
+            "automation"
+          ]
         }
       ]
     },
@@ -139,25 +218,41 @@
           "name": "Vercel",
           "description": "Automatic deployments for every push",
           "url": "https://vercel.com",
-          "tags": ["deployment", "automatic", "preview"]
+          "tags": [
+            "deployment",
+            "automatic",
+            "preview"
+          ]
         },
         {
           "name": "Netlify Deploy",
           "description": "Continuous deployment made simple",
           "url": "https://netlify.com",
-          "tags": ["deployment", "git", "automatic"]
+          "tags": [
+            "deployment",
+            "git",
+            "automatic"
+          ]
         },
         {
           "name": "Heroku",
           "description": "Build, run, and operate applications entirely in the cloud",
           "url": "https://heroku.com",
-          "tags": ["deployment", "cloud", "scaling"]
+          "tags": [
+            "deployment",
+            "cloud",
+            "scaling"
+          ]
         },
         {
           "name": "DigitalOcean App Platform",
           "description": "Build, deploy, and scale apps quickly",
           "url": "https://digitalocean.com/products/app-platform",
-          "tags": ["deployment", "scaling", "containers"]
+          "tags": [
+            "deployment",
+            "scaling",
+            "containers"
+          ]
         }
       ]
     },
@@ -170,25 +265,41 @@
           "name": "PageSpeed Insights",
           "description": "Analyze and optimize web page performance",
           "url": "https://pagespeed.web.dev",
-          "tags": ["analysis", "optimization", "google"]
+          "tags": [
+            "analysis",
+            "optimization",
+            "google"
+          ]
         },
         {
           "name": "GTmetrix",
           "description": "Website performance testing and monitoring",
           "url": "https://gtmetrix.com",
-          "tags": ["testing", "monitoring", "analysis"]
+          "tags": [
+            "testing",
+            "monitoring",
+            "analysis"
+          ]
         },
         {
           "name": "WebPageTest",
           "description": "Test website performance from multiple locations",
           "url": "https://webpagetest.org",
-          "tags": ["testing", "global", "detailed"]
+          "tags": [
+            "testing",
+            "global",
+            "detailed"
+          ]
         },
         {
           "name": "Lighthouse",
           "description": "Automated auditing for web apps",
           "url": "https://developers.google.com/web/tools/lighthouse",
-          "tags": ["audit", "pwa", "accessibility"]
+          "tags": [
+            "audit",
+            "pwa",
+            "accessibility"
+          ]
         }
       ]
     },
@@ -201,25 +312,41 @@
           "name": "EmailJS",
           "description": "Send emails directly from client-side JavaScript",
           "url": "https://emailjs.com",
-          "tags": ["client-side", "javascript", "forms"]
+          "tags": [
+            "client-side",
+            "javascript",
+            "forms"
+          ]
         },
         {
           "name": "Mailgun",
           "description": "Email API service for developers",
           "url": "https://mailgun.com",
-          "tags": ["api", "transactional", "delivery"]
+          "tags": [
+            "api",
+            "transactional",
+            "delivery"
+          ]
         },
         {
           "name": "SendGrid",
           "description": "Email delivery and marketing platform",
           "url": "https://sendgrid.com",
-          "tags": ["delivery", "marketing", "analytics"]
+          "tags": [
+            "delivery",
+            "marketing",
+            "analytics"
+          ]
         },
         {
           "name": "Resend",
           "description": "Email API for developers",
           "url": "https://resend.com",
-          "tags": ["api", "developer-friendly", "modern"]
+          "tags": [
+            "api",
+            "developer-friendly",
+            "modern"
+          ]
         }
       ]
     },
@@ -232,25 +359,41 @@
           "name": "Algolia",
           "description": "Fast, reliable search and discovery",
           "url": "https://algolia.com",
-          "tags": ["search", "instant", "analytics"]
+          "tags": [
+            "search",
+            "instant",
+            "analytics"
+          ]
         },
         {
           "name": "Elasticsearch",
           "description": "Distributed search and analytics engine",
           "url": "https://elastic.co",
-          "tags": ["search", "analytics", "distributed"]
+          "tags": [
+            "search",
+            "analytics",
+            "distributed"
+          ]
         },
         {
           "name": "MeiliSearch",
           "description": "Lightning fast search engine",
           "url": "https://meilisearch.com",
-          "tags": ["search", "fast", "typo-tolerant"]
+          "tags": [
+            "search",
+            "fast",
+            "typo-tolerant"
+          ]
         },
         {
           "name": "Typesense",
           "description": "Fast, typo-tolerant search engine",
           "url": "https://typesense.org",
-          "tags": ["search", "typo-tolerant", "open-source"]
+          "tags": [
+            "search",
+            "typo-tolerant",
+            "open-source"
+          ]
         }
       ]
     },
@@ -263,25 +406,41 @@
           "name": "Supabase",
           "description": "Open source Firebase alternative",
           "url": "https://supabase.com",
-          "tags": ["postgresql", "realtime", "auth"]
+          "tags": [
+            "postgresql",
+            "realtime",
+            "auth"
+          ]
         },
         {
           "name": "PlanetScale",
           "description": "Serverless MySQL platform",
           "url": "https://planetscale.com",
-          "tags": ["mysql", "serverless", "branching"]
+          "tags": [
+            "mysql",
+            "serverless",
+            "branching"
+          ]
         },
         {
           "name": "MongoDB Atlas",
           "description": "Cloud database service",
           "url": "https://mongodb.com/atlas",
-          "tags": ["nosql", "cloud", "document"]
+          "tags": [
+            "nosql",
+            "cloud",
+            "document"
+          ]
         },
         {
           "name": "Neon",
           "description": "Serverless PostgreSQL",
           "url": "https://neon.tech",
-          "tags": ["postgresql", "serverless", "branching"]
+          "tags": [
+            "postgresql",
+            "serverless",
+            "branching"
+          ]
         }
       ]
     }
