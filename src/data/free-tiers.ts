@@ -24,6 +24,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Fontshare": "no-signup",
   "Mozilla Observatory": "no-signup",
   "Have I Been Pwned": "no-signup",
+  "Sourced": "no-card",
 }
 
 /**
@@ -128,6 +129,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "OpenGraph.to": { en: "Free public API with no sign-up or key: 10 requests/hour per IP, JSON responses with a 5-minute cache.", es: "API pública gratis sin registro ni clave: 10 peticiones/hora por IP, respuestas JSON con caché de 5 minutos." },
   "Hoppscotch": { en: "The web client and self-hosted Community Edition are free; cloud collaboration has a free personal workspace.", es: "El cliente web y Community self-hosted son gratis; el cloud incluye un workspace personal gratuito." },
   "Cloudflare Browser Run": { en: "Workers Free: 10 minutes of browser time/day and 3 concurrent browsers; crawl is limited to 5 jobs/day and 100 pages.", es: "Workers Free: 10 minutos de navegador/día y 3 navegadores simultáneos; el crawl se limita a 5 jobs/día y 100 páginas." },
+  "Sourced": { en: "Free: unlimited SDK and docs previews, up to 2 hosted docs review sites, no credit card. Paid plans start only once you publish.", es: "Gratis: previews ilimitados de SDK y docs, hasta 2 sitios de revisión de docs alojados, sin tarjeta. Los planes de pago empiezan solo al publicar." },
 
   "Figma": { en: "Starter: unlimited drafts, UI kits and collaborators, with 3 collaborative design files and 3 FigJam files.", es: "Starter: borradores, kits y colaboradores ilimitados, con 3 archivos de diseño y 3 de FigJam compartidos." },
   "Canva": { en: "Free: 250k+ templates, 1M+ stock assets, 5 GB cloud storage and standard design tools.", es: "Gratis: más de 250.000 plantillas, 1 M de recursos, 5 GB de storage y herramientas de diseño estándar." },

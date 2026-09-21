@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-08-27"
+export const sourceReviewedAt = "2026-09-21"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -158,6 +158,7 @@ const pricingUrls: Record<string, string> = {
   "Cloudinary": "https://cloudinary.com/pricing",
   "Uploadcare": "https://uploadcare.com/pricing/",
   "ImageKit": "https://imagekit.io/plans",
+  "Sourced": "https://sourced.sh/pricing",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -267,6 +268,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "OpenGraph.to", url: "https://www.opengraph.to", faviconFile: "opengraph.to.svg", category: "api", tags: ["open graph", "seo", "social"], description: { en: "Scrape Open Graph, Twitter Card and SEO tags for any public URL: title, description, image, score, issues and suggested meta tags as JSON.", es: "Extrae tags Open Graph, Twitter Card y SEO de cualquier URL pública: título, descripción, imagen, puntuación, problemas y meta tags sugeridos en JSON." } },
   { name: "Hoppscotch", url: "https://hoppscotch.io", category: "api", tags: ["api client", "graphql", "realtime"], description: { en: "A fast web API client for REST, GraphQL and realtime protocols.", es: "Cliente web rápido para APIs REST, GraphQL y protocolos realtime." } },
   { name: "Cloudflare Browser Run", url: "https://developers.cloudflare.com/browser-run/", faviconFile: "cloudflare.com.webp", category: "api", tags: ["scraping", "headless", "automation"], description: { en: "Run headless Chrome on Cloudflare's network to scrape, screenshot, crawl and extract page content as HTML, Markdown or JSON.", es: "Ejecuta Chrome headless en la red de Cloudflare para scrapear, capturar, crawlear y extraer contenido como HTML, Markdown o JSON." } },
+  { name: "Sourced", url: "https://sourced.sh", category: "api", tags: ["openapi", "sdk", "docs"], description: { en: "Validate and diff OpenAPI specs, and generate llms.txt files, MCP servers, hosted docs and SDK previews in the browser.", es: "Valida y compara specs OpenAPI, y genera archivos llms.txt, servidores MCP, docs alojadas y previews de SDK en el navegador." } },
 
   // Design
   { name: "Figma", url: "https://www.figma.com", category: "design", featured: true, tags: ["ui", "prototype", "collaboration"], description: { en: "Collaborative interface design, prototyping and developer handoff.", es: "Diseño de interfaces, prototipado y handoff colaborativo." } },
