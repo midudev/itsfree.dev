@@ -116,6 +116,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Microsoft Clarity": { en: "Completely free: unlimited projects, heatmaps and session recordings with no traffic cap.", es: "Totalmente gratis: proyectos, mapas de calor y grabaciones ilimitados, sin límite de tráfico." },
   "Axiom": { en: "Free: 500 GB-hours of query time and 25 GB ingest/month, with 30-day retention.", es: "Gratis: 500 GB-horas de consulta y 25 GB de ingesta/mes, con 30 días de retención." },
 
+  "Allowly Hiring Evidence": { en: "Free core: one active Hiring job, agent or workflow at a time, plus 1,000 lifetime decisions.", es: "Core gratis: un job activo de Hiring, agente o workflow a la vez, más 1.000 decisiones de por vida." },
   "Pipedream": { en: "Free: 100 workflow credits/month, 3 active workflows and unlimited testing in the builder.", es: "Gratis: 100 créditos de workflows/mes, 3 workflows activos y pruebas ilimitadas en el editor." },
   "Beeceptor": { en: "Free: 50 requests/day, 1 mock endpoint and 10 days of request history, with no credit card.", es: "Gratis: 50 peticiones/día, 1 endpoint mock y 10 días de historial, sin tarjeta." },
   "MockAPI": { en: "Free: one project with up to 2 resources and basic fake REST endpoints for prototyping.", es: "Gratis: un proyecto con hasta 2 recursos y endpoints REST falsos básicos para prototipos." },

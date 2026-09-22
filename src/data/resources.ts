@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-08-27"
+export const sourceReviewedAt = "2026-09-21"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -119,6 +119,7 @@ const pricingUrls: Record<string, string> = {
   "Cloudflare Web Analytics": "https://developers.cloudflare.com/web-analytics/",
   "Microsoft Clarity": "https://clarity.microsoft.com/pricing",
   "Axiom": "https://axiom.co/pricing",
+  "Allowly Hiring Evidence": "https://allowly.ai/pricing/",
   "Pipedream": "https://pipedream.com/docs/pricing",
   "Beeceptor": "https://beeceptor.com/pricing",
   "MockAPI": "https://mockapi.io/pricing",
@@ -255,6 +256,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Axiom", url: "https://axiom.co", category: "analytics", tags: ["events", "logs", "datasets"], description: { en: "Store and explore event data and logs with fast queries and dashboards.", es: "Almacena y explora eventos y logs con consultas rápidas y dashboards." } },
 
   // APIs
+  { name: "Allowly Hiring Evidence", url: "https://allowly.ai/solutions/hiring/", category: "api", tags: ["policy", "hiring", "evidence"], description: { en: "Run structured employment-screening fields through approved policies and export decision evidence via API.", es: "Evalúa campos estructurados de selección con políticas aprobadas y exporta evidencia de decisiones mediante API." } },
   { name: "Pipedream", url: "https://pipedream.com", category: "api", tags: ["automation", "workflows", "api"], description: { en: "Connect APIs and run event-driven workflows with code when you need it.", es: "Conecta APIs y ejecuta workflows por eventos usando código cuando haga falta." } },
   { name: "Beeceptor", url: "https://beeceptor.com", category: "api", tags: ["mock", "http", "debug"], description: { en: "Create instant mock endpoints and inspect, transform or proxy requests.", es: "Crea endpoints mock e inspecciona, transforma o redirige peticiones." } },
   { name: "MockAPI", url: "https://mockapi.io", category: "api", tags: ["mock", "rest", "prototype"], description: { en: "Generate REST endpoints and realistic sample data for prototypes.", es: "Genera endpoints REST y datos realistas para prototipos." } },
