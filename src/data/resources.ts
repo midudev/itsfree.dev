@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-08-27"
+export const sourceReviewedAt = "2026-10-14"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -104,6 +104,7 @@ const pricingUrls: Record<string, string> = {
   "GitHub Actions": "https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions",
   "GitLab CI/CD": "https://about.gitlab.com/pricing/",
   "CircleCI": "https://circleci.com/pricing/",
+  "Flagpool": "https://www.flagpool.io/en/pricing",
   "Buildkite": "https://buildkite.com/pricing",
   "Codecov": "https://about.codecov.io/pricing/",
   "SonarCloud": "https://www.sonarsource.com/plans-and-pricing/sonarcloud/",
@@ -236,6 +237,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "GitHub Actions", url: "https://github.com/features/actions", category: "ci", featured: true, tags: ["ci", "automation", "github"], description: { en: "Automate builds, tests, releases and workflows next to your code.", es: "Automatiza builds, tests, releases y workflows junto a tu código." } },
   { name: "GitLab CI/CD", url: "https://docs.gitlab.com/ci", category: "ci", tags: ["ci", "gitlab", "pipelines"], description: { en: "Integrated pipelines, runners and environments for GitLab projects.", es: "Pipelines, runners y entornos integrados para proyectos de GitLab." } },
   { name: "CircleCI", url: "https://circleci.com", category: "ci", tags: ["ci", "testing", "deploy"], description: { en: "Flexible hosted pipelines with multiple executors and parallel jobs.", es: "Pipelines alojados flexibles con varios ejecutores y trabajos paralelos." } },
+  { name: "Flagpool", url: "https://www.flagpool.io", faviconFile: "https://www.flagpool.io/favicon-32x32.png", category: "ci", tags: ["feature flags", "targeting", "releases"], description: { en: "Manage feature flags with local SDK evaluation to target users and change application behavior without redeploying.", es: "Gestiona feature flags con evaluación local en el SDK para segmentar usuarios y cambiar el comportamiento de la aplicación sin redesplegar." } },
   { name: "Buildkite", url: "https://buildkite.com", category: "ci", tags: ["ci", "agents", "pipelines"], description: { en: "Flexible pipelines with hosted orchestration and your own build agents.", es: "Pipelines flexibles con orquestación alojada y tus propios agentes." } },
   { name: "Codecov", url: "https://about.codecov.io", category: "ci", tags: ["coverage", "testing", "reports"], description: { en: "Turn code coverage uploads into pull-request checks and visual reports.", es: "Convierte la cobertura en checks de pull request e informes visuales." } },
   { name: "SonarCloud", url: "https://sonarcloud.io", category: "ci", tags: ["quality", "static analysis", "code"], description: { en: "Cloud static analysis for code quality, maintainability and security.", es: "Análisis estático cloud de calidad, mantenibilidad y seguridad." } },
