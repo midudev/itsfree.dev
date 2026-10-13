@@ -42,6 +42,7 @@ export const categories: Category[] = [
 ]
 
 const pricingUrls: Record<string, string> = {
+  "Flagpool": "https://www.flagpool.io/en/pricing",
   "Vercel": "https://vercel.com/pricing",
   "Cloudflare": "https://www.cloudflare.com/plans/",
   "Netlify": "https://www.netlify.com/pricing/",
@@ -236,6 +237,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "GitHub Actions", url: "https://github.com/features/actions", category: "ci", featured: true, tags: ["ci", "automation", "github"], description: { en: "Automate builds, tests, releases and workflows next to your code.", es: "Automatiza builds, tests, releases y workflows junto a tu código." } },
   { name: "GitLab CI/CD", url: "https://docs.gitlab.com/ci", category: "ci", tags: ["ci", "gitlab", "pipelines"], description: { en: "Integrated pipelines, runners and environments for GitLab projects.", es: "Pipelines, runners y entornos integrados para proyectos de GitLab." } },
   { name: "CircleCI", url: "https://circleci.com", category: "ci", tags: ["ci", "testing", "deploy"], description: { en: "Flexible hosted pipelines with multiple executors and parallel jobs.", es: "Pipelines alojados flexibles con varios ejecutores y trabajos paralelos." } },
+  { name: "Flagpool", url: "https://www.flagpool.io", category: "ci", tags: ["ci", "experiments", "feature-flags"], description: { en: "Manage feature flags to control releases, target users, and change application behavior at runtime.", es: "Gestiona indicadores de funciones para controlar lanzamientos, segmentar usuarios y cambiar el comportamiento de la aplicación en tiempo de ejecución." } },
   { name: "Buildkite", url: "https://buildkite.com", category: "ci", tags: ["ci", "agents", "pipelines"], description: { en: "Flexible pipelines with hosted orchestration and your own build agents.", es: "Pipelines flexibles con orquestación alojada y tus propios agentes." } },
   { name: "Codecov", url: "https://about.codecov.io", category: "ci", tags: ["coverage", "testing", "reports"], description: { en: "Turn code coverage uploads into pull-request checks and visual reports.", es: "Convierte la cobertura en checks de pull request e informes visuales." } },
   { name: "SonarCloud", url: "https://sonarcloud.io", category: "ci", tags: ["quality", "static analysis", "code"], description: { en: "Cloud static analysis for code quality, maintainability and security.", es: "Análisis estático cloud de calidad, mantenibilidad y seguridad." } },
