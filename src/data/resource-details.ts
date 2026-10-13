@@ -142,6 +142,44 @@ const accessCaveats: Record<Resource["accessRequirement"], Record<Locale, string
 
 /** Optional per-resource guides that replace the generic category copy on detail pages. */
 const resourceGuides: Partial<Record<string, LocalizedGuide & { longDescription: Record<Locale, string[]> }>> = {
+  "Flagpool": {
+    overview: {
+      en: "It separates feature configuration from deployments, with flags evaluated locally through its SDKs.",
+      es: "Separa la configuración de funciones de los despliegues, con flags evaluados localmente mediante sus SDKs.",
+    },
+    idealFor: {
+      en: "Solo developers experimenting with feature flags in personal projects and prototypes",
+      es: "Developers individuales que prueban feature flags en proyectos personales y prototipos",
+    },
+    useCases: {
+      en: ["Toggle a prototype feature without redeploying.", "Test basic targeting rules in a development environment.", "Experiment with string or JSON flags for application configuration."],
+      es: ["Activar o desactivar una función del prototipo sin redesplegar.", "Probar reglas de segmentación básica en un entorno de desarrollo.", "Experimentar con flags de texto o JSON para configurar la aplicación."],
+    },
+    exampleTitle: {
+      en: "Try a feature toggle in a prototype",
+      es: "Prueba un feature flag en un prototipo",
+    },
+    exampleSteps: {
+      en: ["Create a Hobby project and a flag in its development environment.", "Integrate the SDK using the project's credentials and read the flag in your application.", "Change the flag or its targeting rules and verify the behavior within the free limits."],
+      es: ["Crea un proyecto Hobby y un flag en su entorno de desarrollo.", "Integra el SDK con las credenciales del proyecto y lee el flag en la aplicación.", "Cambia el flag o sus reglas de segmentación y comprueba el comportamiento dentro de los límites gratuitos."],
+    },
+    caveat: {
+      en: "Hobby includes only one development environment and one team member. A production environment requires a paid plan; paid-plan trials last 14 days.",
+      es: "Hobby solo incluye un entorno de desarrollo y un miembro. El entorno de producción requiere un plan de pago; sus pruebas duran 14 días.",
+    },
+    longDescription: {
+      en: [
+        "Flagpool manages feature flags and targeting rules, with local SDK evaluation rather than a billed request for each evaluation.",
+        "The permanent Hobby plan includes up to 10 flags per month, unlimited evaluations, one team member, one development environment, basic targeting and seven-day data retention.",
+        "Use the free plan for personal projects and prototypes. Team collaboration and a separate production environment require a paid plan.",
+      ],
+      es: [
+        "Flagpool gestiona feature flags y reglas de segmentación, con evaluación local en el SDK en lugar de una petición facturada por cada evaluación.",
+        "El plan permanente Hobby incluye hasta 10 flags al mes, evaluaciones ilimitadas, un miembro, un entorno de desarrollo, segmentación básica y siete días de retención.",
+        "Usa el plan gratuito para proyectos personales y prototipos. La colaboración en equipo y un entorno de producción separado requieren un plan de pago.",
+      ],
+    },
+  },
   "Cloudflare Browser Run": {
     overview: {
       en: "It runs headless Chrome on Cloudflare's network so you can scrape, screenshot, crawl and extract page content without hosting browsers yourself.",
