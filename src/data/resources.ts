@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-10-17"
+export const sourceReviewedAt = "2026-10-19"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -184,6 +184,7 @@ const pricingUrls: Record<string, string> = {
   "Loops": "https://loops.so/pricing",
   "Aptabase": "https://aptabase.com/pricing",
   "Shields.io": "https://shields.io",
+  "Sealed Rose": "https://sealedrose.com/developers",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -328,6 +329,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Mozilla Observatory", url: "https://observatory.mozilla.org", category: "security", tags: ["headers", "audit", "web"], description: { en: "Scan a website for security headers and common web hardening practices.", es: "Escanea headers y prácticas habituales de protección web." } },
   { name: "Have I Been Pwned", url: "https://haveibeenpwned.com/API/v3", category: "security", tags: ["breaches", "api", "passwords"], description: { en: "Check accounts and domains against known data breaches through an API.", es: "Comprueba cuentas y dominios frente a filtraciones conocidas mediante API." } },
   { name: "Snyk", url: "https://snyk.io", faviconFile: "snyk.io.png", category: "security", tags: ["vulnerabilities", "dependencies", "sast"], description: { en: "Developer security platform scanning code, open-source dependencies, and container images for vulnerabilities.", es: "Plataforma de seguridad para desarrolladores que analiza código, dependencias open source y contenedores." } },
+  { name: "Sealed Rose", url: "https://sealedrose.com/verify-video", faviconFile: "https://sealedrose.com/favicon.ico", category: "security", tags: ["deepfake", "forensics", "ai-detection"], description: { en: "Multimodal forensic verifier and API for detecting AI-generated images, deepfake videos, and cloned voice audio.", es: "Verificador forense multimodal y API para detectar imágenes generadas por IA, vídeos deepfake y voz clonada." } },
 
   // Collaboration
   { name: "Linear", url: "https://linear.app", category: "collaboration", featured: true, tags: ["issues", "roadmap", "product"], description: { en: "Fast issue tracking, cycles and product roadmaps for software teams.", es: "Issues, ciclos y roadmaps rápidos para equipos de software." } },
