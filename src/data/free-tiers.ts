@@ -28,6 +28,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Webhook.site": "no-signup",
   "Shields.io": "no-signup",
   "Smee.io": "no-signup",
+  "Sealed Rose": "no-signup",
 }
 
 /**
@@ -190,4 +191,5 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Loops": { en: "Free plan: up to 1,000 subscribed contacts and 4,000 sends per rolling 30 days, with API access, workflows and custom domains.", es: "Plan gratis: hasta 1.000 contactos suscritos y 4.000 envíos cada 30 días, con API, workflows y dominios propios." },
   "Aptabase": { en: "Free cloud plan: 20,000 events/month, unlimited applications, real-time insights, and choice of EU or US data centers.", es: "Plan cloud gratis: 20.000 eventos al mes, aplicaciones ilimitadas, métricas en tiempo real y centros de datos en la UE o EE.UU." },
   "Shields.io": { en: "Free and open source: hosted badges for hundreds of services, custom JSON endpoints and dynamic badges with no sign-up required.", es: "Gratis y open source: badges para cientos de servicios, endpoints JSON personalizados y badges dinámicos sin registro." },
+  "Sealed Rose": { en: "Free web scanner and developer tier: client-side multimodal deepfake video, AI image, and cloned voice verification with no sign-up or credit card required.", es: "Escáner web y plan developer gratis: verificación forense multimodal de vídeo deepfake, imagen IA y voz clonada en el navegador sin registro ni tarjeta." },
 }
