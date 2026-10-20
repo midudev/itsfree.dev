@@ -10,6 +10,7 @@ export type AccessRequirement =
   | "trial-only"
 
 export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
+  "Icybiz": "no-card",
   "Deno Deploy": "card-for-full-limits",
   "Northflank": "card-for-full-limits",
   "Azure DevOps": "card-for-full-limits",
@@ -160,6 +161,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Slack": { en: "Free: 90 days of message history, 10 app integrations and one-to-one huddles for small teams.", es: "Gratis: 90 días de historial, 10 integraciones y huddles uno a uno para equipos pequeños." },
   "Plane": { en: "Free cloud plan for up to 12 users with core project management (projects, work items, cycles, modules and views); the AGPL-licensed Community Edition is free and open source to self-host with no user limit.", es: "Plan cloud gratis para hasta 12 usuarios con gestión de proyectos base (proyectos, work items, cycles, módulos y vistas); la Community Edition con licencia AGPL es gratis y open source para self-host sin límite de usuarios." },
 
+  "Icybiz": { en: "Free: one hosted website per account at a permanent platform address, up to 12 pages, 20 elements/page and 60 images (20 MiB/input). Also up to 30 text downloads (512 KiB/file), 12 videos (60 seconds and 24 MiB/video) and 36 caption tracks. Public video delivery: 256 MiB and 256 requests/site/hour. Sign-up required; no card or custom subdomain included.", es: "Gratis: un sitio alojado por cuenta con una dirección permanente de la plataforma, hasta 12 páginas, 20 elementos/página y 60 imágenes (20 MiB por archivo original). También hasta 30 descargas de texto (512 KiB/archivo), 12 vídeos (60 segundos y 24 MiB/vídeo) y 36 pistas de subtítulos. Entrega pública de vídeo: 256 MiB y 256 solicitudes/sitio/hora. Requiere registro; sin tarjeta ni subdominio propio incluido." },
   "Sanity": { en: "Free: 20 user seats, 2 datasets, 10k documents, 100k API requests and 100 GB CDN bandwidth/month.", es: "Gratis: 20 usuarios, 2 datasets, 10.000 documentos, 100.000 peticiones y 100 GB de CDN/mes." },
   "Contentful": { en: "Free: 10 users, 2 roles, 2 locales, 1M API calls and 50 GB CDN bandwidth/month.", es: "Gratis: 10 usuarios, 2 roles, 2 idiomas, 1 M de llamadas API y 50 GB de CDN/mes." },
   "Storyblok": { en: "Free: one space, one user, 100k API requests/month and visual editing for small projects.", es: "Gratis: un espacio, un usuario, 100.000 peticiones API/mes y edición visual para proyectos pequeños." },
