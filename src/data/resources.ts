@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-10-17"
+export const sourceReviewedAt = "2026-10-20"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -155,6 +155,7 @@ const pricingUrls: Record<string, string> = {
   "Discord": "https://discord.com/nitro",
   "Slack": "https://slack.com/pricing",
   "Plane": "https://plane.so/pricing",
+  "Icybiz": "https://icybiz.com/",
   "Sanity": "https://www.sanity.io/pricing",
   "Contentful": "https://www.contentful.com/pricing/",
   "Storyblok": "https://www.storyblok.com/pricing",
@@ -340,6 +341,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Plane", url: "https://plane.so", faviconFile: "plane.so.webp", category: "collaboration", tags: ["self-hosted", "issues", "open source"], description: { en: "Open-source project management to track issues, run sprint cycles and manage product roadmaps.", es: "Gestión de proyectos open source para trackear issues, correr sprints por cycles y gestionar roadmaps." } },
 
   // CMS
+  { name: "Icybiz", url: "https://icybiz.com", faviconFile: "icybiz.com.png", category: "cms", tags: ["no-code", "website builder", "hosting"], description: { en: "Build and host a website with visual editing, reusable layouts and an optional forum.", es: "Crea y aloja un sitio web con edición visual, diseños reutilizables y un foro opcional." } },
   { name: "Sanity", url: "https://www.sanity.io", category: "cms", tags: ["headless", "content lake", "studio"], description: { en: "A customizable content workspace backed by a real-time content platform.", es: "Workspace de contenido personalizable sobre una plataforma realtime." } },
   { name: "Contentful", url: "https://www.contentful.com", category: "cms", tags: ["headless", "api", "content"], description: { en: "API-first content infrastructure with a mature editor and ecosystem.", es: "Infraestructura de contenido API-first con editor y ecosistema maduros." } },
   { name: "Storyblok", url: "https://www.storyblok.com", category: "cms", tags: ["headless", "visual editor", "components"], description: { en: "Headless CMS with a visual editor and component-based content model.", es: "CMS headless con editor visual y contenido basado en componentes." } },
