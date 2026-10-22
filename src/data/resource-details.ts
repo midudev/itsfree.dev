@@ -196,6 +196,60 @@ const resourceGuides: Partial<Record<string, LocalizedGuide & { longDescription:
       ],
     },
   },
+  "BootForm": {
+    overview: {
+      en: "It receives HTML form submissions for a static site and forwards them by email or to Discord, so a contact form needs no server code, serverless function or database.",
+      es: "Recibe los envíos de formularios HTML de un sitio estático y los reenvía por email o a Discord, así que un formulario de contacto no necesita código de servidor, funciones serverless ni base de datos.",
+    },
+    idealFor: {
+      en: "Contact, signup and feedback forms on static sites such as GitHub Pages, Netlify, Astro or VitePress",
+      es: "Formularios de contacto, registro y feedback en sitios estáticos como GitHub Pages, Netlify, Astro o VitePress",
+    },
+    useCases: {
+      en: [
+        "Add a working contact form to a static site without writing server code.",
+        "Let an AI agent create the form and its notifications through the MCP server.",
+        "Get each submission in your inbox or in a Discord channel.",
+      ],
+      es: [
+        "Añadir un formulario de contacto que funcione a un sitio estático sin escribir código de servidor.",
+        "Dejar que un agente de IA cree el formulario y sus avisos mediante el servidor MCP.",
+        "Recibir cada envío en tu email o en un canal de Discord.",
+      ],
+    },
+    exampleTitle: {
+      en: "Add a contact form to a static site",
+      es: "Añade un formulario de contacto a un sitio estático",
+    },
+    exampleSteps: {
+      en: [
+        "Generate a UUID and point the form at https://f.bootform.com/<your-uuid> with method POST.",
+        "Keep the hidden honeypot input from the docs snippet in the form and leave it empty; it is the spam trap.",
+        "Send a test submission, then claim the form from the link it returns to read it and add email or Discord.",
+      ],
+      es: [
+        "Genera un UUID y apunta el formulario a https://f.bootform.com/<tu-uuid> con method POST.",
+        "Mantén en el formulario el campo oculto honeypot del ejemplo de la documentación y déjalo vacío; es la trampa antispam.",
+        "Envía una prueba y reclama el formulario desde el enlace que devuelve para leerla y añadir email o Discord.",
+      ],
+    },
+    caveat: {
+      en: "The 250 free submissions/month are shared by every form on the account and stop at the limit, with no overage. Free has no file uploads and keeps full access to submissions for 30 days.",
+      es: "Los 250 envíos gratis al mes se comparten entre todos los formularios de la cuenta y se detienen al llegar al límite, sin excedentes. El plan gratis no admite subida de archivos y da acceso completo a los envíos durante 30 días.",
+    },
+    longDescription: {
+      en: [
+        "BootForm is a form backend for static sites. Point a plain HTML form at https://f.bootform.com/<form-id> and it accepts submissions right away; you only create an account when you want to read them, and up to 10 are held per form until then.",
+        "The free plan includes 250 submissions/month per account, up to 1,000 forms (fair use), email and Discord notifications, honeypot and Cloudflare Turnstile spam protection (with your own keys), CSV/JSON export, the API and the MCP server. No credit card is needed.",
+        "It receives forms rather than sending email from your app, so there is no sending domain, SPF or DKIM to set up. For verification or password-reset emails, use a transactional email API instead.",
+      ],
+      es: [
+        "BootForm es un backend de formularios para sitios estáticos. Apunta un formulario HTML a https://f.bootform.com/<form-id> y acepta envíos al momento; solo creas una cuenta cuando quieres leerlos, y hasta entonces guarda hasta 10 por formulario.",
+        "El plan gratis incluye 250 envíos/mes por cuenta, hasta 1.000 formularios (uso razonable), avisos por email y Discord, antispam con honeypot y Cloudflare Turnstile (con tus propias claves), exportación CSV/JSON, la API y el servidor MCP. No hace falta tarjeta.",
+        "Recibe formularios en lugar de enviar emails desde tu app, así que no hay dominio de envío, SPF ni DKIM que configurar. Para emails de verificación o recuperación de contraseña, usa una API de email transaccional.",
+      ],
+    },
+  },
   "OpenGraph.to": {
     overview: {
       en: "It scrapes any public URL and returns structured Open Graph, Twitter Card and SEO metadata as JSON, plus a quality score and copy-paste meta tags.",
