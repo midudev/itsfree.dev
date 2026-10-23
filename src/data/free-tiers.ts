@@ -28,6 +28,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Webhook.site": "no-signup",
   "Shields.io": "no-signup",
   "Smee.io": "no-signup",
+  "deed.page": "no-signup",
 }
 
 /**
@@ -179,6 +180,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Convex": { en: "Free plan: 1 GB monthly database I/O, 500 MB database storage, 1 GB file storage, 40 deployments and up to 6 developers.", es: "Plan gratis: 1 GB de I/O mensual, 500 MB de base de datos, 1 GB de archivos, 40 deployments y hasta 6 desarrolladores." },
   "Qdrant Cloud": { en: "Free forever cluster: 0.5 vCPU, 1 GB RAM and 4 GB disk (about 1M 768-dimension vectors); suspended after a week of inactivity.", es: "Clúster gratis para siempre: 0.5 vCPU, 1 GB de RAM y 4 GB de disco (unos 1 M de vectores de 768 dimensiones); se suspende tras una semana sin actividad." },
   "Surge.sh": { en: "Free plan: unlimited publishing, custom domains and automatic HTTPS on surge.sh subdomains and custom domains.", es: "Plan gratis: publicaciones ilimitadas, dominios propios y HTTPS automático en subdominios surge.sh y dominios propios." },
+  "deed.page": { en: "Free plan with no account: 25 static sites, 25 MB per site, 4 MB per upload request, 60 publishes/hour, last 10 versions kept and 1 custom domain.", es: "Plan gratis sin cuenta: 25 sitios estáticos, 25 MB por sitio, 4 MB por petición de subida, 60 publicaciones/hora, últimas 10 versiones guardadas y 1 dominio propio." },
   "Snyk": { en: "Free plan: 200 open-source (SCA), 100 code (SAST), 100 container and 300 IaC tests/month, for up to 5 projects.", es: "Plan gratis: 200 tests de open source (SCA), 100 de código (SAST), 100 de contenedores y 300 de IaC al mes, en hasta 5 proyectos." },
   "Cronitor": { en: "Hacker plan: 5 monitors, 5-minute check frequency, 1 public status page with 50 subscribers, and Slack/email alerts.", es: "Plan Hacker: 5 monitores, checks cada 5 minutos, 1 página de estado con 50 suscriptores y alertas por Slack y email." },
   "GlitchTip": { en: "Hosted free tier: 1,000 events/month (errors, uptime checks and transactions combined), unlimited projects and team members, with email and webhook alerts.", es: "Plan alojado gratis: 1.000 eventos/mes (errores, checks de uptime y transacciones en conjunto), proyectos y miembros ilimitados, con alertas por email y webhook." },
