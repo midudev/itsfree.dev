@@ -42,6 +42,7 @@ export const categories: Category[] = [
 ]
 
 const pricingUrls: Record<string, string> = {
+  "AI Compare Ninja": "https://www.aicompare.ninja/en/cost-calculator",
   "Vercel": "https://vercel.com/pricing",
   "Cloudflare": "https://www.cloudflare.com/plans/",
   "Netlify": "https://www.netlify.com/pricing/",
@@ -215,6 +216,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Qdrant Cloud", url: "https://qdrant.tech", faviconFile: "qdrant.tech.png", category: "data", tags: ["vectors", "embeddings", "ai"], description: { en: "High-performance vector search engine and database for LLM embeddings and AI search.", es: "Motor y base de datos vectorial de alto rendimiento para embeddings de LLMs y búsqueda semántica con IA." } },
 
   // AI
+  { name: "AI Compare Ninja", url: "https://www.aicompare.ninja/en/", faviconFile: "aicompare.ninja.png", category: "ai", tags: ["research", "pricing", "cost calculator"], description: { en: "Research AI software with sourced plans and limits, and estimate subscription and LLM API costs. Includes prompts, skills and agent guides; does not provide model inference or API access.", es: "Investiga software de IA con planes y límites documentados y estima costes de suscripciones y API de LLM. Incluye prompts, skills y guías de agentes; no ofrece inferencia ni acceso a API." } },
   { name: "Braintrust", url: "https://www.braintrustdata.com", category: "ai", tags: ["evals", "prompts", "data"], description: { en: "Evaluate AI applications, compare prompts and manage test datasets.", es: "Evalúa aplicaciones de IA, compara prompts y gestiona datasets de prueba." } },
   { name: "Langfuse", url: "https://langfuse.com", category: "ai", tags: ["observability", "evals", "llm"], description: { en: "Open-source tracing, prompt management and evaluation for LLM products.", es: "Trazas, gestión de prompts y evaluación open source para productos con LLM." } },
   { name: "Hugging Face", url: "https://huggingface.co", category: "ai", featured: true, tags: ["models", "datasets", "spaces"], description: { en: "Discover models and datasets, run demos, and publish ML applications.", es: "Descubre modelos y datasets, ejecuta demos y publica aplicaciones de ML." } },
