@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-10-17"
+export const sourceReviewedAt = "2026-10-26"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -42,6 +42,7 @@ export const categories: Category[] = [
 ]
 
 const pricingUrls: Record<string, string> = {
+  "Cloady": "https://cloady.com/#pricing",
   "Vercel": "https://vercel.com/pricing",
   "Cloudflare": "https://www.cloudflare.com/plans/",
   "Netlify": "https://www.netlify.com/pricing/",
@@ -188,6 +189,7 @@ const pricingUrls: Record<string, string> = {
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
   // Hosting & deploy
+  { name: "Cloady", url: "https://cloady.com", faviconFile: "cloady.com.png", category: "hosting", tags: ["containers", "databases", "deploy"], description: { en: "Deploy applications and databases from Git repositories, Docker images or templates, with a browser terminal and persistent storage.", es: "Despliega aplicaciones y bases de datos desde repositorios Git, imágenes Docker o plantillas, con terminal web y almacenamiento persistente." } },
   { name: "Vercel", url: "https://vercel.com", category: "hosting", featured: true, tags: ["hosting", "edge", "frontend"], description: { en: "Deploy web apps with a global CDN, SSL and preview URLs on every push.", es: "Despliega aplicaciones web con CDN global, SSL y previews en cada push." } },
   { name: "Cloudflare", url: "https://www.cloudflare.com", category: "hosting", featured: true, tags: ["cdn", "workers", "security"], description: { en: "A global developer platform for DNS, CDN, edge functions, storage and web security.", es: "Plataforma global para DNS, CDN, funciones edge, almacenamiento y seguridad web." } },
   { name: "Netlify", url: "https://www.netlify.com", category: "hosting", tags: ["hosting", "functions", "jamstack"], description: { en: "A complete platform for deploying modern web projects and serverless functions.", es: "Una plataforma completa para desplegar proyectos web modernos y funciones serverless." } },
