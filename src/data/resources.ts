@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-10-17"
+export const sourceReviewedAt = "2026-10-29"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -42,6 +42,7 @@ export const categories: Category[] = [
 ]
 
 const pricingUrls: Record<string, string> = {
+  "imgmov Last Frame Extractor": "https://imgmov.com/extract-last-frame-from-video",
   "Vercel": "https://vercel.com/pricing",
   "Cloudflare": "https://www.cloudflare.com/plans/",
   "Netlify": "https://www.netlify.com/pricing/",
@@ -354,6 +355,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "PixelVault", url: "https://pixelvault.dev", category: "media", tags: ["images", "uploads", "cdn"], description: { en: "Image hosting for developers and AI agents: upload via API for permanent CDN URLs with on-the-fly transforms.", es: "Hosting de imágenes para developers y agentes de IA: sube por API y obtén URLs permanentes en CDN con transformaciones al vuelo." } },
   { name: "Backblaze B2", url: "https://www.backblaze.com/cloud-storage", faviconFile: "backblaze.com.png", category: "media", tags: ["storage", "s3", "cloud"], description: { en: "S3-compatible cloud object storage with the first 10 GB free and low-cost egress.", es: "Almacenamiento de objetos cloud compatible con S3 con los primeros 10 GB gratis y salida de datos económica." } },
   { name: "UploadThing", url: "https://uploadthing.com", faviconFile: "uploadthing.com.png", category: "media", tags: ["uploads", "nextjs", "storage"], description: { en: "File uploads for modern full-stack web applications with native framework SDKs.", es: "Subida de archivos para aplicaciones full-stack modernas con SDKs nativos para frameworks." } },
+  { name: "imgmov Last Frame Extractor", url: "https://imgmov.com/extract-last-frame-from-video", faviconFile: "imgmov.com.svg", category: "media", tags: ["video", "frames", "local-processing"], description: { en: "Extract an ending still from a local video and compare continuity between clips in the browser. This standalone utility works without an account; imgmov AI generation is paused.", es: "Extrae el fotograma final de un vídeo local y compara la continuidad entre clips en el navegador. Esta utilidad independiente funciona sin cuenta; la generación con IA de imgmov está pausada." } },
   { name: "TinyPNG", url: "https://tinypng.com", faviconFile: "tinypng.com.png", category: "media", tags: ["compression", "images", "api"], description: { en: "Smart lossy compression API to compress WebP, PNG and JPEG images on the fly.", es: "API de compresión inteligente con pérdida para optimizar imágenes WebP, PNG y JPEG al vuelo." } },
   { name: "Filestack", url: "https://www.filestack.com", faviconFile: "filestack.com.png", category: "media", tags: ["uploads", "transformations", "cdn"], description: { en: "File uploader, transformation API, and CDN delivery for web and mobile applications.", es: "Subida de archivos, API de transformaciones y entrega por CDN para aplicaciones web y móviles." } },
 ]
