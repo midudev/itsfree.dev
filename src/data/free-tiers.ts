@@ -35,6 +35,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
  * Limits change frequently, so keep these in one place and review them as a set.
  */
 export const freeTiers: Record<string, LocalizedFreeTier> = {
+  "Irmu": { en: "Free: 200 credits/month across all APIs, with JavaScript rendering and geotargeting included. No credit card required.", es: "Gratis: 200 créditos/mes en todas las APIs, con renderizado JavaScript y geotargeting incluidos. Sin tarjeta." },
   "Vercel": { en: "Hobby: 1M edge requests, 1M function calls and 100 deployments/day for personal, non-commercial projects.", es: "Hobby: 1 M de peticiones edge, 1 M de invocaciones y 100 deploys/día para proyectos personales no comerciales." },
   "Cloudflare": { en: "Workers Free: 100k requests/day; Pages includes 500 builds/month, unlimited sites and static bandwidth.", es: "Workers Free: 100.000 peticiones/día; Pages incluye 500 builds/mes, sitios y ancho de banda estático ilimitados." },
   "Netlify": { en: "Free forever: 300 usage credits/month, one concurrent build, custom domains, SSL and deploy previews.", es: "Gratis para siempre: 300 créditos de uso/mes, un build simultáneo, dominios propios, SSL y previews." },

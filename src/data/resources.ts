@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-10-17"
+export const sourceReviewedAt = "2026-10-31"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -128,6 +128,7 @@ const pricingUrls: Record<string, string> = {
   "MockAPI": "https://mockapi.io/pricing",
   "Abstract API": "https://www.abstractapi.com/api",
   "IPinfo": "https://ipinfo.io/pricing",
+  "Irmu": "https://irmu.com/pricing",
   "IPQuery": "https://ipquery.io/",
   "DummyJSON": "https://dummyjson.com/docs",
   "JSONPlaceholder": "https://jsonplaceholder.typicode.com/guide/",
@@ -306,6 +307,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "OpenGraph.to", url: "https://www.opengraph.to", faviconFile: "opengraph.to.svg", category: "api", tags: ["open graph", "seo", "social"], description: { en: "Scrape Open Graph, Twitter Card and SEO tags for any public URL: title, description, image, score, issues and suggested meta tags as JSON.", es: "Extrae tags Open Graph, Twitter Card y SEO de cualquier URL pública: título, descripción, imagen, puntuación, problemas y meta tags sugeridos en JSON." } },
   { name: "Hoppscotch", url: "https://hoppscotch.io", category: "api", tags: ["api client", "graphql", "realtime"], description: { en: "A fast web API client for REST, GraphQL and realtime protocols.", es: "Cliente web rápido para APIs REST, GraphQL y protocolos realtime." } },
   { name: "Cloudflare Browser Run", url: "https://developers.cloudflare.com/browser-run/", faviconFile: "cloudflare.com.webp", category: "api", tags: ["scraping", "headless", "automation"], description: { en: "Run headless Chrome on Cloudflare's network to scrape, screenshot, crawl and extract page content as HTML, Markdown or JSON.", es: "Ejecuta Chrome headless en la red de Cloudflare para scrapear, capturar, crawlear y extraer contenido como HTML, Markdown o JSON." } },
+  { name: "Irmu", url: "https://irmu.com", category: "api", tags: ["scraping", "screenshots", "api"], description: { en: "Web data APIs to scrape websites, render JavaScript, capture screenshots and extract structured JSON with AI, via REST and MCP.", es: "APIs de datos web para scrapear sitios, renderizar JavaScript, capturar pantallas y extraer JSON estructurado con IA, vía REST y MCP." } },
   { name: "Webhook.site", url: "https://webhook.site", faviconFile: "webhook.site.png", category: "api", tags: ["webhooks", "testing", "debug"], description: { en: "Instantly receive, inspect and debug incoming HTTP webhooks and requests in real time without creating an account.", es: "Recibe, inspecciona y depura webhooks y peticiones HTTP entrantes en tiempo real sin crear una cuenta." } },
   { name: "Flagsmith", url: "https://flagsmith.com", faviconFile: "flagsmith.com.png", category: "api", tags: ["feature flags", "remote config", "open source"], description: { en: "Feature flags and remote configuration platform with hosted cloud and self-hostable open-source options.", es: "Plataforma de feature flags y configuración remota con nube alojada y opción open source self-hosted." } },
   { name: "Smee.io", url: "https://smee.io", faviconFile: "smee.io.png", category: "api", tags: ["webhooks", "proxy", "local"], description: { en: "Webhook payload delivery service that proxies webhooks directly to your local development environment.", es: "Servicio que reenvía payloads de webhooks directamente a tu entorno de desarrollo local." } },
