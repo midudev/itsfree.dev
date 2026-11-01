@@ -142,6 +142,36 @@ const accessCaveats: Record<Resource["accessRequirement"], Record<Locale, string
 
 /** Optional per-resource guides that replace the generic category copy on detail pages. */
 const resourceGuides: Partial<Record<string, LocalizedGuide & { longDescription: Record<Locale, string[]> }>> = {
+  "Pic2SVG": {
+    overview: {
+      en: "It traces an existing raster image into editable paths on its server and provides a before/after preview.",
+      es: "Vectoriza una imagen rasterizada en trazados editables en su servidor y ofrece una vista previa del antes y el después.",
+    },
+    idealFor: {
+      en: "Preparing vector versions of existing logos, icons and drawings for personal projects",
+      es: "Preparar versiones vectoriales de logotipos, iconos y dibujos existentes para proyectos personales",
+    },
+    useCases: {
+      en: ["Convert a personal-project PNG logo into SVG paths.", "Inspect the trace of a scanned drawing before editing it.", "Create vector artwork to open in an SVG editor."],
+      es: ["Convertir el logotipo PNG de un proyecto personal en trazados SVG.", "Revisar la vectorización de un dibujo escaneado antes de editarlo.", "Crear gráficos vectoriales para abrirlos en un editor SVG."],
+    },
+    exampleTitle: {
+      en: "Trace one raster logo without an account",
+      es: "Vectoriza un logotipo rasterizado sin una cuenta",
+    },
+    exampleSteps: {
+      en: ["Choose an image you are permitted to upload to Pic2SVG's server.", "Compare the vector preview with the original and inspect small details.", "Download the SVG and review it in your editor; check the licence before commercial use."],
+      es: ["Elige una imagen que tengas permiso para subir al servidor de Pic2SVG.", "Compara la vista previa vectorial con el original y revisa los detalles pequeños.", "Descarga el SVG y revísalo en tu editor; comprueba la licencia antes de un uso comercial."],
+    },
+    caveat: {
+      en: "Tracing uploads images and approximates their shapes. The free route is for personal use; commercial work requires Pro. PDF, EPS, EPS-based AI and DXF are paid exports.",
+      es: "La vectorización sube las imágenes al servidor y aproxima sus formas. La opción gratuita es para uso personal; el trabajo comercial requiere Pro. PDF, EPS, AI basado en EPS y DXF son exportaciones de pago.",
+    },
+    longDescription: {
+      en: ["Pic2SVG uses a deterministic, server-hosted tracing engine to convert existing raster logos, icons and drawings into SVG paths.", "Tracing, preview and SVG download remain free without an account, one image at a time. This is a permanent free feature, separate from the seven-day Pro trial offered after sign-up.", "Inspect the vector result before using it. Production export formats, commercial work and resale have separate paid-plan requirements."],
+      es: ["Pic2SVG utiliza un motor de vectorización determinista alojado en su servidor para convertir logotipos, iconos y dibujos rasterizados existentes en trazados SVG.", "La vectorización, la vista previa y la descarga SVG siguen siendo gratuitas sin una cuenta, una imagen a la vez. Es una función gratuita permanente, separada de la prueba Pro de siete días que se ofrece tras registrarse.", "Revisa el resultado vectorial antes de usarlo. Los formatos de producción, el trabajo comercial y la reventa tienen requisitos de planes de pago distintos."],
+    },
+  },
   "Cloudflare Browser Run": {
     overview: {
       en: "It runs headless Chrome on Cloudflare's network so you can scrape, screenshot, crawl and extract page content without hosting browsers yourself.",

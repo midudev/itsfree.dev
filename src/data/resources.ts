@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-10-17"
+export const sourceReviewedAt = "2026-11-01"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -42,6 +42,7 @@ export const categories: Category[] = [
 ]
 
 const pricingUrls: Record<string, string> = {
+  "Pic2SVG": "https://pic2svg.com/pricing/",
   "Vercel": "https://vercel.com/pricing",
   "Cloudflare": "https://www.cloudflare.com/plans/",
   "Netlify": "https://www.netlify.com/pricing/",
@@ -321,6 +322,8 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "tldraw", url: "https://www.tldraw.com", faviconFile: "https://www.tldraw.com/favicon.ico", category: "design", tags: ["whiteboard", "infinite canvas", "sdk"], description: { en: "A fast collaborative infinite canvas plus a React SDK for building custom canvas experiences.", es: "Un lienzo infinito colaborativo y rápido, más un SDK de React para crear experiencias de canvas." } },
   { name: "Fontshare", url: "https://www.fontshare.com", category: "design", tags: ["fonts", "typography", "assets"], description: { en: "A growing collection of professional fonts free for personal and commercial use.", es: "Colección de fuentes profesionales gratis para uso personal y comercial." } },
   { name: "Stitch", url: "https://stitch.withgoogle.com/", faviconFile: "stitch.withgoogle.com.webp", category: "design", tags: ["ai", "ui", "frontend"], description: { en: "Turn text prompts, images and wireframes into UI designs, frontend code and editable Figma work.", es: "Convierte prompts, imágenes y wireframes en diseños UI, código frontend y trabajo editable en Figma." } },
+
+  { name: "Pic2SVG", url: "https://pic2svg.com/", faviconFile: "https://pic2svg.com/favicon.ico", category: "design", tags: ["svg", "images", "vector"], description: { en: "Server-hosted tracing of raster logos and drawings into editable SVG paths.", es: "Vectorización en servidor de logotipos y dibujos rasterizados en trazados SVG editables." } },
 
   // Security
   { name: "GitGuardian", url: "https://www.gitguardian.com", category: "security", tags: ["secrets", "git", "scanning"], description: { en: "Detect exposed secrets in source code and guide their remediation.", es: "Detecta secretos expuestos en el código y guía su corrección." } },
