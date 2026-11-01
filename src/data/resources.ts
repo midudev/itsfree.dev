@@ -14,6 +14,7 @@ export interface Resource {
   url: string
   pricingUrl: string
   faviconFile?: string
+  reviewedAt?: string
   category: string
   description: Record<Locale, string>
   freeTier: Record<Locale, string>
@@ -143,6 +144,7 @@ const pricingUrls: Record<string, string> = {
   "tldraw": "https://tldraw.dev/pricing",
   "Fontshare": "https://www.fontshare.com/licenses/itf-ffl",
   "Stitch": "https://stitch.withgoogle.com/",
+  "Glarion": "https://glarion.app/pricing.html",
   "GitGuardian": "https://www.gitguardian.com/pricing",
   "Socket": "https://socket.dev/pricing",
   "Mozilla Observatory": "https://observatory.mozilla.org/",
@@ -323,6 +325,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Stitch", url: "https://stitch.withgoogle.com/", faviconFile: "stitch.withgoogle.com.webp", category: "design", tags: ["ai", "ui", "frontend"], description: { en: "Turn text prompts, images and wireframes into UI designs, frontend code and editable Figma work.", es: "Convierte prompts, imágenes y wireframes en diseños UI, código frontend y trabajo editable en Figma." } },
 
   // Security
+  { name: "Glarion", url: "https://glarion.app/", faviconFile: "glarion.app.png", reviewedAt: "2026-11-01", category: "security", tags: ["tls", "headers", "web"], description: { en: "Review a website’s public TLS certificate, security headers and email configuration.", es: "Revisa el certificado TLS, las cabeceras de seguridad y la configuración de correo públicos de un sitio web." } },
   { name: "GitGuardian", url: "https://www.gitguardian.com", category: "security", tags: ["secrets", "git", "scanning"], description: { en: "Detect exposed secrets in source code and guide their remediation.", es: "Detecta secretos expuestos en el código y guía su corrección." } },
   { name: "Socket", url: "https://socket.dev", category: "security", tags: ["supply chain", "npm", "dependencies"], description: { en: "Protect JavaScript supply chains by analyzing dependency behavior.", es: "Protege la cadena de suministro JavaScript analizando dependencias." } },
   { name: "Mozilla Observatory", url: "https://observatory.mozilla.org", category: "security", tags: ["headers", "audit", "web"], description: { en: "Scan a website for security headers and common web hardening practices.", es: "Escanea headers y prácticas habituales de protección web." } },

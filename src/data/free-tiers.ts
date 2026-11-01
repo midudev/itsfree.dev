@@ -10,6 +10,7 @@ export type AccessRequirement =
   | "trial-only"
 
 export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
+  "Glarion": "no-signup",
   "Deno Deploy": "card-for-full-limits",
   "Northflank": "card-for-full-limits",
   "Azure DevOps": "card-for-full-limits",
@@ -146,6 +147,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Fontshare": { en: "All fonts are free for personal and commercial use under Fontshare's license; no account is required.", es: "Todas las fuentes son gratis para uso personal y comercial bajo su licencia; no hace falta cuenta." },
   "Stitch": { en: "Free Google Labs access for generating UI from text or images, iterating in chat and exporting to Figma or frontend code; usage limits may apply.", es: "Acceso gratuito de Google Labs para generar UI desde texto o imágenes, iterar por chat y exportar a Figma o código frontend; pueden aplicarse límites de uso." },
 
+  "Glarion": { en: "Free: limited public TLS, security header and email configuration check without an account or card; full scans require domain verification and a paid plan.", es: "Gratis: comprobación pública limitada de TLS, cabeceras de seguridad y configuración de correo sin cuenta ni tarjeta; los análisis completos requieren verificar el dominio y un plan de pago." },
   "GitGuardian": { en: "Free: secret scanning for individual developers, up to 25 developers and 100 incidents/month.", es: "Gratis: escaneo de secretos para developers individuales, hasta 25 developers y 100 incidentes/mes." },
   "Socket": { en: "Free for open-source projects; personal GitHub protection and dependency analysis are available at no cost.", es: "Gratis para open source; la protección personal de GitHub y el análisis de dependencias no tienen coste." },
   "Mozilla Observatory": { en: "Completely free public web-security scanner with unlimited on-demand scans and no account required.", es: "Escáner público de seguridad web totalmente gratis, con análisis bajo demanda y sin necesidad de cuenta." },

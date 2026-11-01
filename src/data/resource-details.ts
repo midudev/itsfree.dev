@@ -142,6 +142,15 @@ const accessCaveats: Record<Resource["accessRequirement"], Record<Locale, string
 
 /** Optional per-resource guides that replace the generic category copy on detail pages. */
 const resourceGuides: Partial<Record<string, LocalizedGuide & { longDescription: Record<Locale, string[]> }>> = {
+  "Glarion": {
+    overview: { en: "Its public check reads configuration exposed by the website, without testing for vulnerabilities.", es: "Su comprobación pública lee la configuración expuesta por el sitio, sin comprobar vulnerabilidades." },
+    idealFor: { en: "A first look at public website security configuration", es: "Una primera revisión de la configuración pública de seguridad web" },
+    useCases: { en: ["Inspect a public TLS certificate.", "Review common security response headers.", "Check published SPF and DMARC records."], es: ["Inspeccionar un certificado TLS público.", "Revisar cabeceras habituales de seguridad.", "Comprobar los registros SPF y DMARC publicados."] },
+    exampleTitle: { en: "Review a public website configuration", es: "Revisa la configuración pública de un sitio web" },
+    exampleSteps: { en: ["Enter a website domain in the public check.", "Review the displayed certificate, headers and email records.", "Check findings against your site's configuration before changing settings."], es: ["Introduce un dominio en la comprobación pública.", "Revisa el certificado, las cabeceras y los registros de correo mostrados.", "Contrasta los resultados con la configuración de tu sitio antes de modificarla."] },
+    caveat: { en: "The free check does not test for vulnerabilities. Full scans require verified domain control and a paid plan.", es: "La comprobación gratuita no analiza vulnerabilidades. Los análisis completos requieren verificar el dominio y un plan de pago." },
+    longDescription: { en: ["Glarion offers a public check of a website's TLS certificate, response headers and published email configuration without an account or card.", "The free check returns partial results from publicly available information and does not test for vulnerabilities. Full scans require domain verification and a paid plan."], es: ["Glarion ofrece una comprobación pública del certificado TLS, las cabeceras de respuesta y la configuración de correo publicada de un sitio, sin cuenta ni tarjeta.", "La comprobación gratuita devuelve resultados parciales de información pública y no analiza vulnerabilidades. Los análisis completos requieren verificar el dominio y un plan de pago."] },
+  },
   "Cloudflare Browser Run": {
     overview: {
       en: "It runs headless Chrome on Cloudflare's network so you can scrape, screenshot, crawl and extract page content without hosting browsers yourself.",
