@@ -44,7 +44,8 @@ const relatedResources = resources
   .map(({ resource }) => resource)
 const faviconUrl = getResourceFaviconUrl(resource)
 const screenshotUrl = `https://api.sitelookeratter.com/screenshot?url=${encodeURIComponent(resource.url)}&device=desktop&format=webp&darkMode=true&removeCookies=true&blockAds=true&removeChat=true&removePopups=true`
-const reviewedDate = new Intl.DateTimeFormat(locale, { day: "numeric", month: "long", year: "numeric" }).format(new Date(`${sourceReviewedAt}T12:00:00Z`))
+const resourceReviewedAt = resource.reviewedAt ?? sourceReviewedAt
+const reviewedDate = new Intl.DateTimeFormat(locale, { day: "numeric", month: "long", year: "numeric" }).format(new Date(`${resourceReviewedAt}T12:00:00Z`))
 const pageUrl = `https://itsfree.dev${pagePath}`
 const pageDescription = t({
   en: `Review ${resource.name}'s free tier, current limits, pricing, access requirements, practical use cases and developer alternatives.`,
@@ -59,7 +60,7 @@ const structuredData = {
       url: pageUrl,
       name: t({ en: `${resource.name} free tier, limits and pricing`, es: `Plan gratuito, límites y precios de ${resource.name}` }),
       description: pageDescription,
-      dateModified: sourceReviewedAt,
+      dateModified: resourceReviewedAt,
       inLanguage: locale,
       isPartOf: { "@id": "https://itsfree.dev/#website" },
       mainEntity: { "@id": `${pageUrl}#software` },
