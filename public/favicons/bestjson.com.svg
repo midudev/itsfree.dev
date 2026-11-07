@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">BestJSON</title>
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="#dce9b3"/>
+  <path transform="translate(0 -32)" fill="#263129" fill-rule="evenodd" d="M148 104h126c70 0 112 36 112 94 0 37-18 65-52 81 41 14 64 46 64 87 0 67-47 106-124 106H148V104Zm64 58v88h55c39 0 58-15 58-44 0-30-20-44-59-44h-54Zm0 143v109h60c43 0 64-18 64-54 0-37-22-55-65-55h-59Z"/>
+</svg>
