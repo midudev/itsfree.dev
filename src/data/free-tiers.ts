@@ -14,6 +14,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Northflank": "card-for-full-limits",
   "Azure DevOps": "card-for-full-limits",
   "Pollinations.AI": "no-signup",
+  "BrewPage": "no-signup",
   "Uptime.com": "trial-only",
   "DummyJSON": "no-signup",
   "JSONPlaceholder": "no-signup",
@@ -43,6 +44,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Northflank": { en: "Developer Sandbox: 2 services, 2 jobs and 1 addon for hobby projects. A payment method is required before creating resources.", es: "Developer Sandbox: 2 servicios, 2 jobs y 1 addon para proyectos hobby. Hay que añadir un método de pago antes de crear recursos." },
   "Render": { en: "750 instance hours/month for free web services; static sites are free. Services sleep after 15 idle minutes.", es: "750 horas de instancia/mes para servicios web; sitios estáticos gratis. Se duermen tras 15 min sin tráfico." },
   "Appish": { en: "Free demo hosting for temporary Docker containers; slots are short-lived and intended for previews, not production.", es: "Hosting gratis para demos con contenedores Docker temporales; los slots caducan y no son para producción." },
+  "BrewPage": { en: "Free with no sign-up or API key: 5 MB per page or file, 20 MB multi-file sites; content expires after up to 30 days (90 with a free profile).", es: "Gratis sin registro ni API key: 5 MB por página o archivo, sitios multiarchivo de 20 MB; el contenido caduca en hasta 30 días (90 con un perfil gratuito)." },
   "Deno Deploy": { en: "Free organization with monthly request, bandwidth and compute allowances; apps pause when a limit is reached.", es: "Organización gratis con cuotas mensuales de peticiones, tráfico y cómputo; las apps se pausan al agotarlas." },
   "GitHub": { en: "Unlimited public/private repositories; Pages and 2,000 Actions minutes/month for private repositories.", es: "Repositorios públicos y privados ilimitados; Pages y 2.000 min/mes de Actions para repos privados." },
 
