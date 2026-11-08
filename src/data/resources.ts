@@ -184,6 +184,7 @@ const pricingUrls: Record<string, string> = {
   "Loops": "https://loops.so/pricing",
   "Aptabase": "https://aptabase.com/pricing",
   "Shields.io": "https://shields.io",
+  "anon.li Drop": "https://anon.li/pricing",
 }
 
 const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "accessRequirement">[] = [
@@ -356,6 +357,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "UploadThing", url: "https://uploadthing.com", faviconFile: "uploadthing.com.png", category: "media", tags: ["uploads", "nextjs", "storage"], description: { en: "File uploads for modern full-stack web applications with native framework SDKs.", es: "Subida de archivos para aplicaciones full-stack modernas con SDKs nativos para frameworks." } },
   { name: "TinyPNG", url: "https://tinypng.com", faviconFile: "tinypng.com.png", category: "media", tags: ["compression", "images", "api"], description: { en: "Smart lossy compression API to compress WebP, PNG and JPEG images on the fly.", es: "API de compresión inteligente con pérdida para optimizar imágenes WebP, PNG y JPEG al vuelo." } },
   { name: "Filestack", url: "https://www.filestack.com", faviconFile: "filestack.com.png", category: "media", tags: ["uploads", "transformations", "cdn"], description: { en: "File uploader, transformation API, and CDN delivery for web and mobile applications.", es: "Subida de archivos, API de transformaciones y entrega por CDN para aplicaciones web y móviles." } },
+  { name: "anon.li Drop", url: "https://anon.li/drop", faviconFile: "https://anon.li/android-chrome-512x512.png", category: "media", tags: ["file sharing", "encryption", "open source"], description: { en: "Open-source, end-to-end encrypted file sharing: files are encrypted in the browser with AES-256-GCM and the key stays in the link fragment, so recipients decrypt without an account.", es: "Compartir archivos de código abierto con cifrado de extremo a extremo: los archivos se cifran en el navegador con AES-256-GCM y la clave queda en el fragmento del enlace, así que quien los recibe los descifra sin cuenta." } },
 ]
 
 export const slugifyResourceName = (name: string) => name
