@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-10-17"
+export const sourceReviewedAt = "2026-11-08"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -42,6 +42,7 @@ export const categories: Category[] = [
 ]
 
 const pricingUrls: Record<string, string> = {
+  "agent-qa": "https://vostride.com/pricing.md",
   "Vercel": "https://vercel.com/pricing",
   "Cloudflare": "https://www.cloudflare.com/plans/",
   "Netlify": "https://www.netlify.com/pricing/",
@@ -269,6 +270,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "GlitchTip", url: "https://glitchtip.com", faviconFile: "glitchtip.com.png", category: "observability", tags: ["errors", "open source", "sentry-compatible"], description: { en: "Open-source, Sentry-compatible error tracking and application performance monitoring.", es: "Seguimiento de errores y monitorización de rendimiento open source compatible con el SDK de Sentry." } },
 
   // CI/CD
+  { name: "agent-qa", url: "https://vostride.com", faviconFile: "vostride.com.png", category: "ci", tags: ["testing", "self-hosted", "ai"], description: { en: "Open source web, Android and iOS QA with memidex persistent memory, reviewable self-improvement and run evidence.", es: "QA open source para web, Android e iOS con memoria persistente memidex, automejora revisable y evidencias de ejecución." } },
   { name: "GitHub Actions", url: "https://github.com/features/actions", category: "ci", featured: true, tags: ["ci", "automation", "github"], description: { en: "Automate builds, tests, releases and workflows next to your code.", es: "Automatiza builds, tests, releases y workflows junto a tu código." } },
   { name: "GitLab CI/CD", url: "https://docs.gitlab.com/ci", category: "ci", tags: ["ci", "gitlab", "pipelines"], description: { en: "Integrated pipelines, runners and environments for GitLab projects.", es: "Pipelines, runners y entornos integrados para proyectos de GitLab." } },
   { name: "CircleCI", url: "https://circleci.com", category: "ci", tags: ["ci", "testing", "deploy"], description: { en: "Flexible hosted pipelines with multiple executors and parallel jobs.", es: "Pipelines alojados flexibles con varios ejecutores y trabajos paralelos." } },

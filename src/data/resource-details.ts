@@ -142,6 +142,33 @@ const accessCaveats: Record<Resource["accessRequirement"], Record<Locale, string
 
 /** Optional per-resource guides that replace the generic category copy on detail pages. */
 const resourceGuides: Partial<Record<string, LocalizedGuide & { longDescription: Record<Locale, string[]> }>> = {
+  "agent-qa": {
+    overview: {
+      en: "It runs natural-language UI tests on web, Android and iOS through a CLI, dashboard or MCP integration.",
+      es: "Ejecuta pruebas de interfaz en lenguaje natural para web, Android e iOS mediante CLI, panel o integración MCP.",
+    },
+    idealFor: {
+      en: "Developers and QA teams checking user journeys on their own apps",
+      es: "Desarrolladores y equipos de QA que comprueban recorridos de usuario en sus propias apps",
+    },
+    useCases: {
+      en: ["Check a critical UI journey after changing an app.", "Inspect screenshots, steps and evidence behind a test result.", "Review reusable application knowledge and lessons from previous runs."],
+      es: ["Comprobar un recorrido de interfaz crítico tras cambiar una app.", "Inspeccionar capturas, pasos y evidencias de un resultado.", "Revisar conocimientos reutilizables de la app y lecciones de ejecuciones anteriores."],
+    },
+    exampleTitle: { en: "Check a user journey with reviewable evidence", es: "Comprueba un recorrido con evidencias revisables" },
+    exampleSteps: {
+      en: ["Follow the official quickstart for your target platform and configure your chosen model endpoint.", "Describe a user journey and its expected outcome in natural language.", "Review the run evidence and validate reusable lessons before relying on them."],
+      es: ["Sigue la guía oficial de tu plataforma y configura el endpoint de tu modelo.", "Describe un recorrido de usuario y su resultado esperado en lenguaje natural.", "Revisa las evidencias y valida las lecciones reutilizables antes de depender de ellas."],
+    },
+    caveat: {
+      en: "FSL-1.1-ALv2 restricts competing commercial use. The product has no paid tier; model inference, compute, devices, CI and storage are supplied separately. No vostride account is required; your chosen model provider may require one.",
+      es: "FSL-1.1-ALv2 restringe el uso comercial competidor. El producto no tiene plan de pago; inferencia, cómputo, dispositivos, CI y almacenamiento se aportan aparte. No requiere cuenta de vostride; tu proveedor de modelos puede requerirla.",
+    },
+    longDescription: {
+      en: ["agent-qa provides open source natural-language UI QA for web, Android and iOS, with a CLI, dashboard and MCP integration.", "Its memidex engine stores application facts and reusable procedures in reviewable files. Self-improvement validates lessons, retires stale knowledge and incorporates feedback; run artifacts include steps, screenshots and evidence."],
+      es: ["agent-qa ofrece QA de interfaz open source en lenguaje natural para web, Android e iOS, con CLI, panel e integración MCP.", "Su motor memidex guarda hechos de la app y procedimientos reutilizables en archivos revisables. La automejora valida lecciones, retira conocimientos obsoletos e incorpora feedback; las ejecuciones incluyen pasos, capturas y evidencias."],
+    },
+  },
   "Cloudflare Browser Run": {
     overview: {
       en: "It runs headless Chrome on Cloudflare's network so you can scrape, screenshot, crawl and extract page content without hosting browsers yourself.",
