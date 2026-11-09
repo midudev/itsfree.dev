@@ -142,6 +142,60 @@ const accessCaveats: Record<Resource["accessRequirement"], Record<Locale, string
 
 /** Optional per-resource guides that replace the generic category copy on detail pages. */
 const resourceGuides: Partial<Record<string, LocalizedGuide & { longDescription: Record<Locale, string[]> }>> = {
+  "SiftingIO": {
+    overview: {
+      en: "It supplies real-time market prices and historical bars for US stocks and ETFs, forex, commodities and crypto.",
+      es: "Proporciona precios de mercado en tiempo real y barras históricas de acciones y ETF de EE. UU., divisas, materias primas y criptoactivos.",
+    },
+    idealFor: {
+      en: "Developers evaluating market-data integrations and internal, non-commercial research workflows",
+      es: "Desarrolladores que evalúan integraciones de datos de mercado y flujos de investigación internos no comerciales",
+    },
+    useCases: {
+      en: [
+        "Build an internal watchlist with real-time REST prices or WebSocket updates.",
+        "Retrieve historical bars through REST for charts and market research.",
+        "Explore supported data in a spreadsheet using CSV or Excel exports.",
+      ],
+      es: [
+        "Crear una lista de seguimiento interna con precios REST en tiempo real o actualizaciones WebSocket.",
+        "Consultar barras históricas por REST para gráficos e investigación de mercados.",
+        "Explorar datos disponibles en una hoja de cálculo mediante exportaciones CSV o Excel.",
+      ],
+    },
+    exampleTitle: {
+      en: "Plan a small market watchlist",
+      es: "Planifica una pequeña lista de seguimiento de mercado",
+    },
+    exampleSteps: {
+      en: [
+        "Choose up to five supported symbols in one market and check instrument and interval availability in the documentation.",
+        "Use REST for historical bars and latest prices; choose WebSocket when streaming real-time updates are needed.",
+        "Check that planned usage fits the market's quotas and confirm usage rights before publishing or redistributing data.",
+      ],
+      es: [
+        "Elige hasta cinco símbolos disponibles de un mercado y comprueba los instrumentos e intervalos en la documentación.",
+        "Usa REST para barras históricas y precios actuales; elige WebSocket cuando necesites actualizaciones en tiempo real.",
+        "Comprueba que el uso previsto respeta las cuotas del mercado y confirma los permisos antes de publicar o redistribuir datos.",
+      ],
+    },
+    caveat: {
+      en: "Free access is for internal, non-commercial use only: per market, 10,000 REST calls/month, 60 requests/minute, one WebSocket connection and five subscribed symbols; one API key and one user. An account is required, without a card. Full available history is included, but depth and intervals vary by instrument and series. Commercial use or redistribution requires appropriate permission.",
+      es: "El acceso gratuito es solo para uso interno no comercial: por mercado, 10.000 consultas REST/mes, 60 peticiones/minuto, una conexión WebSocket y cinco símbolos suscritos; una clave API y un usuario. Requiere cuenta, sin tarjeta. Incluye todo el histórico disponible, pero la profundidad y los intervalos varían por instrumento y serie. El uso comercial o la redistribución requieren los permisos correspondientes.",
+    },
+    longDescription: {
+      en: [
+        "SiftingIO provides real-time and historical market data for US stocks and ETFs, forex, commodities and crypto. REST serves latest prices and historical bars; WebSocket delivers real-time updates.",
+        "Go, TypeScript and Python SDKs support API integration. Market Data Export provides a browser workflow for supported CSV and Excel downloads, within the applicable access and usage limits.",
+        "The ongoing Free plan requires an account but no credit card and is limited to internal, non-commercial use. Historical access covers the available archive for each supported series; check the official documentation and pricing for instruments, intervals, quotas and permissions.",
+      ],
+      es: [
+        "SiftingIO ofrece datos de mercado en tiempo real e históricos de acciones y ETF de EE. UU., divisas, materias primas y criptoactivos. REST permite consultar precios actuales y barras históricas; WebSocket transmite actualizaciones en tiempo real.",
+        "Los SDK de Go, TypeScript y Python facilitan la integración con la API. Market Data Export permite descargar datos disponibles en CSV y Excel desde el navegador, dentro de los límites de acceso y uso aplicables.",
+        "El plan Free permanente requiere cuenta, sin tarjeta de crédito, y se limita al uso interno no comercial. El acceso histórico abarca el archivo disponible de cada serie; consulta la documentación y los precios oficiales para comprobar instrumentos, intervalos, cuotas y permisos.",
+      ],
+    },
+  },
   "Cloudflare Browser Run": {
     overview: {
       en: "It runs headless Chrome on Cloudflare's network so you can scrape, screenshot, crawl and extract page content without hosting browsers yourself.",
