@@ -10,6 +10,7 @@ export type AccessRequirement =
   | "trial-only"
 
 export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
+  "SiftingIO": "no-card",
   "Deno Deploy": "card-for-full-limits",
   "Northflank": "card-for-full-limits",
   "Azure DevOps": "card-for-full-limits",
@@ -35,6 +36,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
  * Limits change frequently, so keep these in one place and review them as a set.
  */
 export const freeTiers: Record<string, LocalizedFreeTier> = {
+  "SiftingIO": { en: "Free per market: 10,000 REST calls/month, 60 requests/minute, one WebSocket connection and five symbol subscriptions; one API key and one user. Full available history, varying by market and series. Account required, no card; internal, non-commercial use only.", es: "Gratis por mercado: 10.000 consultas REST/mes, 60 peticiones/minuto, una conexión WebSocket y cinco suscripciones a símbolos; una clave API y un usuario. Todo el histórico disponible, según mercado y serie. Requiere cuenta, sin tarjeta; solo uso interno no comercial." },
   "Vercel": { en: "Hobby: 1M edge requests, 1M function calls and 100 deployments/day for personal, non-commercial projects.", es: "Hobby: 1 M de peticiones edge, 1 M de invocaciones y 100 deploys/día para proyectos personales no comerciales." },
   "Cloudflare": { en: "Workers Free: 100k requests/day; Pages includes 500 builds/month, unlimited sites and static bandwidth.", es: "Workers Free: 100.000 peticiones/día; Pages incluye 500 builds/mes, sitios y ancho de banda estático ilimitados." },
   "Netlify": { en: "Free forever: 300 usage credits/month, one concurrent build, custom domains, SSL and deploy previews.", es: "Gratis para siempre: 300 créditos de uso/mes, un build simultáneo, dominios propios, SSL y previews." },

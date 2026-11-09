@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-10-17"
+export const sourceReviewedAt = "2026-11-09"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -42,6 +42,7 @@ export const categories: Category[] = [
 ]
 
 const pricingUrls: Record<string, string> = {
+  "SiftingIO": "https://sifting.io/pricing",
   "Vercel": "https://vercel.com/pricing",
   "Cloudflare": "https://www.cloudflare.com/plans/",
   "Netlify": "https://www.netlify.com/pricing/",
@@ -294,6 +295,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Aptabase", url: "https://aptabase.com", faviconFile: "aptabase.com.png", category: "analytics", tags: ["privacy", "mobile", "desktop"], description: { en: "Privacy-friendly, lightweight analytics built for mobile, desktop, and web applications.", es: "Analítica ligera y respetuosa con la privacidad diseñada para aplicaciones móviles, de escritorio y web." } },
 
   // APIs
+  { name: "SiftingIO", url: "https://sifting.io/", faviconFile: "https://sifting.io/brand-kit/icon.png", category: "api", tags: ["market data", "rest", "websocket"], description: { en: "Real-time and historical market data for US stocks and ETFs, forex, commodities and crypto through REST and WebSocket.", es: "Datos de mercado en tiempo real e históricos de acciones y ETF de EE. UU., divisas, materias primas y criptoactivos mediante REST y WebSocket." } },
   { name: "Pipedream", url: "https://pipedream.com", category: "api", tags: ["automation", "workflows", "api"], description: { en: "Connect APIs and run event-driven workflows with code when you need it.", es: "Conecta APIs y ejecuta workflows por eventos usando código cuando haga falta." } },
   { name: "Beeceptor", url: "https://beeceptor.com", category: "api", tags: ["mock", "http", "debug"], description: { en: "Create instant mock endpoints and inspect, transform or proxy requests.", es: "Crea endpoints mock e inspecciona, transforma o redirige peticiones." } },
   { name: "MockAPI", url: "https://mockapi.io", category: "api", tags: ["mock", "rest", "prototype"], description: { en: "Generate REST endpoints and realistic sample data for prototypes.", es: "Genera endpoints REST y datos realistas para prototipos." } },
