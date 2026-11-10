@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-10-17"
+export const sourceReviewedAt = "2026-11-11"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -134,6 +134,7 @@ const pricingUrls: Record<string, string> = {
   "Cloudflare Browser Run": "https://developers.cloudflare.com/browser-run/pricing/",
   "Webhook.site": "https://docs.webhook.site/pro.html",
   "Open-Meteo": "https://open-meteo.com/en/pricing",
+  "Datacircle": "https://api.datacircle.dev/v1/openapi.json",
   "OpenGraph.to": "https://www.opengraph.to/api",
   "Hoppscotch": "https://hoppscotch.com/pricing",
   "Figma": "https://www.figma.com/pricing/",
@@ -303,6 +304,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "DummyJSON", url: "https://dummyjson.com", faviconFile: "dummyjson.com.webp", category: "api", tags: ["fake api", "rest", "testing"], description: { en: "A free fake REST API with products, users, carts and auth for frontend prototypes—no backend or API key required.", es: "API REST falsa gratis con productos, usuarios, carritos y auth para prototipos frontend, sin backend ni API key." } },
   { name: "JSONPlaceholder", url: "https://jsonplaceholder.typicode.com", category: "api", tags: ["fake api", "rest", "testing"], description: { en: "A dependable fake REST API for examples, tests and quick prototypes.", es: "Una API REST falsa y fiable para ejemplos, pruebas y prototipos." } },
   { name: "Open-Meteo", url: "https://open-meteo.com", category: "api", tags: ["weather", "forecast", "open data"], description: { en: "Global weather forecasts and historical data through a free JSON API with no API key.", es: "Pronósticos globales e históricos del tiempo mediante una API JSON gratis sin API key." } },
+  { name: "Datacircle", url: "https://datacircle.dev", category: "api", tags: ["gtm", "api benchmark", "open data"], description: { en: "Find the best GTM APIs. A free JSON API with no key that lists every GTM API, shows who is best for each and searches every plan.", es: "Encuentra las mejores API GTM. Una API JSON gratis sin clave que lista cada API GTM, muestra cuál es la mejor para cada caso y busca en cada plan." } },
   { name: "OpenGraph.to", url: "https://www.opengraph.to", faviconFile: "opengraph.to.svg", category: "api", tags: ["open graph", "seo", "social"], description: { en: "Scrape Open Graph, Twitter Card and SEO tags for any public URL: title, description, image, score, issues and suggested meta tags as JSON.", es: "Extrae tags Open Graph, Twitter Card y SEO de cualquier URL pública: título, descripción, imagen, puntuación, problemas y meta tags sugeridos en JSON." } },
   { name: "Hoppscotch", url: "https://hoppscotch.io", category: "api", tags: ["api client", "graphql", "realtime"], description: { en: "A fast web API client for REST, GraphQL and realtime protocols.", es: "Cliente web rápido para APIs REST, GraphQL y protocolos realtime." } },
   { name: "Cloudflare Browser Run", url: "https://developers.cloudflare.com/browser-run/", faviconFile: "cloudflare.com.webp", category: "api", tags: ["scraping", "headless", "automation"], description: { en: "Run headless Chrome on Cloudflare's network to scrape, screenshot, crawl and extract page content as HTML, Markdown or JSON.", es: "Ejecuta Chrome headless en la red de Cloudflare para scrapear, capturar, crawlear y extraer contenido como HTML, Markdown o JSON." } },
