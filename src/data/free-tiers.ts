@@ -79,6 +79,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Kinde": { en: "Free: 10,500 monthly active users, 5 organizations and core authentication with no credit card.", es: "Gratis: 10.500 usuarios activos/mes, 5 organizaciones y autenticación base sin tarjeta." },
   "Stytch": { en: "Free: up to 10k monthly active users for consumer auth or 1,000 for B2B auth, with usage caps by method.", es: "Gratis: hasta 10.000 usuarios activos/mes en B2C o 1.000 en B2B, con cuotas según el método." },
   "Descope": { en: "Free: 7,500 monthly active users, unlimited applications and core authentication flows.", es: "Gratis: 7.500 usuarios activos/mes, aplicaciones ilimitadas y flujos de autenticación base." },
+  "Frontegg": { en: "Free: $0 plan with 7,500 monthly active users and 5 enterprise connections (SSO/SCIM).", es: "Gratis: plan de $0 con 7.500 usuarios activos/mes y 5 conexiones enterprise (SSO/SCIM)." },
   "Logto": { en: "Free cloud plan: 50k monthly active users and core auth; the open-source edition can be self-hosted free.", es: "Cloud gratis: 50.000 usuarios activos/mes y auth base; la edición open source se puede autoalojar gratis." },
 
   "Resend": { en: "Free: 3,000 emails/month and 100/day, one domain, one webhook endpoint and one-day log retention.", es: "Gratis: 3.000 emails/mes y 100/día, un dominio, un webhook y logs durante un día." },

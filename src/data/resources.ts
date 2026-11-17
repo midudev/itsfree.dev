@@ -83,6 +83,7 @@ const pricingUrls: Record<string, string> = {
   "Kinde": "https://kinde.com/pricing",
   "Stytch": "https://stytch.com/pricing",
   "Descope": "https://www.descope.com/pricing",
+  "Frontegg": "https://frontegg.com/pricing",
   "Logto": "https://logto.io/pricing",
   "Resend": "https://resend.com/pricing",
   "Unitpost": "https://unitpost.com/pricing",
@@ -239,6 +240,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Kinde", url: "https://kinde.com", category: "auth", tags: ["auth", "billing", "organizations"], description: { en: "Straightforward authentication, organizations and feature access for SaaS apps.", es: "Autenticación, organizaciones y acceso a funciones para aplicaciones SaaS." } },
   { name: "Stytch", url: "https://stytch.com", category: "auth", tags: ["passwordless", "fraud", "b2b"], description: { en: "APIs and SDKs for authentication, B2B identity and fraud prevention.", es: "APIs y SDKs para autenticación, identidad B2B y prevención de fraude." } },
   { name: "Descope", url: "https://www.descope.com", category: "auth", tags: ["no-code", "auth", "flows"], description: { en: "Visual authentication flows backed by APIs and SDKs for custom experiences.", es: "Flujos visuales de autenticación con APIs y SDKs para experiencias propias." } },
+  { name: "Frontegg", url: "https://frontegg.com", category: "auth", tags: ["auth", "b2b", "sso", "scim"], description: { en: "Customer identity for B2B SaaS with SSO, SCIM, MFA and roles.", es: "Identidad de clientes para SaaS B2B con SSO, SCIM, MFA y roles." } },
   { name: "Logto", url: "https://logto.io", category: "auth", tags: ["identity", "auth", "open source"], description: { en: "Authentication and authorization infrastructure for consumer and business apps.", es: "Infraestructura de autenticación y autorización para aplicaciones B2C y B2B." } },
 
   // Email & forms
