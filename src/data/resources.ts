@@ -177,6 +177,7 @@ const pricingUrls: Record<string, string> = {
   "Snyk": "https://snyk.io/plans/",
   "Cronitor": "https://cronitor.io/pricing",
   "GlitchTip": "https://glitchtip.com/pricing",
+  "ZoneBI": "https://zonebi.com/en/#pricing",
   "Smee.io": "https://smee.io",
   "Reqres": "https://reqres.in/#pricing",
   "Scalar": "https://scalar.com/pricing",
@@ -269,6 +270,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Logtail", url: "https://betterstack.com/logs", category: "observability", tags: ["logs", "sql", "alerts"], description: { en: "Centralize structured logs and query them quickly with SQL-like syntax.", es: "Centraliza logs estructurados y consúltalos con una sintaxis tipo SQL." } },
   { name: "Cronitor", url: "https://cronitor.io", faviconFile: "cronitor.io.png", category: "observability", tags: ["cron", "uptime", "heartbeat"], description: { en: "Continuous monitoring for cron jobs, background workers, and websites with instant alerts.", es: "Monitorización continua de tareas cron, workers en segundo plano y sitios web con alertas instantáneas." } },
   { name: "GlitchTip", url: "https://glitchtip.com", faviconFile: "glitchtip.com.png", category: "observability", tags: ["errors", "open source", "sentry-compatible"], description: { en: "Open-source, Sentry-compatible error tracking and application performance monitoring.", es: "Seguimiento de errores y monitorización de rendimiento open source compatible con el SDK de Sentry." } },
+  { name: "ZoneBI", url: "https://zonebi.com/en/", category: "observability", tags: ["uptime", "dns", "ssl"], description: { en: "Outside-in monitoring for domains, DNS, SSL certificates, uptime and email authentication (SPF, DKIM, DMARC).", es: "Monitorización externa de dominios, DNS, certificados SSL, uptime y autenticación de email (SPF, DKIM, DMARC)." } },
 
   // CI/CD
   { name: "GitHub Actions", url: "https://github.com/features/actions", category: "ci", featured: true, tags: ["ci", "automation", "github"], description: { en: "Automate builds, tests, releases and workflows next to your code.", es: "Automatiza builds, tests, releases y workflows junto a tu código." } },
