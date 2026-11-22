@@ -10,6 +10,7 @@ export type AccessRequirement =
   | "trial-only"
 
 export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
+  "PDF Fan": "no-signup",
   "Deno Deploy": "card-for-full-limits",
   "Northflank": "card-for-full-limits",
   "Azure DevOps": "card-for-full-limits",
@@ -160,6 +161,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Discord": { en: "Core text, voice, video, communities and bots are free; upload quality and customization have limits.", es: "Texto, voz, vídeo, comunidades y bots son gratis; las subidas, calidad y personalización tienen límites." },
   "Slack": { en: "Free: 90 days of message history, 10 app integrations and one-to-one huddles for small teams.", es: "Gratis: 90 días de historial, 10 integraciones y huddles uno a uno para equipos pequeños." },
   "Plane": { en: "Free cloud plan for up to 12 users with core project management (projects, work items, cycles, modules and views); the AGPL-licensed Community Edition is free and open source to self-host with no user limit.", es: "Plan cloud gratis para hasta 12 usuarios con gestión de proyectos base (proyectos, work items, cycles, módulos y vistas); la Community Edition con licencia AGPL es gratis y open source para self-host sin límite de usuarios." },
+  "PDF Fan": { en: "Free page extraction for one PDF up to 25 MB and 200 pages, with no account. The original is processed in the browser. A temporary copy of the result is uploaded for downloads.", es: "Extracción gratuita de páginas de un PDF de hasta 25 MB y 200 páginas, sin cuenta. El original se procesa en el navegador. Se sube una copia temporal del resultado para la descarga." },
 
   "Sanity": { en: "Free: 20 user seats, 2 datasets, 10k documents, 100k API requests and 100 GB CDN bandwidth/month.", es: "Gratis: 20 usuarios, 2 datasets, 10.000 documentos, 100.000 peticiones y 100 GB de CDN/mes." },
   "Contentful": { en: "Free: 10 users, 2 roles, 2 locales, 1M API calls and 50 GB CDN bandwidth/month.", es: "Gratis: 10 usuarios, 2 roles, 2 idiomas, 1 M de llamadas API y 50 GB de CDN/mes." },

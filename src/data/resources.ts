@@ -22,7 +22,7 @@ export interface Resource {
   featured?: boolean
 }
 
-export const sourceReviewedAt = "2026-10-17"
+export const sourceReviewedAt = "2026-11-23"
 
 export const categories: Category[] = [
   { id: "hosting", icon: "cloud-computing", name: { en: "Hosting & deploy", es: "Hosting y deploy" } },
@@ -42,6 +42,7 @@ export const categories: Category[] = [
 ]
 
 const pricingUrls: Record<string, string> = {
+  "PDF Fan": "https://pdf.fan/es/extraer-paginas-pdf/",
   "Vercel": "https://vercel.com/pricing",
   "Cloudflare": "https://www.cloudflare.com/plans/",
   "Netlify": "https://www.netlify.com/pricing/",
@@ -340,6 +341,8 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Discord", url: "https://discord.com", category: "collaboration", tags: ["community", "chat", "voice"], description: { en: "Persistent text, voice and video spaces for developer communities.", es: "Espacios persistentes de texto, voz y vídeo para comunidades." } },
   { name: "Slack", url: "https://slack.com", category: "collaboration", tags: ["chat", "integrations", "teams"], description: { en: "Team messaging with channels, huddles and a large integration ecosystem.", es: "Mensajería de equipo con canales, huddles y muchas integraciones." } },
   { name: "Plane", url: "https://plane.so", faviconFile: "plane.so.webp", category: "collaboration", tags: ["self-hosted", "issues", "open source"], description: { en: "Open-source project management to track issues, run sprint cycles and manage product roadmaps.", es: "Gestión de proyectos open source para trackear issues, correr sprints por cycles y gestionar roadmaps." } },
+
+  { name: "PDF Fan", url: "https://pdf.fan/", category: "collaboration", tags: ["pdf", "documents", "file tools"], description: { en: "Extract individual pages from a PDF for a project handoff or share them as a separate document.", es: "Extrae páginas de un PDF para documentar una entrega o compartirlas en un archivo aparte." } },
 
   // CMS
   { name: "Sanity", url: "https://www.sanity.io", category: "cms", tags: ["headless", "content lake", "studio"], description: { en: "A customizable content workspace backed by a real-time content platform.", es: "Workspace de contenido personalizable sobre una plataforma realtime." } },
