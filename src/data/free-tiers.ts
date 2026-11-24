@@ -28,6 +28,7 @@ export const accessRequirements: Partial<Record<string, AccessRequirement>> = {
   "Webhook.site": "no-signup",
   "Shields.io": "no-signup",
   "Smee.io": "no-signup",
+  "BatchSet": "no-signup",
 }
 
 /**
@@ -175,6 +176,7 @@ export const freeTiers: Record<string, LocalizedFreeTier> = {
   "Backblaze B2": { en: "Free forever: first 10 GB of cloud storage, plus free download egress up to 3x your average monthly storage.", es: "Gratis para siempre: los primeros 10 GB de almacenamiento y descarga gratuita hasta el triple de tu almacenamiento medio mensual." },
   "UploadThing": { en: "Free tier: 2 GB total cloud storage, unlimited uploads and downloads, 7-day audit logs.", es: "Gratis: 2 GB de almacenamiento cloud total, subidas y descargas ilimitadas y 7 días de logs." },
   "TinyPNG": { en: "Free API tier: 500 image compressions/month with no credit card; the web compressor is also free (up to 20 images at once, 5 MB each).", es: "API gratis: 500 compresiones de imágenes/mes sin tarjeta; el compresor web también es gratis (hasta 20 imágenes a la vez, 5 MB cada una)." },
+  "BatchSet": { en: "Free: JPG, PNG and WebP conversion runs in your browser with no sign-up for the first 1,000 conversions; a free account adds 100 credits/month for server jobs such as GIF and BMP. 10 MB per file without an account, 25 MB with one.", es: "Gratis: la conversión de JPG, PNG y WebP se ejecuta en tu navegador sin registro para las primeras 1.000 conversiones; una cuenta gratuita añade 100 créditos/mes para trabajos en servidor como GIF y BMP. 10 MB por archivo sin cuenta, 25 MB con cuenta." },
   "Filestack": { en: "Free forever: 500 uploads/month, 1,000 transformations, 1 GB bandwidth and 1 GB storage, with files up to 20 MB.", es: "Gratis para siempre: 500 subidas/mes, 1.000 transformaciones, 1 GB de ancho de banda y 1 GB de almacenamiento, con archivos de hasta 20 MB." },
   "TiDB Cloud": { en: "Starter: 25 GiB row storage, 25 GiB columnar storage and 250M Request Units/month per organization, split across up to 5 instances.", es: "Starter: 25 GiB de almacenamiento por filas, 25 GiB columnar y 250 M de Request Units/mes por organización, repartidos en hasta 5 instancias." },
   "Convex": { en: "Free plan: 1 GB monthly database I/O, 500 MB database storage, 1 GB file storage, 40 deployments and up to 6 developers.", es: "Plan gratis: 1 GB de I/O mensual, 500 MB de base de datos, 1 GB de archivos, 40 deployments y hasta 6 desarrolladores." },
