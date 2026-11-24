@@ -169,6 +169,7 @@ const pricingUrls: Record<string, string> = {
   "Backblaze B2": "https://www.backblaze.com/cloud-storage/pricing",
   "UploadThing": "https://uploadthing.com/pricing",
   "TinyPNG": "https://tinypng.com/pricing/api",
+  "BatchSet": "https://batchset.com/pricing",
   "Filestack": "https://www.filestack.com/pricing/",
   "TiDB Cloud": "https://www.pingcap.com/pricing/",
   "Convex": "https://www.convex.dev/pricing",
@@ -357,6 +358,7 @@ const resourceCatalog: Omit<Resource, "slug" | "pricingUrl" | "freeTier" | "acce
   { name: "Backblaze B2", url: "https://www.backblaze.com/cloud-storage", faviconFile: "backblaze.com.png", category: "media", tags: ["storage", "s3", "cloud"], description: { en: "S3-compatible cloud object storage with the first 10 GB free and low-cost egress.", es: "Almacenamiento de objetos cloud compatible con S3 con los primeros 10 GB gratis y salida de datos económica." } },
   { name: "UploadThing", url: "https://uploadthing.com", faviconFile: "uploadthing.com.png", category: "media", tags: ["uploads", "nextjs", "storage"], description: { en: "File uploads for modern full-stack web applications with native framework SDKs.", es: "Subida de archivos para aplicaciones full-stack modernas con SDKs nativos para frameworks." } },
   { name: "TinyPNG", url: "https://tinypng.com", faviconFile: "tinypng.com.png", category: "media", tags: ["compression", "images", "api"], description: { en: "Smart lossy compression API to compress WebP, PNG and JPEG images on the fly.", es: "API de compresión inteligente con pérdida para optimizar imágenes WebP, PNG y JPEG al vuelo." } },
+  { name: "BatchSet", url: "https://batchset.com", category: "media", tags: ["images", "compression", "batch"], description: { en: "Batch convert, compress and resize images (JPG, PNG, WebP, HEIC), with common formats processed in the browser.", es: "Convierte, comprime y redimensiona imágenes por lotes (JPG, PNG, WebP, HEIC), con los formatos comunes procesados en el navegador." } },
   { name: "Filestack", url: "https://www.filestack.com", faviconFile: "filestack.com.png", category: "media", tags: ["uploads", "transformations", "cdn"], description: { en: "File uploader, transformation API, and CDN delivery for web and mobile applications.", es: "Subida de archivos, API de transformaciones y entrega por CDN para aplicaciones web y móviles." } },
 ]
 
